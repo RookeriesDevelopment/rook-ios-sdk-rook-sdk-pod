@@ -1,0 +1,45 @@
+// swift-interface-format-version: 1.0
+// swift-compiler-version: Apple Swift version 5.7 (swiftlang-5.7.0.127.4 clang-1400.0.29.50)
+// swift-module-flags: -target arm64-apple-ios13.0-simulator -enable-objc-interop -enable-library-evolution -swift-version 5 -enforce-exclusivity=checked -O -module-name RookSDK
+// swift-module-flags-ignorable: -enable-bare-slash-regex
+import Foundation
+import RookAppleHealth
+import RookConnectTransmission
+@_exported import RookSDK
+import RookUsersSDK
+import Swift
+import _Concurrency
+import _StringProcessing
+final public class RookEventsManager {
+  public init()
+  final public func syncBodyHeartRateEvent(date: Foundation.Date, completion: @escaping (Swift.Result<Swift.Bool, Swift.Error>) -> Swift.Void)
+  final public func syncPhysicalHeartRateEvent(date: Foundation.Date, completion: @escaping (Swift.Result<Swift.Bool, Swift.Error>) -> Swift.Void)
+  final public func syncBodyOxygenationEvent(date: Foundation.Date, completion: @escaping (Swift.Result<Swift.Bool, Swift.Error>) -> Swift.Void)
+  final public func syncPhysicalOxygenationEvent(date: Foundation.Date, completion: @escaping (Swift.Result<Swift.Bool, Swift.Error>) -> Swift.Void)
+  final public func syncTrainingEvent(date: Foundation.Date, completion: @escaping (Swift.Result<Swift.Bool, Swift.Error>) -> Swift.Void)
+  @objc deinit
+}
+@_hasMissingDesignatedInitializers final public class RookConnectConfigurationManager {
+  public static let shared: RookSDK.RookConnectConfigurationManager
+  final public func setConfiguration(urlAPI: Swift.String, clientUUID: Swift.String, secretKey: Swift.String)
+  final public func initRook()
+  final public func updateUserId(_ id: Swift.String, completion: @escaping (Swift.Result<Swift.Bool, Swift.Error>) -> Swift.Void)
+  final public func clearUser(completion: @escaping (Swift.Result<Swift.Bool, Swift.Error>) -> Swift.Void)
+  @objc deinit
+}
+final public class RookConnectPermissionsManager {
+  public init()
+  final public func requestAllPermissions(completion: @escaping (Swift.Result<Swift.Bool, Swift.Error>) -> Swift.Void)
+  final public func requestSleepPermissions(completion: @escaping (Swift.Result<Swift.Bool, Swift.Error>) -> Swift.Void)
+  final public func requestUserInfoPersmissions(completion: @escaping (Swift.Result<Swift.Bool, Swift.Error>) -> Swift.Void)
+  final public func requestPhysicalPermissions(completion: @escaping (Swift.Result<Swift.Bool, Swift.Error>) -> Swift.Void)
+  final public func requesBodyPermissions(completion: @escaping (Swift.Result<Swift.Bool, Swift.Error>) -> Swift.Void)
+  @objc deinit
+}
+final public class RookSummaryManger {
+  public init()
+  final public func syncSleepSummary(form date: Foundation.Date, completion: @escaping (Swift.Result<Swift.Bool, Swift.Error>) -> Swift.Void)
+  final public func syncPhysicalSummary(form date: Foundation.Date, completion: @escaping (Swift.Result<Swift.Bool, Swift.Error>) -> Swift.Void)
+  final public func syncBodySummary(from date: Foundation.Date, completion: @escaping (Swift.Result<Swift.Bool, Swift.Error>) -> Swift.Void)
+  @objc deinit
+}
