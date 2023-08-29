@@ -15,6 +15,23 @@
         ]
       },
       {
+        "kind": "Import",
+        "name": "RookConnectTransmission",
+        "printedName": "RookConnectTransmission",
+        "declKind": "Import",
+        "moduleName": "RookSDK"
+      },
+      {
+        "kind": "Import",
+        "name": "Foundation",
+        "printedName": "Foundation",
+        "declKind": "Import",
+        "moduleName": "RookSDK",
+        "declAttributes": [
+          "RawDocComment"
+        ]
+      },
+      {
         "kind": "TypeDecl",
         "name": "RookEventsManager",
         "printedName": "RookEventsManager",
@@ -28,14 +45,19 @@
                 "kind": "TypeNominal",
                 "name": "RookEventsManager",
                 "printedName": "RookSDK.RookEventsManager",
-                "usr": "s:7RookSDK0A13EventsManagerC"
+                "usr": "c:@M@RookSDK@objc(cs)RookEventsManager"
               }
             ],
             "declKind": "Constructor",
-            "usr": "s:7RookSDK0A13EventsManagerCACycfc",
+            "usr": "c:@M@RookSDK@objc(cs)RookEventsManager(im)init",
             "mangledName": "$s7RookSDK0A13EventsManagerCACycfc",
             "moduleName": "RookSDK",
+            "overriding": true,
+            "objc_name": "init",
             "declAttributes": [
+              "Dynamic",
+              "ObjC",
+              "Override",
               "AccessControl",
               "RawDocComment"
             ],
@@ -336,15 +358,480 @@
               "AccessControl"
             ],
             "funcSelfKind": "NonMutating"
+          },
+          {
+            "kind": "Function",
+            "name": "syncPendingEvents",
+            "printedName": "syncPendingEvents(completion:)",
+            "children": [
+              {
+                "kind": "TypeNominal",
+                "name": "Void",
+                "printedName": "()"
+              },
+              {
+                "kind": "TypeFunc",
+                "name": "Function",
+                "printedName": "(Swift.Result<Swift.Bool, Swift.Error>) -> ()",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "Void",
+                    "printedName": "()"
+                  },
+                  {
+                    "kind": "TypeNominal",
+                    "name": "Result",
+                    "printedName": "Swift.Result<Swift.Bool, Swift.Error>",
+                    "children": [
+                      {
+                        "kind": "TypeNominal",
+                        "name": "Bool",
+                        "printedName": "Swift.Bool",
+                        "usr": "s:Sb"
+                      },
+                      {
+                        "kind": "TypeNominal",
+                        "name": "Error",
+                        "printedName": "Swift.Error",
+                        "usr": "s:s5ErrorP"
+                      }
+                    ],
+                    "usr": "s:s6ResultO"
+                  }
+                ]
+              }
+            ],
+            "declKind": "Func",
+            "usr": "s:7RookSDK0A13EventsManagerC011syncPendingC010completionyys6ResultOySbs5Error_pGc_tF",
+            "mangledName": "$s7RookSDK0A13EventsManagerC011syncPendingC010completionyys6ResultOySbs5Error_pGc_tF",
+            "moduleName": "RookSDK",
+            "declAttributes": [
+              "Final",
+              "AccessControl"
+            ],
+            "funcSelfKind": "NonMutating"
+          },
+          {
+            "kind": "Function",
+            "name": "syncBodyHeartRateEventObjc",
+            "printedName": "syncBodyHeartRateEventObjc(date:completion:)",
+            "children": [
+              {
+                "kind": "TypeNominal",
+                "name": "Void",
+                "printedName": "()"
+              },
+              {
+                "kind": "TypeNominal",
+                "name": "Date",
+                "printedName": "Foundation.Date",
+                "usr": "s:10Foundation4DateV"
+              },
+              {
+                "kind": "TypeFunc",
+                "name": "Function",
+                "printedName": "(Swift.Bool, Swift.Error?) -> ()",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "Void",
+                    "printedName": "()"
+                  },
+                  {
+                    "kind": "TypeNominal",
+                    "name": "Tuple",
+                    "printedName": "(Swift.Bool, Swift.Error?)",
+                    "children": [
+                      {
+                        "kind": "TypeNominal",
+                        "name": "Bool",
+                        "printedName": "Swift.Bool",
+                        "usr": "s:Sb"
+                      },
+                      {
+                        "kind": "TypeNominal",
+                        "name": "Optional",
+                        "printedName": "Swift.Error?",
+                        "children": [
+                          {
+                            "kind": "TypeNominal",
+                            "name": "Error",
+                            "printedName": "Swift.Error",
+                            "usr": "s:s5ErrorP"
+                          }
+                        ],
+                        "usr": "s:Sq"
+                      }
+                    ]
+                  }
+                ]
+              }
+            ],
+            "declKind": "Func",
+            "usr": "c:@CM@RookSDK@objc(cs)RookEventsManager(im)syncBodyHeartRateEventObjcWithDate:completion:",
+            "mangledName": "$s7RookSDK0A13EventsManagerC26syncBodyHeartRateEventObjc4date10completiony10Foundation4DateV_ySb_s5Error_pSgtctF",
+            "moduleName": "RookSDK",
+            "objc_name": "syncBodyHeartRateEventObjcWithDate:completion:",
+            "declAttributes": [
+              "Final",
+              "AccessControl",
+              "ObjC"
+            ],
+            "isFromExtension": true,
+            "funcSelfKind": "NonMutating"
+          },
+          {
+            "kind": "Function",
+            "name": "syncPhysicalHeartRateEventObjc",
+            "printedName": "syncPhysicalHeartRateEventObjc(date:completion:)",
+            "children": [
+              {
+                "kind": "TypeNominal",
+                "name": "Void",
+                "printedName": "()"
+              },
+              {
+                "kind": "TypeNominal",
+                "name": "Date",
+                "printedName": "Foundation.Date",
+                "usr": "s:10Foundation4DateV"
+              },
+              {
+                "kind": "TypeFunc",
+                "name": "Function",
+                "printedName": "(Swift.Bool, Swift.Error?) -> ()",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "Void",
+                    "printedName": "()"
+                  },
+                  {
+                    "kind": "TypeNominal",
+                    "name": "Tuple",
+                    "printedName": "(Swift.Bool, Swift.Error?)",
+                    "children": [
+                      {
+                        "kind": "TypeNominal",
+                        "name": "Bool",
+                        "printedName": "Swift.Bool",
+                        "usr": "s:Sb"
+                      },
+                      {
+                        "kind": "TypeNominal",
+                        "name": "Optional",
+                        "printedName": "Swift.Error?",
+                        "children": [
+                          {
+                            "kind": "TypeNominal",
+                            "name": "Error",
+                            "printedName": "Swift.Error",
+                            "usr": "s:s5ErrorP"
+                          }
+                        ],
+                        "usr": "s:Sq"
+                      }
+                    ]
+                  }
+                ]
+              }
+            ],
+            "declKind": "Func",
+            "usr": "c:@CM@RookSDK@objc(cs)RookEventsManager(im)syncPhysicalHeartRateEventObjcWithDate:completion:",
+            "mangledName": "$s7RookSDK0A13EventsManagerC30syncPhysicalHeartRateEventObjc4date10completiony10Foundation4DateV_ySb_s5Error_pSgtctF",
+            "moduleName": "RookSDK",
+            "objc_name": "syncPhysicalHeartRateEventObjcWithDate:completion:",
+            "declAttributes": [
+              "Final",
+              "AccessControl",
+              "ObjC"
+            ],
+            "isFromExtension": true,
+            "funcSelfKind": "NonMutating"
+          },
+          {
+            "kind": "Function",
+            "name": "syncBodyOxygenationEventObjc",
+            "printedName": "syncBodyOxygenationEventObjc(date:completion:)",
+            "children": [
+              {
+                "kind": "TypeNominal",
+                "name": "Void",
+                "printedName": "()"
+              },
+              {
+                "kind": "TypeNominal",
+                "name": "Date",
+                "printedName": "Foundation.Date",
+                "usr": "s:10Foundation4DateV"
+              },
+              {
+                "kind": "TypeFunc",
+                "name": "Function",
+                "printedName": "(Swift.Bool, Swift.Error?) -> ()",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "Void",
+                    "printedName": "()"
+                  },
+                  {
+                    "kind": "TypeNominal",
+                    "name": "Tuple",
+                    "printedName": "(Swift.Bool, Swift.Error?)",
+                    "children": [
+                      {
+                        "kind": "TypeNominal",
+                        "name": "Bool",
+                        "printedName": "Swift.Bool",
+                        "usr": "s:Sb"
+                      },
+                      {
+                        "kind": "TypeNominal",
+                        "name": "Optional",
+                        "printedName": "Swift.Error?",
+                        "children": [
+                          {
+                            "kind": "TypeNominal",
+                            "name": "Error",
+                            "printedName": "Swift.Error",
+                            "usr": "s:s5ErrorP"
+                          }
+                        ],
+                        "usr": "s:Sq"
+                      }
+                    ]
+                  }
+                ]
+              }
+            ],
+            "declKind": "Func",
+            "usr": "c:@CM@RookSDK@objc(cs)RookEventsManager(im)syncBodyOxygenationEventObjcWithDate:completion:",
+            "mangledName": "$s7RookSDK0A13EventsManagerC28syncBodyOxygenationEventObjc4date10completiony10Foundation4DateV_ySb_s5Error_pSgtctF",
+            "moduleName": "RookSDK",
+            "objc_name": "syncBodyOxygenationEventObjcWithDate:completion:",
+            "declAttributes": [
+              "Final",
+              "AccessControl",
+              "ObjC"
+            ],
+            "isFromExtension": true,
+            "funcSelfKind": "NonMutating"
+          },
+          {
+            "kind": "Function",
+            "name": "syncPhysicalOxygenationEventObjc",
+            "printedName": "syncPhysicalOxygenationEventObjc(date:completion:)",
+            "children": [
+              {
+                "kind": "TypeNominal",
+                "name": "Void",
+                "printedName": "()"
+              },
+              {
+                "kind": "TypeNominal",
+                "name": "Date",
+                "printedName": "Foundation.Date",
+                "usr": "s:10Foundation4DateV"
+              },
+              {
+                "kind": "TypeFunc",
+                "name": "Function",
+                "printedName": "(Swift.Bool, Swift.Error?) -> ()",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "Void",
+                    "printedName": "()"
+                  },
+                  {
+                    "kind": "TypeNominal",
+                    "name": "Tuple",
+                    "printedName": "(Swift.Bool, Swift.Error?)",
+                    "children": [
+                      {
+                        "kind": "TypeNominal",
+                        "name": "Bool",
+                        "printedName": "Swift.Bool",
+                        "usr": "s:Sb"
+                      },
+                      {
+                        "kind": "TypeNominal",
+                        "name": "Optional",
+                        "printedName": "Swift.Error?",
+                        "children": [
+                          {
+                            "kind": "TypeNominal",
+                            "name": "Error",
+                            "printedName": "Swift.Error",
+                            "usr": "s:s5ErrorP"
+                          }
+                        ],
+                        "usr": "s:Sq"
+                      }
+                    ]
+                  }
+                ]
+              }
+            ],
+            "declKind": "Func",
+            "usr": "c:@CM@RookSDK@objc(cs)RookEventsManager(im)syncPhysicalOxygenationEventObjcWithDate:completion:",
+            "mangledName": "$s7RookSDK0A13EventsManagerC32syncPhysicalOxygenationEventObjc4date10completiony10Foundation4DateV_ySb_s5Error_pSgtctF",
+            "moduleName": "RookSDK",
+            "objc_name": "syncPhysicalOxygenationEventObjcWithDate:completion:",
+            "declAttributes": [
+              "Final",
+              "AccessControl",
+              "ObjC"
+            ],
+            "isFromExtension": true,
+            "funcSelfKind": "NonMutating"
+          },
+          {
+            "kind": "Function",
+            "name": "syncTrainingEventObjc",
+            "printedName": "syncTrainingEventObjc(date:completion:)",
+            "children": [
+              {
+                "kind": "TypeNominal",
+                "name": "Void",
+                "printedName": "()"
+              },
+              {
+                "kind": "TypeNominal",
+                "name": "Date",
+                "printedName": "Foundation.Date",
+                "usr": "s:10Foundation4DateV"
+              },
+              {
+                "kind": "TypeFunc",
+                "name": "Function",
+                "printedName": "(Swift.Bool, Swift.Error?) -> ()",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "Void",
+                    "printedName": "()"
+                  },
+                  {
+                    "kind": "TypeNominal",
+                    "name": "Tuple",
+                    "printedName": "(Swift.Bool, Swift.Error?)",
+                    "children": [
+                      {
+                        "kind": "TypeNominal",
+                        "name": "Bool",
+                        "printedName": "Swift.Bool",
+                        "usr": "s:Sb"
+                      },
+                      {
+                        "kind": "TypeNominal",
+                        "name": "Optional",
+                        "printedName": "Swift.Error?",
+                        "children": [
+                          {
+                            "kind": "TypeNominal",
+                            "name": "Error",
+                            "printedName": "Swift.Error",
+                            "usr": "s:s5ErrorP"
+                          }
+                        ],
+                        "usr": "s:Sq"
+                      }
+                    ]
+                  }
+                ]
+              }
+            ],
+            "declKind": "Func",
+            "usr": "c:@CM@RookSDK@objc(cs)RookEventsManager(im)syncTrainingEventObjcWithDate:completion:",
+            "mangledName": "$s7RookSDK0A13EventsManagerC21syncTrainingEventObjc4date10completiony10Foundation4DateV_ySb_s5Error_pSgtctF",
+            "moduleName": "RookSDK",
+            "objc_name": "syncTrainingEventObjcWithDate:completion:",
+            "declAttributes": [
+              "Final",
+              "AccessControl",
+              "ObjC"
+            ],
+            "isFromExtension": true,
+            "funcSelfKind": "NonMutating"
           }
         ],
         "declKind": "Class",
-        "usr": "s:7RookSDK0A13EventsManagerC",
+        "usr": "c:@M@RookSDK@objc(cs)RookEventsManager",
         "mangledName": "$s7RookSDK0A13EventsManagerC",
         "moduleName": "RookSDK",
         "declAttributes": [
           "Final",
-          "AccessControl"
+          "AccessControl",
+          "ObjC"
+        ],
+        "superclassUsr": "c:objc(cs)NSObject",
+        "inheritsConvenienceInitializers": true,
+        "superclassNames": [
+          "ObjectiveC.NSObject"
+        ],
+        "conformances": [
+          {
+            "kind": "Conformance",
+            "name": "Equatable",
+            "printedName": "Equatable",
+            "usr": "s:SQ",
+            "mangledName": "$sSQ"
+          },
+          {
+            "kind": "Conformance",
+            "name": "Hashable",
+            "printedName": "Hashable",
+            "usr": "s:SH",
+            "mangledName": "$sSH"
+          },
+          {
+            "kind": "Conformance",
+            "name": "CVarArg",
+            "printedName": "CVarArg",
+            "usr": "s:s7CVarArgP",
+            "mangledName": "$ss7CVarArgP"
+          },
+          {
+            "kind": "Conformance",
+            "name": "_KeyValueCodingAndObservingPublishing",
+            "printedName": "_KeyValueCodingAndObservingPublishing",
+            "usr": "s:10Foundation37_KeyValueCodingAndObservingPublishingP",
+            "mangledName": "$s10Foundation37_KeyValueCodingAndObservingPublishingP"
+          },
+          {
+            "kind": "Conformance",
+            "name": "_KeyValueCodingAndObserving",
+            "printedName": "_KeyValueCodingAndObserving",
+            "usr": "s:10Foundation27_KeyValueCodingAndObservingP",
+            "mangledName": "$s10Foundation27_KeyValueCodingAndObservingP"
+          },
+          {
+            "kind": "Conformance",
+            "name": "CustomStringConvertible",
+            "printedName": "CustomStringConvertible",
+            "usr": "s:s23CustomStringConvertibleP",
+            "mangledName": "$ss23CustomStringConvertibleP"
+          },
+          {
+            "kind": "Conformance",
+            "name": "CustomDebugStringConvertible",
+            "printedName": "CustomDebugStringConvertible",
+            "usr": "s:s28CustomDebugStringConvertibleP",
+            "mangledName": "$ss28CustomDebugStringConvertibleP"
+          }
+        ]
+      },
+      {
+        "kind": "Import",
+        "name": "Foundation",
+        "printedName": "Foundation",
+        "declKind": "Import",
+        "moduleName": "RookSDK",
+        "declAttributes": [
+          "RawDocComment"
         ]
       },
       {
@@ -631,6 +1118,413 @@
       },
       {
         "kind": "Import",
+        "name": "RookUsersSDK",
+        "printedName": "RookUsersSDK",
+        "declKind": "Import",
+        "moduleName": "RookSDK"
+      },
+      {
+        "kind": "TypeDecl",
+        "name": "RookConnectConfigurationManagerObjc",
+        "printedName": "RookConnectConfigurationManagerObjc",
+        "children": [
+          {
+            "kind": "Var",
+            "name": "shared",
+            "printedName": "shared",
+            "children": [
+              {
+                "kind": "TypeNominal",
+                "name": "RookConnectConfigurationManagerObjc",
+                "printedName": "RookSDK.RookConnectConfigurationManagerObjc",
+                "usr": "c:@M@RookSDK@objc(cs)RookConnectConfigurationManagerObjc"
+              }
+            ],
+            "declKind": "Var",
+            "usr": "c:@M@RookSDK@objc(cs)RookConnectConfigurationManagerObjc(cpy)shared",
+            "mangledName": "$s7RookSDK0A31ConnectConfigurationManagerObjcC6sharedACvpZ",
+            "moduleName": "RookSDK",
+            "static": true,
+            "declAttributes": [
+              "HasInitialValue",
+              "Final",
+              "HasStorage",
+              "AccessControl",
+              "ObjC",
+              "RawDocComment"
+            ],
+            "isLet": true,
+            "hasStorage": true,
+            "accessors": [
+              {
+                "kind": "Accessor",
+                "name": "Get",
+                "printedName": "Get()",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "RookConnectConfigurationManagerObjc",
+                    "printedName": "RookSDK.RookConnectConfigurationManagerObjc",
+                    "usr": "c:@M@RookSDK@objc(cs)RookConnectConfigurationManagerObjc"
+                  }
+                ],
+                "declKind": "Accessor",
+                "usr": "c:@M@RookSDK@objc(cs)RookConnectConfigurationManagerObjc(cm)shared",
+                "mangledName": "$s7RookSDK0A31ConnectConfigurationManagerObjcC6sharedACvgZ",
+                "moduleName": "RookSDK",
+                "static": true,
+                "implicit": true,
+                "declAttributes": [
+                  "Final",
+                  "ObjC"
+                ],
+                "accessorKind": "get"
+              }
+            ]
+          },
+          {
+            "kind": "Function",
+            "name": "setConfiguration",
+            "printedName": "setConfiguration(urlAPI:clientUUID:secretKey:)",
+            "children": [
+              {
+                "kind": "TypeNominal",
+                "name": "Void",
+                "printedName": "()"
+              },
+              {
+                "kind": "TypeNominal",
+                "name": "String",
+                "printedName": "Swift.String",
+                "usr": "s:SS"
+              },
+              {
+                "kind": "TypeNominal",
+                "name": "String",
+                "printedName": "Swift.String",
+                "usr": "s:SS"
+              },
+              {
+                "kind": "TypeNominal",
+                "name": "String",
+                "printedName": "Swift.String",
+                "usr": "s:SS"
+              }
+            ],
+            "declKind": "Func",
+            "usr": "c:@M@RookSDK@objc(cs)RookConnectConfigurationManagerObjc(im)setConfigurationWithUrlAPI:clientUUID:secretKey:",
+            "mangledName": "$s7RookSDK0A31ConnectConfigurationManagerObjcC03setD06urlAPI10clientUUID9secretKeyySS_S2StF",
+            "moduleName": "RookSDK",
+            "objc_name": "setConfigurationWithUrlAPI:clientUUID:secretKey:",
+            "declAttributes": [
+              "Final",
+              "AccessControl",
+              "ObjC",
+              "RawDocComment"
+            ],
+            "funcSelfKind": "NonMutating"
+          },
+          {
+            "kind": "Function",
+            "name": "initRook",
+            "printedName": "initRook()",
+            "children": [
+              {
+                "kind": "TypeNominal",
+                "name": "Void",
+                "printedName": "()"
+              }
+            ],
+            "declKind": "Func",
+            "usr": "c:@M@RookSDK@objc(cs)RookConnectConfigurationManagerObjc(im)initRook",
+            "mangledName": "$s7RookSDK0A31ConnectConfigurationManagerObjcC04initA0yyF",
+            "moduleName": "RookSDK",
+            "declAttributes": [
+              "Final",
+              "AccessControl",
+              "ObjC"
+            ],
+            "funcSelfKind": "NonMutating"
+          },
+          {
+            "kind": "Function",
+            "name": "updateUserId",
+            "printedName": "updateUserId(_:completion:)",
+            "children": [
+              {
+                "kind": "TypeNominal",
+                "name": "Void",
+                "printedName": "()"
+              },
+              {
+                "kind": "TypeNominal",
+                "name": "String",
+                "printedName": "Swift.String",
+                "usr": "s:SS"
+              },
+              {
+                "kind": "TypeFunc",
+                "name": "Function",
+                "printedName": "(Swift.Bool, Swift.Error?) -> ()",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "Void",
+                    "printedName": "()"
+                  },
+                  {
+                    "kind": "TypeNominal",
+                    "name": "Tuple",
+                    "printedName": "(Swift.Bool, Swift.Error?)",
+                    "children": [
+                      {
+                        "kind": "TypeNominal",
+                        "name": "Bool",
+                        "printedName": "Swift.Bool",
+                        "usr": "s:Sb"
+                      },
+                      {
+                        "kind": "TypeNominal",
+                        "name": "Optional",
+                        "printedName": "Swift.Error?",
+                        "children": [
+                          {
+                            "kind": "TypeNominal",
+                            "name": "Error",
+                            "printedName": "Swift.Error",
+                            "usr": "s:s5ErrorP"
+                          }
+                        ],
+                        "usr": "s:Sq"
+                      }
+                    ]
+                  }
+                ]
+              }
+            ],
+            "declKind": "Func",
+            "usr": "c:@M@RookSDK@objc(cs)RookConnectConfigurationManagerObjc(im)updateUserId:completion:",
+            "mangledName": "$s7RookSDK0A31ConnectConfigurationManagerObjcC12updateUserId_10completionySS_ySb_s5Error_pSgtctF",
+            "moduleName": "RookSDK",
+            "declAttributes": [
+              "Final",
+              "AccessControl",
+              "ObjC"
+            ],
+            "funcSelfKind": "NonMutating"
+          },
+          {
+            "kind": "Function",
+            "name": "readUserId",
+            "printedName": "readUserId(completion:)",
+            "children": [
+              {
+                "kind": "TypeNominal",
+                "name": "Void",
+                "printedName": "()"
+              },
+              {
+                "kind": "TypeFunc",
+                "name": "Function",
+                "printedName": "(Swift.String?, Swift.Error?) -> ()",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "Void",
+                    "printedName": "()"
+                  },
+                  {
+                    "kind": "TypeNominal",
+                    "name": "Tuple",
+                    "printedName": "(Swift.String?, Swift.Error?)",
+                    "children": [
+                      {
+                        "kind": "TypeNominal",
+                        "name": "Optional",
+                        "printedName": "Swift.String?",
+                        "children": [
+                          {
+                            "kind": "TypeNominal",
+                            "name": "String",
+                            "printedName": "Swift.String",
+                            "usr": "s:SS"
+                          }
+                        ],
+                        "usr": "s:Sq"
+                      },
+                      {
+                        "kind": "TypeNominal",
+                        "name": "Optional",
+                        "printedName": "Swift.Error?",
+                        "children": [
+                          {
+                            "kind": "TypeNominal",
+                            "name": "Error",
+                            "printedName": "Swift.Error",
+                            "usr": "s:s5ErrorP"
+                          }
+                        ],
+                        "usr": "s:Sq"
+                      }
+                    ]
+                  }
+                ]
+              }
+            ],
+            "declKind": "Func",
+            "usr": "c:@M@RookSDK@objc(cs)RookConnectConfigurationManagerObjc(im)readUserIdWithCompletion:",
+            "mangledName": "$s7RookSDK0A31ConnectConfigurationManagerObjcC10readUserId10completionyySSSg_s5Error_pSgtc_tF",
+            "moduleName": "RookSDK",
+            "objc_name": "readUserIdWithCompletion:",
+            "declAttributes": [
+              "Final",
+              "AccessControl",
+              "ObjC"
+            ],
+            "funcSelfKind": "NonMutating"
+          },
+          {
+            "kind": "Function",
+            "name": "clearUser",
+            "printedName": "clearUser(completion:)",
+            "children": [
+              {
+                "kind": "TypeNominal",
+                "name": "Void",
+                "printedName": "()"
+              },
+              {
+                "kind": "TypeFunc",
+                "name": "Function",
+                "printedName": "(Swift.Bool, Swift.Error?) -> ()",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "Void",
+                    "printedName": "()"
+                  },
+                  {
+                    "kind": "TypeNominal",
+                    "name": "Tuple",
+                    "printedName": "(Swift.Bool, Swift.Error?)",
+                    "children": [
+                      {
+                        "kind": "TypeNominal",
+                        "name": "Bool",
+                        "printedName": "Swift.Bool",
+                        "usr": "s:Sb"
+                      },
+                      {
+                        "kind": "TypeNominal",
+                        "name": "Optional",
+                        "printedName": "Swift.Error?",
+                        "children": [
+                          {
+                            "kind": "TypeNominal",
+                            "name": "Error",
+                            "printedName": "Swift.Error",
+                            "usr": "s:s5ErrorP"
+                          }
+                        ],
+                        "usr": "s:Sq"
+                      }
+                    ]
+                  }
+                ]
+              }
+            ],
+            "declKind": "Func",
+            "usr": "c:@M@RookSDK@objc(cs)RookConnectConfigurationManagerObjc(im)clearUserWithCompletion:",
+            "mangledName": "$s7RookSDK0A31ConnectConfigurationManagerObjcC9clearUser10completionyySb_s5Error_pSgtc_tF",
+            "moduleName": "RookSDK",
+            "objc_name": "clearUserWithCompletion:",
+            "declAttributes": [
+              "Final",
+              "AccessControl",
+              "ObjC"
+            ],
+            "funcSelfKind": "NonMutating"
+          }
+        ],
+        "declKind": "Class",
+        "usr": "c:@M@RookSDK@objc(cs)RookConnectConfigurationManagerObjc",
+        "mangledName": "$s7RookSDK0A31ConnectConfigurationManagerObjcC",
+        "moduleName": "RookSDK",
+        "declAttributes": [
+          "AccessControl",
+          "Final",
+          "ObjC"
+        ],
+        "superclassUsr": "c:objc(cs)NSObject",
+        "hasMissingDesignatedInitializers": true,
+        "inheritsConvenienceInitializers": true,
+        "superclassNames": [
+          "ObjectiveC.NSObject"
+        ],
+        "conformances": [
+          {
+            "kind": "Conformance",
+            "name": "Equatable",
+            "printedName": "Equatable",
+            "usr": "s:SQ",
+            "mangledName": "$sSQ"
+          },
+          {
+            "kind": "Conformance",
+            "name": "Hashable",
+            "printedName": "Hashable",
+            "usr": "s:SH",
+            "mangledName": "$sSH"
+          },
+          {
+            "kind": "Conformance",
+            "name": "CVarArg",
+            "printedName": "CVarArg",
+            "usr": "s:s7CVarArgP",
+            "mangledName": "$ss7CVarArgP"
+          },
+          {
+            "kind": "Conformance",
+            "name": "_KeyValueCodingAndObservingPublishing",
+            "printedName": "_KeyValueCodingAndObservingPublishing",
+            "usr": "s:10Foundation37_KeyValueCodingAndObservingPublishingP",
+            "mangledName": "$s10Foundation37_KeyValueCodingAndObservingPublishingP"
+          },
+          {
+            "kind": "Conformance",
+            "name": "_KeyValueCodingAndObserving",
+            "printedName": "_KeyValueCodingAndObserving",
+            "usr": "s:10Foundation27_KeyValueCodingAndObservingP",
+            "mangledName": "$s10Foundation27_KeyValueCodingAndObservingP"
+          },
+          {
+            "kind": "Conformance",
+            "name": "CustomStringConvertible",
+            "printedName": "CustomStringConvertible",
+            "usr": "s:s23CustomStringConvertibleP",
+            "mangledName": "$ss23CustomStringConvertibleP"
+          },
+          {
+            "kind": "Conformance",
+            "name": "CustomDebugStringConvertible",
+            "printedName": "CustomDebugStringConvertible",
+            "usr": "s:s28CustomDebugStringConvertibleP",
+            "mangledName": "$ss28CustomDebugStringConvertibleP"
+          }
+        ]
+      },
+      {
+        "kind": "Import",
+        "name": "Foundation",
+        "printedName": "Foundation",
+        "declKind": "Import",
+        "moduleName": "RookSDK",
+        "declAttributes": [
+          "RawDocComment"
+        ]
+      },
+      {
+        "kind": "Import",
         "name": "RookAppleHealth",
         "printedName": "RookAppleHealth",
         "declKind": "Import",
@@ -705,14 +1599,19 @@
                 "kind": "TypeNominal",
                 "name": "RookConnectPermissionsManager",
                 "printedName": "RookSDK.RookConnectPermissionsManager",
-                "usr": "s:7RookSDK0A25ConnectPermissionsManagerC"
+                "usr": "c:@M@RookSDK@objc(cs)RookConnectPermissionsManager"
               }
             ],
             "declKind": "Constructor",
-            "usr": "s:7RookSDK0A25ConnectPermissionsManagerCACycfc",
+            "usr": "c:@M@RookSDK@objc(cs)RookConnectPermissionsManager(im)init",
             "mangledName": "$s7RookSDK0A25ConnectPermissionsManagerCACycfc",
             "moduleName": "RookSDK",
+            "overriding": true,
+            "objc_name": "init",
             "declAttributes": [
+              "Dynamic",
+              "ObjC",
+              "Override",
               "AccessControl",
               "RawDocComment"
             ],
@@ -983,15 +1882,387 @@
               "AccessControl"
             ],
             "funcSelfKind": "NonMutating"
+          },
+          {
+            "kind": "Function",
+            "name": "requestAllPermissionsObjc",
+            "printedName": "requestAllPermissionsObjc(completion:)",
+            "children": [
+              {
+                "kind": "TypeNominal",
+                "name": "Void",
+                "printedName": "()"
+              },
+              {
+                "kind": "TypeFunc",
+                "name": "Function",
+                "printedName": "(Swift.Bool, Swift.Error?) -> ()",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "Void",
+                    "printedName": "()"
+                  },
+                  {
+                    "kind": "TypeNominal",
+                    "name": "Tuple",
+                    "printedName": "(Swift.Bool, Swift.Error?)",
+                    "children": [
+                      {
+                        "kind": "TypeNominal",
+                        "name": "Bool",
+                        "printedName": "Swift.Bool",
+                        "usr": "s:Sb"
+                      },
+                      {
+                        "kind": "TypeNominal",
+                        "name": "Optional",
+                        "printedName": "Swift.Error?",
+                        "children": [
+                          {
+                            "kind": "TypeNominal",
+                            "name": "Error",
+                            "printedName": "Swift.Error",
+                            "usr": "s:s5ErrorP"
+                          }
+                        ],
+                        "usr": "s:Sq"
+                      }
+                    ]
+                  }
+                ]
+              }
+            ],
+            "declKind": "Func",
+            "usr": "c:@CM@RookSDK@objc(cs)RookConnectPermissionsManager(im)requestAllPermissionsObjcWithCompletion:",
+            "mangledName": "$s7RookSDK0A25ConnectPermissionsManagerC010requestAllD4Objc10completionyySb_s5Error_pSgtc_tF",
+            "moduleName": "RookSDK",
+            "objc_name": "requestAllPermissionsObjcWithCompletion:",
+            "declAttributes": [
+              "Final",
+              "AccessControl",
+              "ObjC"
+            ],
+            "isFromExtension": true,
+            "funcSelfKind": "NonMutating"
+          },
+          {
+            "kind": "Function",
+            "name": "requestSleepPermissionsObjc",
+            "printedName": "requestSleepPermissionsObjc(completion:)",
+            "children": [
+              {
+                "kind": "TypeNominal",
+                "name": "Void",
+                "printedName": "()"
+              },
+              {
+                "kind": "TypeFunc",
+                "name": "Function",
+                "printedName": "(Swift.Bool, Swift.Error?) -> ()",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "Void",
+                    "printedName": "()"
+                  },
+                  {
+                    "kind": "TypeNominal",
+                    "name": "Tuple",
+                    "printedName": "(Swift.Bool, Swift.Error?)",
+                    "children": [
+                      {
+                        "kind": "TypeNominal",
+                        "name": "Bool",
+                        "printedName": "Swift.Bool",
+                        "usr": "s:Sb"
+                      },
+                      {
+                        "kind": "TypeNominal",
+                        "name": "Optional",
+                        "printedName": "Swift.Error?",
+                        "children": [
+                          {
+                            "kind": "TypeNominal",
+                            "name": "Error",
+                            "printedName": "Swift.Error",
+                            "usr": "s:s5ErrorP"
+                          }
+                        ],
+                        "usr": "s:Sq"
+                      }
+                    ]
+                  }
+                ]
+              }
+            ],
+            "declKind": "Func",
+            "usr": "c:@CM@RookSDK@objc(cs)RookConnectPermissionsManager(im)requestSleepPermissionsObjcWithCompletion:",
+            "mangledName": "$s7RookSDK0A25ConnectPermissionsManagerC012requestSleepD4Objc10completionyySb_s5Error_pSgtc_tF",
+            "moduleName": "RookSDK",
+            "objc_name": "requestSleepPermissionsObjcWithCompletion:",
+            "declAttributes": [
+              "Final",
+              "AccessControl",
+              "ObjC"
+            ],
+            "isFromExtension": true,
+            "funcSelfKind": "NonMutating"
+          },
+          {
+            "kind": "Function",
+            "name": "requestUserInfoPersmissionsObjc",
+            "printedName": "requestUserInfoPersmissionsObjc(completion:)",
+            "children": [
+              {
+                "kind": "TypeNominal",
+                "name": "Void",
+                "printedName": "()"
+              },
+              {
+                "kind": "TypeFunc",
+                "name": "Function",
+                "printedName": "(Swift.Bool, Swift.Error?) -> ()",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "Void",
+                    "printedName": "()"
+                  },
+                  {
+                    "kind": "TypeNominal",
+                    "name": "Tuple",
+                    "printedName": "(Swift.Bool, Swift.Error?)",
+                    "children": [
+                      {
+                        "kind": "TypeNominal",
+                        "name": "Bool",
+                        "printedName": "Swift.Bool",
+                        "usr": "s:Sb"
+                      },
+                      {
+                        "kind": "TypeNominal",
+                        "name": "Optional",
+                        "printedName": "Swift.Error?",
+                        "children": [
+                          {
+                            "kind": "TypeNominal",
+                            "name": "Error",
+                            "printedName": "Swift.Error",
+                            "usr": "s:s5ErrorP"
+                          }
+                        ],
+                        "usr": "s:Sq"
+                      }
+                    ]
+                  }
+                ]
+              }
+            ],
+            "declKind": "Func",
+            "usr": "c:@CM@RookSDK@objc(cs)RookConnectPermissionsManager(im)requestUserInfoPersmissionsObjcWithCompletion:",
+            "mangledName": "$s7RookSDK0A25ConnectPermissionsManagerC31requestUserInfoPersmissionsObjc10completionyySb_s5Error_pSgtc_tF",
+            "moduleName": "RookSDK",
+            "objc_name": "requestUserInfoPersmissionsObjcWithCompletion:",
+            "declAttributes": [
+              "Final",
+              "AccessControl",
+              "ObjC"
+            ],
+            "isFromExtension": true,
+            "funcSelfKind": "NonMutating"
+          },
+          {
+            "kind": "Function",
+            "name": "requestPhysicalPermissionsObjc",
+            "printedName": "requestPhysicalPermissionsObjc(completion:)",
+            "children": [
+              {
+                "kind": "TypeNominal",
+                "name": "Void",
+                "printedName": "()"
+              },
+              {
+                "kind": "TypeFunc",
+                "name": "Function",
+                "printedName": "(Swift.Bool, Swift.Error?) -> ()",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "Void",
+                    "printedName": "()"
+                  },
+                  {
+                    "kind": "TypeNominal",
+                    "name": "Tuple",
+                    "printedName": "(Swift.Bool, Swift.Error?)",
+                    "children": [
+                      {
+                        "kind": "TypeNominal",
+                        "name": "Bool",
+                        "printedName": "Swift.Bool",
+                        "usr": "s:Sb"
+                      },
+                      {
+                        "kind": "TypeNominal",
+                        "name": "Optional",
+                        "printedName": "Swift.Error?",
+                        "children": [
+                          {
+                            "kind": "TypeNominal",
+                            "name": "Error",
+                            "printedName": "Swift.Error",
+                            "usr": "s:s5ErrorP"
+                          }
+                        ],
+                        "usr": "s:Sq"
+                      }
+                    ]
+                  }
+                ]
+              }
+            ],
+            "declKind": "Func",
+            "usr": "c:@CM@RookSDK@objc(cs)RookConnectPermissionsManager(im)requestPhysicalPermissionsObjcWithCompletion:",
+            "mangledName": "$s7RookSDK0A25ConnectPermissionsManagerC015requestPhysicalD4Objc10completionyySb_s5Error_pSgtc_tF",
+            "moduleName": "RookSDK",
+            "objc_name": "requestPhysicalPermissionsObjcWithCompletion:",
+            "declAttributes": [
+              "Final",
+              "AccessControl",
+              "ObjC"
+            ],
+            "isFromExtension": true,
+            "funcSelfKind": "NonMutating"
+          },
+          {
+            "kind": "Function",
+            "name": "requesBodyPermissionsObjc",
+            "printedName": "requesBodyPermissionsObjc(completion:)",
+            "children": [
+              {
+                "kind": "TypeNominal",
+                "name": "Void",
+                "printedName": "()"
+              },
+              {
+                "kind": "TypeFunc",
+                "name": "Function",
+                "printedName": "(Swift.Bool, Swift.Error?) -> ()",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "Void",
+                    "printedName": "()"
+                  },
+                  {
+                    "kind": "TypeNominal",
+                    "name": "Tuple",
+                    "printedName": "(Swift.Bool, Swift.Error?)",
+                    "children": [
+                      {
+                        "kind": "TypeNominal",
+                        "name": "Bool",
+                        "printedName": "Swift.Bool",
+                        "usr": "s:Sb"
+                      },
+                      {
+                        "kind": "TypeNominal",
+                        "name": "Optional",
+                        "printedName": "Swift.Error?",
+                        "children": [
+                          {
+                            "kind": "TypeNominal",
+                            "name": "Error",
+                            "printedName": "Swift.Error",
+                            "usr": "s:s5ErrorP"
+                          }
+                        ],
+                        "usr": "s:Sq"
+                      }
+                    ]
+                  }
+                ]
+              }
+            ],
+            "declKind": "Func",
+            "usr": "c:@CM@RookSDK@objc(cs)RookConnectPermissionsManager(im)requesBodyPermissionsObjcWithCompletion:",
+            "mangledName": "$s7RookSDK0A25ConnectPermissionsManagerC010requesBodyD4Objc10completionyySb_s5Error_pSgtc_tF",
+            "moduleName": "RookSDK",
+            "objc_name": "requesBodyPermissionsObjcWithCompletion:",
+            "declAttributes": [
+              "Final",
+              "AccessControl",
+              "ObjC"
+            ],
+            "isFromExtension": true,
+            "funcSelfKind": "NonMutating"
           }
         ],
         "declKind": "Class",
-        "usr": "s:7RookSDK0A25ConnectPermissionsManagerC",
+        "usr": "c:@M@RookSDK@objc(cs)RookConnectPermissionsManager",
         "mangledName": "$s7RookSDK0A25ConnectPermissionsManagerC",
         "moduleName": "RookSDK",
         "declAttributes": [
           "Final",
-          "AccessControl"
+          "AccessControl",
+          "ObjC"
+        ],
+        "superclassUsr": "c:objc(cs)NSObject",
+        "inheritsConvenienceInitializers": true,
+        "superclassNames": [
+          "ObjectiveC.NSObject"
+        ],
+        "conformances": [
+          {
+            "kind": "Conformance",
+            "name": "Equatable",
+            "printedName": "Equatable",
+            "usr": "s:SQ",
+            "mangledName": "$sSQ"
+          },
+          {
+            "kind": "Conformance",
+            "name": "Hashable",
+            "printedName": "Hashable",
+            "usr": "s:SH",
+            "mangledName": "$sSH"
+          },
+          {
+            "kind": "Conformance",
+            "name": "CVarArg",
+            "printedName": "CVarArg",
+            "usr": "s:s7CVarArgP",
+            "mangledName": "$ss7CVarArgP"
+          },
+          {
+            "kind": "Conformance",
+            "name": "_KeyValueCodingAndObservingPublishing",
+            "printedName": "_KeyValueCodingAndObservingPublishing",
+            "usr": "s:10Foundation37_KeyValueCodingAndObservingPublishingP",
+            "mangledName": "$s10Foundation37_KeyValueCodingAndObservingPublishingP"
+          },
+          {
+            "kind": "Conformance",
+            "name": "_KeyValueCodingAndObserving",
+            "printedName": "_KeyValueCodingAndObserving",
+            "usr": "s:10Foundation27_KeyValueCodingAndObservingP",
+            "mangledName": "$s10Foundation27_KeyValueCodingAndObservingP"
+          },
+          {
+            "kind": "Conformance",
+            "name": "CustomStringConvertible",
+            "printedName": "CustomStringConvertible",
+            "usr": "s:s23CustomStringConvertibleP",
+            "mangledName": "$ss23CustomStringConvertibleP"
+          },
+          {
+            "kind": "Conformance",
+            "name": "CustomDebugStringConvertible",
+            "printedName": "CustomDebugStringConvertible",
+            "usr": "s:s28CustomDebugStringConvertibleP",
+            "mangledName": "$ss28CustomDebugStringConvertibleP"
+          }
         ]
       },
       {
@@ -1099,6 +2370,16 @@
         "printedName": "RookConnectTransmission",
         "declKind": "Import",
         "moduleName": "RookSDK"
+      },
+      {
+        "kind": "Import",
+        "name": "Foundation",
+        "printedName": "Foundation",
+        "declKind": "Import",
+        "moduleName": "RookSDK",
+        "declAttributes": [
+          "RawDocComment"
+        ]
       },
       {
         "kind": "Import",
@@ -1124,14 +2405,19 @@
                 "kind": "TypeNominal",
                 "name": "RookSummaryManger",
                 "printedName": "RookSDK.RookSummaryManger",
-                "usr": "s:7RookSDK0A13SummaryMangerC"
+                "usr": "c:@M@RookSDK@objc(cs)RookSummaryManger"
               }
             ],
             "declKind": "Constructor",
-            "usr": "s:7RookSDK0A13SummaryMangerCACycfc",
+            "usr": "c:@M@RookSDK@objc(cs)RookSummaryManger(im)init",
             "mangledName": "$s7RookSDK0A13SummaryMangerCACycfc",
             "moduleName": "RookSDK",
+            "overriding": true,
+            "objc_name": "init",
             "declAttributes": [
+              "Dynamic",
+              "ObjC",
+              "Override",
               "AccessControl",
               "RawDocComment"
             ],
@@ -1140,7 +2426,7 @@
           {
             "kind": "Function",
             "name": "syncSleepSummary",
-            "printedName": "syncSleepSummary(form:completion:)",
+            "printedName": "syncSleepSummary(from:completion:)",
             "children": [
               {
                 "kind": "TypeNominal",
@@ -1187,8 +2473,8 @@
               }
             ],
             "declKind": "Func",
-            "usr": "s:7RookSDK0A13SummaryMangerC09syncSleepC04form10completiony10Foundation4DateV_ys6ResultOySbs5Error_pGctF",
-            "mangledName": "$s7RookSDK0A13SummaryMangerC09syncSleepC04form10completiony10Foundation4DateV_ys6ResultOySbs5Error_pGctF",
+            "usr": "s:7RookSDK0A13SummaryMangerC09syncSleepC04from10completiony10Foundation4DateV_ys6ResultOySbs5Error_pGctF",
+            "mangledName": "$s7RookSDK0A13SummaryMangerC09syncSleepC04from10completiony10Foundation4DateV_ys6ResultOySbs5Error_pGctF",
             "moduleName": "RookSDK",
             "declAttributes": [
               "Final",
@@ -1200,7 +2486,7 @@
           {
             "kind": "Function",
             "name": "syncPhysicalSummary",
-            "printedName": "syncPhysicalSummary(form:completion:)",
+            "printedName": "syncPhysicalSummary(from:completion:)",
             "children": [
               {
                 "kind": "TypeNominal",
@@ -1247,8 +2533,8 @@
               }
             ],
             "declKind": "Func",
-            "usr": "s:7RookSDK0A13SummaryMangerC012syncPhysicalC04form10completiony10Foundation4DateV_ys6ResultOySbs5Error_pGctF",
-            "mangledName": "$s7RookSDK0A13SummaryMangerC012syncPhysicalC04form10completiony10Foundation4DateV_ys6ResultOySbs5Error_pGctF",
+            "usr": "s:7RookSDK0A13SummaryMangerC012syncPhysicalC04from10completiony10Foundation4DateV_ys6ResultOySbs5Error_pGctF",
+            "mangledName": "$s7RookSDK0A13SummaryMangerC012syncPhysicalC04from10completiony10Foundation4DateV_ys6ResultOySbs5Error_pGctF",
             "moduleName": "RookSDK",
             "declAttributes": [
               "Final",
@@ -1314,15 +2600,395 @@
               "AccessControl"
             ],
             "funcSelfKind": "NonMutating"
+          },
+          {
+            "kind": "Function",
+            "name": "syncPendingSummaries",
+            "printedName": "syncPendingSummaries(completion:)",
+            "children": [
+              {
+                "kind": "TypeNominal",
+                "name": "Void",
+                "printedName": "()"
+              },
+              {
+                "kind": "TypeFunc",
+                "name": "Function",
+                "printedName": "(Swift.Result<Swift.Bool, Swift.Error>) -> ()",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "Void",
+                    "printedName": "()"
+                  },
+                  {
+                    "kind": "TypeNominal",
+                    "name": "Result",
+                    "printedName": "Swift.Result<Swift.Bool, Swift.Error>",
+                    "children": [
+                      {
+                        "kind": "TypeNominal",
+                        "name": "Bool",
+                        "printedName": "Swift.Bool",
+                        "usr": "s:Sb"
+                      },
+                      {
+                        "kind": "TypeNominal",
+                        "name": "Error",
+                        "printedName": "Swift.Error",
+                        "usr": "s:s5ErrorP"
+                      }
+                    ],
+                    "usr": "s:s6ResultO"
+                  }
+                ]
+              }
+            ],
+            "declKind": "Func",
+            "usr": "s:7RookSDK0A13SummaryMangerC20syncPendingSummaries10completionyys6ResultOySbs5Error_pGc_tF",
+            "mangledName": "$s7RookSDK0A13SummaryMangerC20syncPendingSummaries10completionyys6ResultOySbs5Error_pGc_tF",
+            "moduleName": "RookSDK",
+            "declAttributes": [
+              "Final",
+              "AccessControl"
+            ],
+            "funcSelfKind": "NonMutating"
+          },
+          {
+            "kind": "Function",
+            "name": "syncSleepSummaryObjc",
+            "printedName": "syncSleepSummaryObjc(form:completion:)",
+            "children": [
+              {
+                "kind": "TypeNominal",
+                "name": "Void",
+                "printedName": "()"
+              },
+              {
+                "kind": "TypeNominal",
+                "name": "Date",
+                "printedName": "Foundation.Date",
+                "usr": "s:10Foundation4DateV"
+              },
+              {
+                "kind": "TypeFunc",
+                "name": "Function",
+                "printedName": "(Swift.Bool, Swift.Error?) -> ()",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "Void",
+                    "printedName": "()"
+                  },
+                  {
+                    "kind": "TypeNominal",
+                    "name": "Tuple",
+                    "printedName": "(Swift.Bool, Swift.Error?)",
+                    "children": [
+                      {
+                        "kind": "TypeNominal",
+                        "name": "Bool",
+                        "printedName": "Swift.Bool",
+                        "usr": "s:Sb"
+                      },
+                      {
+                        "kind": "TypeNominal",
+                        "name": "Optional",
+                        "printedName": "Swift.Error?",
+                        "children": [
+                          {
+                            "kind": "TypeNominal",
+                            "name": "Error",
+                            "printedName": "Swift.Error",
+                            "usr": "s:s5ErrorP"
+                          }
+                        ],
+                        "usr": "s:Sq"
+                      }
+                    ]
+                  }
+                ]
+              }
+            ],
+            "declKind": "Func",
+            "usr": "c:@CM@RookSDK@objc(cs)RookSummaryManger(im)syncSleepSummaryObjcWithForm:completion:",
+            "mangledName": "$s7RookSDK0A13SummaryMangerC09syncSleepC4Objc4form10completiony10Foundation4DateV_ySb_s5Error_pSgtctF",
+            "moduleName": "RookSDK",
+            "objc_name": "syncSleepSummaryObjcWithForm:completion:",
+            "declAttributes": [
+              "Final",
+              "AccessControl",
+              "ObjC"
+            ],
+            "isFromExtension": true,
+            "funcSelfKind": "NonMutating"
+          },
+          {
+            "kind": "Function",
+            "name": "syncPhysicalSummaryObjc",
+            "printedName": "syncPhysicalSummaryObjc(form:completion:)",
+            "children": [
+              {
+                "kind": "TypeNominal",
+                "name": "Void",
+                "printedName": "()"
+              },
+              {
+                "kind": "TypeNominal",
+                "name": "Date",
+                "printedName": "Foundation.Date",
+                "usr": "s:10Foundation4DateV"
+              },
+              {
+                "kind": "TypeFunc",
+                "name": "Function",
+                "printedName": "(Swift.Bool, Swift.Error?) -> ()",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "Void",
+                    "printedName": "()"
+                  },
+                  {
+                    "kind": "TypeNominal",
+                    "name": "Tuple",
+                    "printedName": "(Swift.Bool, Swift.Error?)",
+                    "children": [
+                      {
+                        "kind": "TypeNominal",
+                        "name": "Bool",
+                        "printedName": "Swift.Bool",
+                        "usr": "s:Sb"
+                      },
+                      {
+                        "kind": "TypeNominal",
+                        "name": "Optional",
+                        "printedName": "Swift.Error?",
+                        "children": [
+                          {
+                            "kind": "TypeNominal",
+                            "name": "Error",
+                            "printedName": "Swift.Error",
+                            "usr": "s:s5ErrorP"
+                          }
+                        ],
+                        "usr": "s:Sq"
+                      }
+                    ]
+                  }
+                ]
+              }
+            ],
+            "declKind": "Func",
+            "usr": "c:@CM@RookSDK@objc(cs)RookSummaryManger(im)syncPhysicalSummaryObjcWithForm:completion:",
+            "mangledName": "$s7RookSDK0A13SummaryMangerC012syncPhysicalC4Objc4form10completiony10Foundation4DateV_ySb_s5Error_pSgtctF",
+            "moduleName": "RookSDK",
+            "objc_name": "syncPhysicalSummaryObjcWithForm:completion:",
+            "declAttributes": [
+              "Final",
+              "AccessControl",
+              "ObjC"
+            ],
+            "isFromExtension": true,
+            "funcSelfKind": "NonMutating"
+          },
+          {
+            "kind": "Function",
+            "name": "syncBodySummaryObjc",
+            "printedName": "syncBodySummaryObjc(from:completion:)",
+            "children": [
+              {
+                "kind": "TypeNominal",
+                "name": "Void",
+                "printedName": "()"
+              },
+              {
+                "kind": "TypeNominal",
+                "name": "Date",
+                "printedName": "Foundation.Date",
+                "usr": "s:10Foundation4DateV"
+              },
+              {
+                "kind": "TypeFunc",
+                "name": "Function",
+                "printedName": "(Swift.Bool, Swift.Error?) -> ()",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "Void",
+                    "printedName": "()"
+                  },
+                  {
+                    "kind": "TypeNominal",
+                    "name": "Tuple",
+                    "printedName": "(Swift.Bool, Swift.Error?)",
+                    "children": [
+                      {
+                        "kind": "TypeNominal",
+                        "name": "Bool",
+                        "printedName": "Swift.Bool",
+                        "usr": "s:Sb"
+                      },
+                      {
+                        "kind": "TypeNominal",
+                        "name": "Optional",
+                        "printedName": "Swift.Error?",
+                        "children": [
+                          {
+                            "kind": "TypeNominal",
+                            "name": "Error",
+                            "printedName": "Swift.Error",
+                            "usr": "s:s5ErrorP"
+                          }
+                        ],
+                        "usr": "s:Sq"
+                      }
+                    ]
+                  }
+                ]
+              }
+            ],
+            "declKind": "Func",
+            "usr": "c:@CM@RookSDK@objc(cs)RookSummaryManger(im)syncBodySummaryObjcFrom:completion:",
+            "mangledName": "$s7RookSDK0A13SummaryMangerC08syncBodyC4Objc4from10completiony10Foundation4DateV_ySb_s5Error_pSgtctF",
+            "moduleName": "RookSDK",
+            "objc_name": "syncBodySummaryObjcFrom:completion:",
+            "declAttributes": [
+              "Final",
+              "AccessControl",
+              "ObjC"
+            ],
+            "isFromExtension": true,
+            "funcSelfKind": "NonMutating"
+          },
+          {
+            "kind": "Function",
+            "name": "syncPendingSummariesObjc",
+            "printedName": "syncPendingSummariesObjc(completion:)",
+            "children": [
+              {
+                "kind": "TypeNominal",
+                "name": "Void",
+                "printedName": "()"
+              },
+              {
+                "kind": "TypeFunc",
+                "name": "Function",
+                "printedName": "(Swift.Bool, Swift.Error?) -> ()",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "Void",
+                    "printedName": "()"
+                  },
+                  {
+                    "kind": "TypeNominal",
+                    "name": "Tuple",
+                    "printedName": "(Swift.Bool, Swift.Error?)",
+                    "children": [
+                      {
+                        "kind": "TypeNominal",
+                        "name": "Bool",
+                        "printedName": "Swift.Bool",
+                        "usr": "s:Sb"
+                      },
+                      {
+                        "kind": "TypeNominal",
+                        "name": "Optional",
+                        "printedName": "Swift.Error?",
+                        "children": [
+                          {
+                            "kind": "TypeNominal",
+                            "name": "Error",
+                            "printedName": "Swift.Error",
+                            "usr": "s:s5ErrorP"
+                          }
+                        ],
+                        "usr": "s:Sq"
+                      }
+                    ]
+                  }
+                ]
+              }
+            ],
+            "declKind": "Func",
+            "usr": "c:@CM@RookSDK@objc(cs)RookSummaryManger(im)syncPendingSummariesObjcWithCompletion:",
+            "mangledName": "$s7RookSDK0A13SummaryMangerC24syncPendingSummariesObjc10completionyySb_s5Error_pSgtc_tF",
+            "moduleName": "RookSDK",
+            "objc_name": "syncPendingSummariesObjcWithCompletion:",
+            "declAttributes": [
+              "Final",
+              "AccessControl",
+              "ObjC"
+            ],
+            "isFromExtension": true,
+            "funcSelfKind": "NonMutating"
           }
         ],
         "declKind": "Class",
-        "usr": "s:7RookSDK0A13SummaryMangerC",
+        "usr": "c:@M@RookSDK@objc(cs)RookSummaryManger",
         "mangledName": "$s7RookSDK0A13SummaryMangerC",
         "moduleName": "RookSDK",
         "declAttributes": [
           "Final",
-          "AccessControl"
+          "AccessControl",
+          "ObjC"
+        ],
+        "superclassUsr": "c:objc(cs)NSObject",
+        "inheritsConvenienceInitializers": true,
+        "superclassNames": [
+          "ObjectiveC.NSObject"
+        ],
+        "conformances": [
+          {
+            "kind": "Conformance",
+            "name": "Equatable",
+            "printedName": "Equatable",
+            "usr": "s:SQ",
+            "mangledName": "$sSQ"
+          },
+          {
+            "kind": "Conformance",
+            "name": "Hashable",
+            "printedName": "Hashable",
+            "usr": "s:SH",
+            "mangledName": "$sSH"
+          },
+          {
+            "kind": "Conformance",
+            "name": "CVarArg",
+            "printedName": "CVarArg",
+            "usr": "s:s7CVarArgP",
+            "mangledName": "$ss7CVarArgP"
+          },
+          {
+            "kind": "Conformance",
+            "name": "_KeyValueCodingAndObservingPublishing",
+            "printedName": "_KeyValueCodingAndObservingPublishing",
+            "usr": "s:10Foundation37_KeyValueCodingAndObservingPublishingP",
+            "mangledName": "$s10Foundation37_KeyValueCodingAndObservingPublishingP"
+          },
+          {
+            "kind": "Conformance",
+            "name": "_KeyValueCodingAndObserving",
+            "printedName": "_KeyValueCodingAndObserving",
+            "usr": "s:10Foundation27_KeyValueCodingAndObservingP",
+            "mangledName": "$s10Foundation27_KeyValueCodingAndObservingP"
+          },
+          {
+            "kind": "Conformance",
+            "name": "CustomStringConvertible",
+            "printedName": "CustomStringConvertible",
+            "usr": "s:s23CustomStringConvertibleP",
+            "mangledName": "$ss23CustomStringConvertibleP"
+          },
+          {
+            "kind": "Conformance",
+            "name": "CustomDebugStringConvertible",
+            "printedName": "CustomDebugStringConvertible",
+            "usr": "s:s28CustomDebugStringConvertibleP",
+            "mangledName": "$ss28CustomDebugStringConvertibleP"
+          }
         ]
       },
       {
@@ -1341,6 +3007,33 @@
         "printedName": "RookAppleHealth",
         "declKind": "Import",
         "moduleName": "RookSDK"
+      },
+      {
+        "kind": "Import",
+        "name": "RookConnectTransmission",
+        "printedName": "RookConnectTransmission",
+        "declKind": "Import",
+        "moduleName": "RookSDK"
+      },
+      {
+        "kind": "Import",
+        "name": "Foundation",
+        "printedName": "Foundation",
+        "declKind": "Import",
+        "moduleName": "RookSDK",
+        "declAttributes": [
+          "RawDocComment"
+        ]
+      },
+      {
+        "kind": "Import",
+        "name": "Foundation",
+        "printedName": "Foundation",
+        "declKind": "Import",
+        "moduleName": "RookSDK",
+        "declAttributes": [
+          "RawDocComment"
+        ]
       },
       {
         "kind": "Import",

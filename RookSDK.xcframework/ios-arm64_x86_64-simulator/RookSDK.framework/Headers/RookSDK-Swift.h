@@ -230,6 +230,7 @@ using UInt = size_t;
 #if __has_warning("-Watimport-in-framework-header")
 #pragma clang diagnostic ignored "-Watimport-in-framework-header"
 #endif
+@import ObjectiveC;
 #endif
 
 #endif
@@ -250,6 +251,66 @@ using UInt = size_t;
 #endif
 
 #if defined(__OBJC__)
+@class NSString;
+
+SWIFT_CLASS("_TtC7RookSDK35RookConnectConfigurationManagerObjc")
+@interface RookConnectConfigurationManagerObjc : NSObject
+SWIFT_CLASS_PROPERTY(@property (nonatomic, class, readonly, strong) RookConnectConfigurationManagerObjc * _Nonnull shared;)
++ (RookConnectConfigurationManagerObjc * _Nonnull)shared SWIFT_WARN_UNUSED_RESULT;
+- (nonnull instancetype)init SWIFT_UNAVAILABLE;
++ (nonnull instancetype)new SWIFT_UNAVAILABLE_MSG("-init is unavailable");
+- (void)setConfigurationWithUrlAPI:(NSString * _Nonnull)urlAPI clientUUID:(NSString * _Nonnull)clientUUID secretKey:(NSString * _Nonnull)secretKey;
+- (void)initRook SWIFT_METHOD_FAMILY(none);
+- (void)updateUserId:(NSString * _Nonnull)id completion:(void (^ _Nonnull)(BOOL, NSError * _Nullable))completion;
+- (void)readUserIdWithCompletion:(void (^ _Nonnull)(NSString * _Nullable, NSError * _Nullable))completion;
+- (void)clearUserWithCompletion:(void (^ _Nonnull)(BOOL, NSError * _Nullable))completion;
+@end
+
+
+SWIFT_CLASS("_TtC7RookSDK29RookConnectPermissionsManager")
+@interface RookConnectPermissionsManager : NSObject
+- (nonnull instancetype)init OBJC_DESIGNATED_INITIALIZER;
+@end
+
+
+@interface RookConnectPermissionsManager (SWIFT_EXTENSION(RookSDK))
+- (void)requestAllPermissionsObjcWithCompletion:(void (^ _Nonnull)(BOOL, NSError * _Nullable))completion;
+- (void)requestSleepPermissionsObjcWithCompletion:(void (^ _Nonnull)(BOOL, NSError * _Nullable))completion;
+- (void)requestUserInfoPersmissionsObjcWithCompletion:(void (^ _Nonnull)(BOOL, NSError * _Nullable))completion;
+- (void)requestPhysicalPermissionsObjcWithCompletion:(void (^ _Nonnull)(BOOL, NSError * _Nullable))completion;
+- (void)requesBodyPermissionsObjcWithCompletion:(void (^ _Nonnull)(BOOL, NSError * _Nullable))completion;
+@end
+
+
+SWIFT_CLASS("_TtC7RookSDK17RookEventsManager")
+@interface RookEventsManager : NSObject
+- (nonnull instancetype)init OBJC_DESIGNATED_INITIALIZER;
+@end
+
+@class NSDate;
+
+@interface RookEventsManager (SWIFT_EXTENSION(RookSDK))
+- (void)syncBodyHeartRateEventObjcWithDate:(NSDate * _Nonnull)date completion:(void (^ _Nonnull)(BOOL, NSError * _Nullable))completion;
+- (void)syncPhysicalHeartRateEventObjcWithDate:(NSDate * _Nonnull)date completion:(void (^ _Nonnull)(BOOL, NSError * _Nullable))completion;
+- (void)syncBodyOxygenationEventObjcWithDate:(NSDate * _Nonnull)date completion:(void (^ _Nonnull)(BOOL, NSError * _Nullable))completion;
+- (void)syncPhysicalOxygenationEventObjcWithDate:(NSDate * _Nonnull)date completion:(void (^ _Nonnull)(BOOL, NSError * _Nullable))completion;
+- (void)syncTrainingEventObjcWithDate:(NSDate * _Nonnull)date completion:(void (^ _Nonnull)(BOOL, NSError * _Nullable))completion;
+@end
+
+
+SWIFT_CLASS("_TtC7RookSDK17RookSummaryManger")
+@interface RookSummaryManger : NSObject
+- (nonnull instancetype)init OBJC_DESIGNATED_INITIALIZER;
+@end
+
+
+@interface RookSummaryManger (SWIFT_EXTENSION(RookSDK))
+- (void)syncSleepSummaryObjcWithForm:(NSDate * _Nonnull)date completion:(void (^ _Nonnull)(BOOL, NSError * _Nullable))completion;
+- (void)syncPhysicalSummaryObjcWithForm:(NSDate * _Nonnull)date completion:(void (^ _Nonnull)(BOOL, NSError * _Nullable))completion;
+- (void)syncBodySummaryObjcFrom:(NSDate * _Nonnull)date completion:(void (^ _Nonnull)(BOOL, NSError * _Nullable))completion;
+- (void)syncPendingSummariesObjcWithCompletion:(void (^ _Nonnull)(BOOL, NSError * _Nullable))completion;
+@end
+
 #endif
 #if defined(__cplusplus)
 #endif
@@ -490,6 +551,7 @@ using UInt = size_t;
 #if __has_warning("-Watimport-in-framework-header")
 #pragma clang diagnostic ignored "-Watimport-in-framework-header"
 #endif
+@import ObjectiveC;
 #endif
 
 #endif
@@ -510,6 +572,66 @@ using UInt = size_t;
 #endif
 
 #if defined(__OBJC__)
+@class NSString;
+
+SWIFT_CLASS("_TtC7RookSDK35RookConnectConfigurationManagerObjc")
+@interface RookConnectConfigurationManagerObjc : NSObject
+SWIFT_CLASS_PROPERTY(@property (nonatomic, class, readonly, strong) RookConnectConfigurationManagerObjc * _Nonnull shared;)
++ (RookConnectConfigurationManagerObjc * _Nonnull)shared SWIFT_WARN_UNUSED_RESULT;
+- (nonnull instancetype)init SWIFT_UNAVAILABLE;
++ (nonnull instancetype)new SWIFT_UNAVAILABLE_MSG("-init is unavailable");
+- (void)setConfigurationWithUrlAPI:(NSString * _Nonnull)urlAPI clientUUID:(NSString * _Nonnull)clientUUID secretKey:(NSString * _Nonnull)secretKey;
+- (void)initRook SWIFT_METHOD_FAMILY(none);
+- (void)updateUserId:(NSString * _Nonnull)id completion:(void (^ _Nonnull)(BOOL, NSError * _Nullable))completion;
+- (void)readUserIdWithCompletion:(void (^ _Nonnull)(NSString * _Nullable, NSError * _Nullable))completion;
+- (void)clearUserWithCompletion:(void (^ _Nonnull)(BOOL, NSError * _Nullable))completion;
+@end
+
+
+SWIFT_CLASS("_TtC7RookSDK29RookConnectPermissionsManager")
+@interface RookConnectPermissionsManager : NSObject
+- (nonnull instancetype)init OBJC_DESIGNATED_INITIALIZER;
+@end
+
+
+@interface RookConnectPermissionsManager (SWIFT_EXTENSION(RookSDK))
+- (void)requestAllPermissionsObjcWithCompletion:(void (^ _Nonnull)(BOOL, NSError * _Nullable))completion;
+- (void)requestSleepPermissionsObjcWithCompletion:(void (^ _Nonnull)(BOOL, NSError * _Nullable))completion;
+- (void)requestUserInfoPersmissionsObjcWithCompletion:(void (^ _Nonnull)(BOOL, NSError * _Nullable))completion;
+- (void)requestPhysicalPermissionsObjcWithCompletion:(void (^ _Nonnull)(BOOL, NSError * _Nullable))completion;
+- (void)requesBodyPermissionsObjcWithCompletion:(void (^ _Nonnull)(BOOL, NSError * _Nullable))completion;
+@end
+
+
+SWIFT_CLASS("_TtC7RookSDK17RookEventsManager")
+@interface RookEventsManager : NSObject
+- (nonnull instancetype)init OBJC_DESIGNATED_INITIALIZER;
+@end
+
+@class NSDate;
+
+@interface RookEventsManager (SWIFT_EXTENSION(RookSDK))
+- (void)syncBodyHeartRateEventObjcWithDate:(NSDate * _Nonnull)date completion:(void (^ _Nonnull)(BOOL, NSError * _Nullable))completion;
+- (void)syncPhysicalHeartRateEventObjcWithDate:(NSDate * _Nonnull)date completion:(void (^ _Nonnull)(BOOL, NSError * _Nullable))completion;
+- (void)syncBodyOxygenationEventObjcWithDate:(NSDate * _Nonnull)date completion:(void (^ _Nonnull)(BOOL, NSError * _Nullable))completion;
+- (void)syncPhysicalOxygenationEventObjcWithDate:(NSDate * _Nonnull)date completion:(void (^ _Nonnull)(BOOL, NSError * _Nullable))completion;
+- (void)syncTrainingEventObjcWithDate:(NSDate * _Nonnull)date completion:(void (^ _Nonnull)(BOOL, NSError * _Nullable))completion;
+@end
+
+
+SWIFT_CLASS("_TtC7RookSDK17RookSummaryManger")
+@interface RookSummaryManger : NSObject
+- (nonnull instancetype)init OBJC_DESIGNATED_INITIALIZER;
+@end
+
+
+@interface RookSummaryManger (SWIFT_EXTENSION(RookSDK))
+- (void)syncSleepSummaryObjcWithForm:(NSDate * _Nonnull)date completion:(void (^ _Nonnull)(BOOL, NSError * _Nullable))completion;
+- (void)syncPhysicalSummaryObjcWithForm:(NSDate * _Nonnull)date completion:(void (^ _Nonnull)(BOOL, NSError * _Nullable))completion;
+- (void)syncBodySummaryObjcFrom:(NSDate * _Nonnull)date completion:(void (^ _Nonnull)(BOOL, NSError * _Nullable))completion;
+- (void)syncPendingSummariesObjcWithCompletion:(void (^ _Nonnull)(BOOL, NSError * _Nullable))completion;
+@end
+
 #endif
 #if defined(__cplusplus)
 #endif
