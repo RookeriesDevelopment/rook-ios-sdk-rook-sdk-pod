@@ -10,14 +10,22 @@ import RookUsersSDK
 import Swift
 import _Concurrency
 import _StringProcessing
-final public class RookEventsManager {
-  public init()
+@_inheritsConvenienceInitializers @objc final public class RookEventsManager : ObjectiveC.NSObject {
+  @objc override dynamic public init()
   final public func syncBodyHeartRateEvent(date: Foundation.Date, completion: @escaping (Swift.Result<Swift.Bool, Swift.Error>) -> Swift.Void)
   final public func syncPhysicalHeartRateEvent(date: Foundation.Date, completion: @escaping (Swift.Result<Swift.Bool, Swift.Error>) -> Swift.Void)
   final public func syncBodyOxygenationEvent(date: Foundation.Date, completion: @escaping (Swift.Result<Swift.Bool, Swift.Error>) -> Swift.Void)
   final public func syncPhysicalOxygenationEvent(date: Foundation.Date, completion: @escaping (Swift.Result<Swift.Bool, Swift.Error>) -> Swift.Void)
   final public func syncTrainingEvent(date: Foundation.Date, completion: @escaping (Swift.Result<Swift.Bool, Swift.Error>) -> Swift.Void)
+  final public func syncPendingEvents(completion: @escaping (Swift.Result<Swift.Bool, Swift.Error>) -> Swift.Void)
   @objc deinit
+}
+extension RookSDK.RookEventsManager {
+  @objc final public func syncBodyHeartRateEventObjc(date: Foundation.Date, completion: @escaping (Swift.Bool, Swift.Error?) -> Swift.Void)
+  @objc final public func syncPhysicalHeartRateEventObjc(date: Foundation.Date, completion: @escaping (Swift.Bool, Swift.Error?) -> Swift.Void)
+  @objc final public func syncBodyOxygenationEventObjc(date: Foundation.Date, completion: @escaping (Swift.Bool, Swift.Error?) -> Swift.Void)
+  @objc final public func syncPhysicalOxygenationEventObjc(date: Foundation.Date, completion: @escaping (Swift.Bool, Swift.Error?) -> Swift.Void)
+  @objc final public func syncTrainingEventObjc(date: Foundation.Date, completion: @escaping (Swift.Bool, Swift.Error?) -> Swift.Void)
 }
 @_hasMissingDesignatedInitializers final public class RookConnectConfigurationManager {
   public static let shared: RookSDK.RookConnectConfigurationManager
@@ -27,8 +35,17 @@ final public class RookEventsManager {
   final public func clearUser(completion: @escaping (Swift.Result<Swift.Bool, Swift.Error>) -> Swift.Void)
   @objc deinit
 }
-final public class RookConnectPermissionsManager {
-  public init()
+@_inheritsConvenienceInitializers @_hasMissingDesignatedInitializers @objc final public class RookConnectConfigurationManagerObjc : ObjectiveC.NSObject {
+  @objc public static let shared: RookSDK.RookConnectConfigurationManagerObjc
+  @objc final public func setConfiguration(urlAPI: Swift.String, clientUUID: Swift.String, secretKey: Swift.String)
+  @objc final public func initRook()
+  @objc final public func updateUserId(_ id: Swift.String, completion: @escaping (Swift.Bool, Swift.Error?) -> Swift.Void)
+  @objc final public func readUserId(completion: @escaping (Swift.String?, Swift.Error?) -> Swift.Void)
+  @objc final public func clearUser(completion: @escaping (Swift.Bool, Swift.Error?) -> Swift.Void)
+  @objc deinit
+}
+@_inheritsConvenienceInitializers @objc final public class RookConnectPermissionsManager : ObjectiveC.NSObject {
+  @objc override dynamic public init()
   final public func requestAllPermissions(completion: @escaping (Swift.Result<Swift.Bool, Swift.Error>) -> Swift.Void)
   final public func requestSleepPermissions(completion: @escaping (Swift.Result<Swift.Bool, Swift.Error>) -> Swift.Void)
   final public func requestUserInfoPersmissions(completion: @escaping (Swift.Result<Swift.Bool, Swift.Error>) -> Swift.Void)
@@ -36,10 +53,24 @@ final public class RookConnectPermissionsManager {
   final public func requesBodyPermissions(completion: @escaping (Swift.Result<Swift.Bool, Swift.Error>) -> Swift.Void)
   @objc deinit
 }
-final public class RookSummaryManger {
-  public init()
-  final public func syncSleepSummary(form date: Foundation.Date, completion: @escaping (Swift.Result<Swift.Bool, Swift.Error>) -> Swift.Void)
-  final public func syncPhysicalSummary(form date: Foundation.Date, completion: @escaping (Swift.Result<Swift.Bool, Swift.Error>) -> Swift.Void)
+extension RookSDK.RookConnectPermissionsManager {
+  @objc final public func requestAllPermissionsObjc(completion: @escaping (Swift.Bool, Swift.Error?) -> Swift.Void)
+  @objc final public func requestSleepPermissionsObjc(completion: @escaping (Swift.Bool, Swift.Error?) -> Swift.Void)
+  @objc final public func requestUserInfoPersmissionsObjc(completion: @escaping (Swift.Bool, Swift.Error?) -> Swift.Void)
+  @objc final public func requestPhysicalPermissionsObjc(completion: @escaping (Swift.Bool, Swift.Error?) -> Swift.Void)
+  @objc final public func requesBodyPermissionsObjc(completion: @escaping (Swift.Bool, Swift.Error?) -> Swift.Void)
+}
+@_inheritsConvenienceInitializers @objc final public class RookSummaryManger : ObjectiveC.NSObject {
+  @objc override dynamic public init()
+  final public func syncSleepSummary(from date: Foundation.Date, completion: @escaping (Swift.Result<Swift.Bool, Swift.Error>) -> Swift.Void)
+  final public func syncPhysicalSummary(from date: Foundation.Date, completion: @escaping (Swift.Result<Swift.Bool, Swift.Error>) -> Swift.Void)
   final public func syncBodySummary(from date: Foundation.Date, completion: @escaping (Swift.Result<Swift.Bool, Swift.Error>) -> Swift.Void)
+  final public func syncPendingSummaries(completion: @escaping (Swift.Result<Swift.Bool, Swift.Error>) -> Swift.Void)
   @objc deinit
+}
+extension RookSDK.RookSummaryManger {
+  @objc final public func syncSleepSummaryObjc(form date: Foundation.Date, completion: @escaping (Swift.Bool, Swift.Error?) -> Swift.Void)
+  @objc final public func syncPhysicalSummaryObjc(form date: Foundation.Date, completion: @escaping (Swift.Bool, Swift.Error?) -> Swift.Void)
+  @objc final public func syncBodySummaryObjc(from date: Foundation.Date, completion: @escaping (Swift.Bool, Swift.Error?) -> Swift.Void)
+  @objc final public func syncPendingSummariesObjc(completion: @escaping (Swift.Bool, Swift.Error?) -> Swift.Void)
 }
