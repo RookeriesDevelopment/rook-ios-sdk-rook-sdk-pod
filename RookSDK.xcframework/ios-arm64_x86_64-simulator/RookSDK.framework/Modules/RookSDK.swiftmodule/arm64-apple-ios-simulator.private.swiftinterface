@@ -31,6 +31,7 @@ extension RookSDK.RookEventsManager {
   public static let shared: RookSDK.RookConnectConfigurationManager
   final public func setConfiguration(urlAPI: Swift.String, clientUUID: Swift.String, secretKey: Swift.String)
   final public func initRook()
+  final public func initRook(completion: @escaping (Swift.Result<Swift.Bool, Swift.Error>) -> Swift.Void)
   final public func updateUserId(_ id: Swift.String, completion: @escaping (Swift.Result<Swift.Bool, Swift.Error>) -> Swift.Void)
   final public func clearUser(completion: @escaping (Swift.Result<Swift.Bool, Swift.Error>) -> Swift.Void)
   @objc deinit
