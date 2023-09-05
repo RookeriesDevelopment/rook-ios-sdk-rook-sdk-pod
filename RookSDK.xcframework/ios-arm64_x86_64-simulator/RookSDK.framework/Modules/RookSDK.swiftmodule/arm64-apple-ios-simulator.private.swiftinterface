@@ -54,6 +54,18 @@ extension RookSDK.RookEventsManager {
   final public func requesBodyPermissions(completion: @escaping (Swift.Result<Swift.Bool, Swift.Error>) -> Swift.Void)
   @objc deinit
 }
+public enum RookConnectErrors : Swift.Error {
+  case empySummary
+  case emptySummaries
+  case emptyEvent
+  case nothingToUpdate
+  case missingConfigurtion
+  public static func == (a: RookSDK.RookConnectErrors, b: RookSDK.RookConnectErrors) -> Swift.Bool
+  public func hash(into hasher: inout Swift.Hasher)
+  public var hashValue: Swift.Int {
+    get
+  }
+}
 extension RookSDK.RookConnectPermissionsManager {
   @objc final public func requestAllPermissionsObjc(completion: @escaping (Swift.Bool, Swift.Error?) -> Swift.Void)
   @objc final public func requestSleepPermissionsObjc(completion: @escaping (Swift.Bool, Swift.Error?) -> Swift.Void)
@@ -75,3 +87,5 @@ extension RookSDK.RookSummaryManger {
   @objc final public func syncBodySummaryObjc(from date: Foundation.Date, completion: @escaping (Swift.Bool, Swift.Error?) -> Swift.Void)
   @objc final public func syncPendingSummariesObjc(completion: @escaping (Swift.Bool, Swift.Error?) -> Swift.Void)
 }
+extension RookSDK.RookConnectErrors : Swift.Equatable {}
+extension RookSDK.RookConnectErrors : Swift.Hashable {}

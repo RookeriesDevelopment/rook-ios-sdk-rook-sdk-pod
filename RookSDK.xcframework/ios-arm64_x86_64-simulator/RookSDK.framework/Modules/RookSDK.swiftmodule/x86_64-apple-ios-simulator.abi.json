@@ -2387,6 +2387,331 @@
         ]
       },
       {
+        "kind": "TypeDecl",
+        "name": "RookConnectErrors",
+        "printedName": "RookConnectErrors",
+        "children": [
+          {
+            "kind": "Var",
+            "name": "empySummary",
+            "printedName": "empySummary",
+            "children": [
+              {
+                "kind": "TypeFunc",
+                "name": "Function",
+                "printedName": "(RookSDK.RookConnectErrors.Type) -> RookSDK.RookConnectErrors",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "RookConnectErrors",
+                    "printedName": "RookSDK.RookConnectErrors",
+                    "usr": "s:7RookSDK0A13ConnectErrorsO"
+                  },
+                  {
+                    "kind": "TypeNominal",
+                    "name": "Metatype",
+                    "printedName": "RookSDK.RookConnectErrors.Type",
+                    "children": [
+                      {
+                        "kind": "TypeNominal",
+                        "name": "RookConnectErrors",
+                        "printedName": "RookSDK.RookConnectErrors",
+                        "usr": "s:7RookSDK0A13ConnectErrorsO"
+                      }
+                    ]
+                  }
+                ]
+              }
+            ],
+            "declKind": "EnumElement",
+            "usr": "s:7RookSDK0A13ConnectErrorsO11empySummaryyA2CmF",
+            "mangledName": "$s7RookSDK0A13ConnectErrorsO11empySummaryyA2CmF",
+            "moduleName": "RookSDK"
+          },
+          {
+            "kind": "Var",
+            "name": "emptySummaries",
+            "printedName": "emptySummaries",
+            "children": [
+              {
+                "kind": "TypeFunc",
+                "name": "Function",
+                "printedName": "(RookSDK.RookConnectErrors.Type) -> RookSDK.RookConnectErrors",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "RookConnectErrors",
+                    "printedName": "RookSDK.RookConnectErrors",
+                    "usr": "s:7RookSDK0A13ConnectErrorsO"
+                  },
+                  {
+                    "kind": "TypeNominal",
+                    "name": "Metatype",
+                    "printedName": "RookSDK.RookConnectErrors.Type",
+                    "children": [
+                      {
+                        "kind": "TypeNominal",
+                        "name": "RookConnectErrors",
+                        "printedName": "RookSDK.RookConnectErrors",
+                        "usr": "s:7RookSDK0A13ConnectErrorsO"
+                      }
+                    ]
+                  }
+                ]
+              }
+            ],
+            "declKind": "EnumElement",
+            "usr": "s:7RookSDK0A13ConnectErrorsO14emptySummariesyA2CmF",
+            "mangledName": "$s7RookSDK0A13ConnectErrorsO14emptySummariesyA2CmF",
+            "moduleName": "RookSDK"
+          },
+          {
+            "kind": "Var",
+            "name": "emptyEvent",
+            "printedName": "emptyEvent",
+            "children": [
+              {
+                "kind": "TypeFunc",
+                "name": "Function",
+                "printedName": "(RookSDK.RookConnectErrors.Type) -> RookSDK.RookConnectErrors",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "RookConnectErrors",
+                    "printedName": "RookSDK.RookConnectErrors",
+                    "usr": "s:7RookSDK0A13ConnectErrorsO"
+                  },
+                  {
+                    "kind": "TypeNominal",
+                    "name": "Metatype",
+                    "printedName": "RookSDK.RookConnectErrors.Type",
+                    "children": [
+                      {
+                        "kind": "TypeNominal",
+                        "name": "RookConnectErrors",
+                        "printedName": "RookSDK.RookConnectErrors",
+                        "usr": "s:7RookSDK0A13ConnectErrorsO"
+                      }
+                    ]
+                  }
+                ]
+              }
+            ],
+            "declKind": "EnumElement",
+            "usr": "s:7RookSDK0A13ConnectErrorsO10emptyEventyA2CmF",
+            "mangledName": "$s7RookSDK0A13ConnectErrorsO10emptyEventyA2CmF",
+            "moduleName": "RookSDK"
+          },
+          {
+            "kind": "Var",
+            "name": "nothingToUpdate",
+            "printedName": "nothingToUpdate",
+            "children": [
+              {
+                "kind": "TypeFunc",
+                "name": "Function",
+                "printedName": "(RookSDK.RookConnectErrors.Type) -> RookSDK.RookConnectErrors",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "RookConnectErrors",
+                    "printedName": "RookSDK.RookConnectErrors",
+                    "usr": "s:7RookSDK0A13ConnectErrorsO"
+                  },
+                  {
+                    "kind": "TypeNominal",
+                    "name": "Metatype",
+                    "printedName": "RookSDK.RookConnectErrors.Type",
+                    "children": [
+                      {
+                        "kind": "TypeNominal",
+                        "name": "RookConnectErrors",
+                        "printedName": "RookSDK.RookConnectErrors",
+                        "usr": "s:7RookSDK0A13ConnectErrorsO"
+                      }
+                    ]
+                  }
+                ]
+              }
+            ],
+            "declKind": "EnumElement",
+            "usr": "s:7RookSDK0A13ConnectErrorsO15nothingToUpdateyA2CmF",
+            "mangledName": "$s7RookSDK0A13ConnectErrorsO15nothingToUpdateyA2CmF",
+            "moduleName": "RookSDK"
+          },
+          {
+            "kind": "Var",
+            "name": "missingConfigurtion",
+            "printedName": "missingConfigurtion",
+            "children": [
+              {
+                "kind": "TypeFunc",
+                "name": "Function",
+                "printedName": "(RookSDK.RookConnectErrors.Type) -> RookSDK.RookConnectErrors",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "RookConnectErrors",
+                    "printedName": "RookSDK.RookConnectErrors",
+                    "usr": "s:7RookSDK0A13ConnectErrorsO"
+                  },
+                  {
+                    "kind": "TypeNominal",
+                    "name": "Metatype",
+                    "printedName": "RookSDK.RookConnectErrors.Type",
+                    "children": [
+                      {
+                        "kind": "TypeNominal",
+                        "name": "RookConnectErrors",
+                        "printedName": "RookSDK.RookConnectErrors",
+                        "usr": "s:7RookSDK0A13ConnectErrorsO"
+                      }
+                    ]
+                  }
+                ]
+              }
+            ],
+            "declKind": "EnumElement",
+            "usr": "s:7RookSDK0A13ConnectErrorsO19missingConfigurtionyA2CmF",
+            "mangledName": "$s7RookSDK0A13ConnectErrorsO19missingConfigurtionyA2CmF",
+            "moduleName": "RookSDK"
+          },
+          {
+            "kind": "Function",
+            "name": "==",
+            "printedName": "==(_:_:)",
+            "children": [
+              {
+                "kind": "TypeNominal",
+                "name": "Bool",
+                "printedName": "Swift.Bool",
+                "usr": "s:Sb"
+              },
+              {
+                "kind": "TypeNominal",
+                "name": "RookConnectErrors",
+                "printedName": "RookSDK.RookConnectErrors",
+                "usr": "s:7RookSDK0A13ConnectErrorsO"
+              },
+              {
+                "kind": "TypeNominal",
+                "name": "RookConnectErrors",
+                "printedName": "RookSDK.RookConnectErrors",
+                "usr": "s:7RookSDK0A13ConnectErrorsO"
+              }
+            ],
+            "declKind": "Func",
+            "usr": "s:7RookSDK0A13ConnectErrorsO2eeoiySbAC_ACtFZ",
+            "mangledName": "$s7RookSDK0A13ConnectErrorsO2eeoiySbAC_ACtFZ",
+            "moduleName": "RookSDK",
+            "static": true,
+            "implicit": true,
+            "funcSelfKind": "NonMutating"
+          },
+          {
+            "kind": "Var",
+            "name": "hashValue",
+            "printedName": "hashValue",
+            "children": [
+              {
+                "kind": "TypeNominal",
+                "name": "Int",
+                "printedName": "Swift.Int",
+                "usr": "s:Si"
+              }
+            ],
+            "declKind": "Var",
+            "usr": "s:7RookSDK0A13ConnectErrorsO9hashValueSivp",
+            "mangledName": "$s7RookSDK0A13ConnectErrorsO9hashValueSivp",
+            "moduleName": "RookSDK",
+            "implicit": true,
+            "accessors": [
+              {
+                "kind": "Accessor",
+                "name": "Get",
+                "printedName": "Get()",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "Int",
+                    "printedName": "Swift.Int",
+                    "usr": "s:Si"
+                  }
+                ],
+                "declKind": "Accessor",
+                "usr": "s:7RookSDK0A13ConnectErrorsO9hashValueSivg",
+                "mangledName": "$s7RookSDK0A13ConnectErrorsO9hashValueSivg",
+                "moduleName": "RookSDK",
+                "implicit": true,
+                "accessorKind": "get"
+              }
+            ]
+          },
+          {
+            "kind": "Function",
+            "name": "hash",
+            "printedName": "hash(into:)",
+            "children": [
+              {
+                "kind": "TypeNominal",
+                "name": "Void",
+                "printedName": "()"
+              },
+              {
+                "kind": "TypeNominal",
+                "name": "Hasher",
+                "printedName": "Swift.Hasher",
+                "paramValueOwnership": "InOut",
+                "usr": "s:s6HasherV"
+              }
+            ],
+            "declKind": "Func",
+            "usr": "s:7RookSDK0A13ConnectErrorsO4hash4intoys6HasherVz_tF",
+            "mangledName": "$s7RookSDK0A13ConnectErrorsO4hash4intoys6HasherVz_tF",
+            "moduleName": "RookSDK",
+            "implicit": true,
+            "funcSelfKind": "NonMutating"
+          }
+        ],
+        "declKind": "Enum",
+        "usr": "s:7RookSDK0A13ConnectErrorsO",
+        "mangledName": "$s7RookSDK0A13ConnectErrorsO",
+        "moduleName": "RookSDK",
+        "declAttributes": [
+          "AccessControl"
+        ],
+        "conformances": [
+          {
+            "kind": "Conformance",
+            "name": "Equatable",
+            "printedName": "Equatable",
+            "usr": "s:SQ",
+            "mangledName": "$sSQ"
+          },
+          {
+            "kind": "Conformance",
+            "name": "Hashable",
+            "printedName": "Hashable",
+            "usr": "s:SH",
+            "mangledName": "$sSH"
+          },
+          {
+            "kind": "Conformance",
+            "name": "Error",
+            "printedName": "Error",
+            "usr": "s:s5ErrorP",
+            "mangledName": "$ss5ErrorP"
+          },
+          {
+            "kind": "Conformance",
+            "name": "Sendable",
+            "printedName": "Sendable",
+            "usr": "s:s8SendableP",
+            "mangledName": "$ss8SendableP"
+          }
+        ]
+      },
+      {
         "kind": "Import",
         "name": "Foundation",
         "printedName": "Foundation",
