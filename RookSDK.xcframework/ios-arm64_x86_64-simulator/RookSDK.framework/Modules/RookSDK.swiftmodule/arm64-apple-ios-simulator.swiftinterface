@@ -44,6 +44,7 @@ extension RookSDK.RookEventsManager {
   @objc final public func updateUserId(_ id: Swift.String, completion: @escaping (Swift.Bool, Swift.Error?) -> Swift.Void)
   @objc final public func readUserId(completion: @escaping (Swift.String?, Swift.Error?) -> Swift.Void)
   @objc final public func clearUser(completion: @escaping (Swift.Bool, Swift.Error?) -> Swift.Void)
+  @objc final public func syncUserTimeZone(completion: @escaping (Swift.Bool, Swift.Error?) -> Swift.Void)
   @objc deinit
 }
 @_inheritsConvenienceInitializers @objc final public class RookConnectPermissionsManager : ObjectiveC.NSObject {
