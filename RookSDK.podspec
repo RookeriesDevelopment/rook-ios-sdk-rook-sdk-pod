@@ -27,7 +27,7 @@ Pod::Spec.new do |spec|
 
   spec.ios.vendored_frameworks = 'RookSDK.xcframework'
 
-  spec.dependency 'RookAppleHealth', '1.0.11'
+  spec.dependency 'RookAppleHealth', '1.0.14'
   spec.dependency 'RookConnectTransmission', '1.0.10'
   spec.dependency 'RookUsersSDK', '1.0.0'
 
