@@ -845,6 +845,216 @@
         ]
       },
       {
+        "kind": "TypeDecl",
+        "name": "RookEnvironment",
+        "printedName": "RookEnvironment",
+        "children": [
+          {
+            "kind": "Var",
+            "name": "sandbox",
+            "printedName": "sandbox",
+            "children": [
+              {
+                "kind": "TypeFunc",
+                "name": "Function",
+                "printedName": "(RookSDK.RookEnvironment.Type) -> RookSDK.RookEnvironment",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "RookEnvironment",
+                    "printedName": "RookSDK.RookEnvironment",
+                    "usr": "s:7RookSDK0A11EnvironmentO"
+                  },
+                  {
+                    "kind": "TypeNominal",
+                    "name": "Metatype",
+                    "printedName": "RookSDK.RookEnvironment.Type",
+                    "children": [
+                      {
+                        "kind": "TypeNominal",
+                        "name": "RookEnvironment",
+                        "printedName": "RookSDK.RookEnvironment",
+                        "usr": "s:7RookSDK0A11EnvironmentO"
+                      }
+                    ]
+                  }
+                ]
+              }
+            ],
+            "declKind": "EnumElement",
+            "usr": "s:7RookSDK0A11EnvironmentO7sandboxyA2CmF",
+            "mangledName": "$s7RookSDK0A11EnvironmentO7sandboxyA2CmF",
+            "moduleName": "RookSDK"
+          },
+          {
+            "kind": "Var",
+            "name": "production",
+            "printedName": "production",
+            "children": [
+              {
+                "kind": "TypeFunc",
+                "name": "Function",
+                "printedName": "(RookSDK.RookEnvironment.Type) -> RookSDK.RookEnvironment",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "RookEnvironment",
+                    "printedName": "RookSDK.RookEnvironment",
+                    "usr": "s:7RookSDK0A11EnvironmentO"
+                  },
+                  {
+                    "kind": "TypeNominal",
+                    "name": "Metatype",
+                    "printedName": "RookSDK.RookEnvironment.Type",
+                    "children": [
+                      {
+                        "kind": "TypeNominal",
+                        "name": "RookEnvironment",
+                        "printedName": "RookSDK.RookEnvironment",
+                        "usr": "s:7RookSDK0A11EnvironmentO"
+                      }
+                    ]
+                  }
+                ]
+              }
+            ],
+            "declKind": "EnumElement",
+            "usr": "s:7RookSDK0A11EnvironmentO10productionyA2CmF",
+            "mangledName": "$s7RookSDK0A11EnvironmentO10productionyA2CmF",
+            "moduleName": "RookSDK"
+          },
+          {
+            "kind": "Function",
+            "name": "==",
+            "printedName": "==(_:_:)",
+            "children": [
+              {
+                "kind": "TypeNominal",
+                "name": "Bool",
+                "printedName": "Swift.Bool",
+                "usr": "s:Sb"
+              },
+              {
+                "kind": "TypeNominal",
+                "name": "RookEnvironment",
+                "printedName": "RookSDK.RookEnvironment",
+                "usr": "s:7RookSDK0A11EnvironmentO"
+              },
+              {
+                "kind": "TypeNominal",
+                "name": "RookEnvironment",
+                "printedName": "RookSDK.RookEnvironment",
+                "usr": "s:7RookSDK0A11EnvironmentO"
+              }
+            ],
+            "declKind": "Func",
+            "usr": "s:7RookSDK0A11EnvironmentO2eeoiySbAC_ACtFZ",
+            "mangledName": "$s7RookSDK0A11EnvironmentO2eeoiySbAC_ACtFZ",
+            "moduleName": "RookSDK",
+            "static": true,
+            "implicit": true,
+            "funcSelfKind": "NonMutating"
+          },
+          {
+            "kind": "Var",
+            "name": "hashValue",
+            "printedName": "hashValue",
+            "children": [
+              {
+                "kind": "TypeNominal",
+                "name": "Int",
+                "printedName": "Swift.Int",
+                "usr": "s:Si"
+              }
+            ],
+            "declKind": "Var",
+            "usr": "s:7RookSDK0A11EnvironmentO9hashValueSivp",
+            "mangledName": "$s7RookSDK0A11EnvironmentO9hashValueSivp",
+            "moduleName": "RookSDK",
+            "implicit": true,
+            "accessors": [
+              {
+                "kind": "Accessor",
+                "name": "Get",
+                "printedName": "Get()",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "Int",
+                    "printedName": "Swift.Int",
+                    "usr": "s:Si"
+                  }
+                ],
+                "declKind": "Accessor",
+                "usr": "s:7RookSDK0A11EnvironmentO9hashValueSivg",
+                "mangledName": "$s7RookSDK0A11EnvironmentO9hashValueSivg",
+                "moduleName": "RookSDK",
+                "implicit": true,
+                "accessorKind": "get"
+              }
+            ]
+          },
+          {
+            "kind": "Function",
+            "name": "hash",
+            "printedName": "hash(into:)",
+            "children": [
+              {
+                "kind": "TypeNominal",
+                "name": "Void",
+                "printedName": "()"
+              },
+              {
+                "kind": "TypeNominal",
+                "name": "Hasher",
+                "printedName": "Swift.Hasher",
+                "paramValueOwnership": "InOut",
+                "usr": "s:s6HasherV"
+              }
+            ],
+            "declKind": "Func",
+            "usr": "s:7RookSDK0A11EnvironmentO4hash4intoys6HasherVz_tF",
+            "mangledName": "$s7RookSDK0A11EnvironmentO4hash4intoys6HasherVz_tF",
+            "moduleName": "RookSDK",
+            "implicit": true,
+            "funcSelfKind": "NonMutating"
+          }
+        ],
+        "declKind": "Enum",
+        "usr": "s:7RookSDK0A11EnvironmentO",
+        "mangledName": "$s7RookSDK0A11EnvironmentO",
+        "moduleName": "RookSDK",
+        "declAttributes": [
+          "AccessControl"
+        ],
+        "conformances": [
+          {
+            "kind": "Conformance",
+            "name": "Equatable",
+            "printedName": "Equatable",
+            "usr": "s:SQ",
+            "mangledName": "$sSQ"
+          },
+          {
+            "kind": "Conformance",
+            "name": "Hashable",
+            "printedName": "Hashable",
+            "usr": "s:SH",
+            "mangledName": "$sSH"
+          }
+        ]
+      },
+      {
+        "kind": "Import",
+        "name": "Foundation",
+        "printedName": "Foundation",
+        "declKind": "Import",
+        "moduleName": "RookSDK",
+        "declAttributes": [
+          "RawDocComment"
+        ]
+      },
+      {
         "kind": "Import",
         "name": "RookAppleHealth",
         "printedName": "RookAppleHealth",
@@ -925,7 +1135,7 @@
           {
             "kind": "Function",
             "name": "setConfiguration",
-            "printedName": "setConfiguration(urlAPI:clientUUID:secretKey:)",
+            "printedName": "setConfiguration(clientUUID:secretKey:)",
             "children": [
               {
                 "kind": "TypeNominal",
@@ -943,22 +1153,43 @@
                 "name": "String",
                 "printedName": "Swift.String",
                 "usr": "s:SS"
-              },
-              {
-                "kind": "TypeNominal",
-                "name": "String",
-                "printedName": "Swift.String",
-                "usr": "s:SS"
               }
             ],
             "declKind": "Func",
-            "usr": "s:7RookSDK0A27ConnectConfigurationManagerC03setD06urlAPI10clientUUID9secretKeyySS_S2StF",
-            "mangledName": "$s7RookSDK0A27ConnectConfigurationManagerC03setD06urlAPI10clientUUID9secretKeyySS_S2StF",
+            "usr": "s:7RookSDK0A27ConnectConfigurationManagerC03setD010clientUUID9secretKeyySS_SStF",
+            "mangledName": "$s7RookSDK0A27ConnectConfigurationManagerC03setD010clientUUID9secretKeyySS_SStF",
             "moduleName": "RookSDK",
             "declAttributes": [
               "Final",
               "AccessControl",
               "RawDocComment"
+            ],
+            "funcSelfKind": "NonMutating"
+          },
+          {
+            "kind": "Function",
+            "name": "setEnvironment",
+            "printedName": "setEnvironment(_:)",
+            "children": [
+              {
+                "kind": "TypeNominal",
+                "name": "Void",
+                "printedName": "()"
+              },
+              {
+                "kind": "TypeNominal",
+                "name": "RookEnvironment",
+                "printedName": "RookSDK.RookEnvironment",
+                "usr": "s:7RookSDK0A11EnvironmentO"
+              }
+            ],
+            "declKind": "Func",
+            "usr": "s:7RookSDK0A27ConnectConfigurationManagerC14setEnvironmentyyAA0aG0OF",
+            "mangledName": "$s7RookSDK0A27ConnectConfigurationManagerC14setEnvironmentyyAA0aG0OF",
+            "moduleName": "RookSDK",
+            "declAttributes": [
+              "Final",
+              "AccessControl"
             ],
             "funcSelfKind": "NonMutating"
           },
@@ -1301,7 +1532,7 @@
           {
             "kind": "Function",
             "name": "setConfiguration",
-            "printedName": "setConfiguration(urlAPI:clientUUID:secretKey:)",
+            "printedName": "setConfiguration(clientUUID:secretKey:)",
             "children": [
               {
                 "kind": "TypeNominal",
@@ -1319,24 +1550,62 @@
                 "name": "String",
                 "printedName": "Swift.String",
                 "usr": "s:SS"
-              },
-              {
-                "kind": "TypeNominal",
-                "name": "String",
-                "printedName": "Swift.String",
-                "usr": "s:SS"
               }
             ],
             "declKind": "Func",
-            "usr": "c:@M@RookSDK@objc(cs)RookConnectConfigurationManagerObjc(im)setConfigurationWithUrlAPI:clientUUID:secretKey:",
-            "mangledName": "$s7RookSDK0A31ConnectConfigurationManagerObjcC03setD06urlAPI10clientUUID9secretKeyySS_S2StF",
+            "usr": "c:@M@RookSDK@objc(cs)RookConnectConfigurationManagerObjc(im)setConfigurationWithClientUUID:secretKey:",
+            "mangledName": "$s7RookSDK0A31ConnectConfigurationManagerObjcC03setD010clientUUID9secretKeyySS_SStF",
             "moduleName": "RookSDK",
-            "objc_name": "setConfigurationWithUrlAPI:clientUUID:secretKey:",
+            "objc_name": "setConfigurationWithClientUUID:secretKey:",
             "declAttributes": [
               "Final",
               "AccessControl",
               "ObjC",
               "RawDocComment"
+            ],
+            "funcSelfKind": "NonMutating"
+          },
+          {
+            "kind": "Function",
+            "name": "setEnvironmentForSandbox",
+            "printedName": "setEnvironmentForSandbox()",
+            "children": [
+              {
+                "kind": "TypeNominal",
+                "name": "Void",
+                "printedName": "()"
+              }
+            ],
+            "declKind": "Func",
+            "usr": "c:@M@RookSDK@objc(cs)RookConnectConfigurationManagerObjc(im)setEnvironmentForSandbox",
+            "mangledName": "$s7RookSDK0A31ConnectConfigurationManagerObjcC24setEnvironmentForSandboxyyF",
+            "moduleName": "RookSDK",
+            "declAttributes": [
+              "Final",
+              "AccessControl",
+              "ObjC"
+            ],
+            "funcSelfKind": "NonMutating"
+          },
+          {
+            "kind": "Function",
+            "name": "setEnvironmentForProduction",
+            "printedName": "setEnvironmentForProduction()",
+            "children": [
+              {
+                "kind": "TypeNominal",
+                "name": "Void",
+                "printedName": "()"
+              }
+            ],
+            "declKind": "Func",
+            "usr": "c:@M@RookSDK@objc(cs)RookConnectConfigurationManagerObjc(im)setEnvironmentForProduction",
+            "mangledName": "$s7RookSDK0A31ConnectConfigurationManagerObjcC27setEnvironmentForProductionyyF",
+            "moduleName": "RookSDK",
+            "declAttributes": [
+              "Final",
+              "AccessControl",
+              "ObjC"
             ],
             "funcSelfKind": "NonMutating"
           },
@@ -2813,6 +3082,64 @@
             "moduleName": "RookSDK",
             "implicit": true,
             "funcSelfKind": "NonMutating"
+          },
+          {
+            "kind": "Var",
+            "name": "errorDescription",
+            "printedName": "errorDescription",
+            "children": [
+              {
+                "kind": "TypeNominal",
+                "name": "Optional",
+                "printedName": "Swift.String?",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "String",
+                    "printedName": "Swift.String",
+                    "usr": "s:SS"
+                  }
+                ],
+                "usr": "s:Sq"
+              }
+            ],
+            "declKind": "Var",
+            "usr": "s:7RookSDK0A13ConnectErrorsO16errorDescriptionSSSgvp",
+            "mangledName": "$s7RookSDK0A13ConnectErrorsO16errorDescriptionSSSgvp",
+            "moduleName": "RookSDK",
+            "declAttributes": [
+              "AccessControl"
+            ],
+            "isFromExtension": true,
+            "accessors": [
+              {
+                "kind": "Accessor",
+                "name": "Get",
+                "printedName": "Get()",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "Optional",
+                    "printedName": "Swift.String?",
+                    "children": [
+                      {
+                        "kind": "TypeNominal",
+                        "name": "String",
+                        "printedName": "Swift.String",
+                        "usr": "s:SS"
+                      }
+                    ],
+                    "usr": "s:Sq"
+                  }
+                ],
+                "declKind": "Accessor",
+                "usr": "s:7RookSDK0A13ConnectErrorsO16errorDescriptionSSSgvg",
+                "mangledName": "$s7RookSDK0A13ConnectErrorsO16errorDescriptionSSSgvg",
+                "moduleName": "RookSDK",
+                "isFromExtension": true,
+                "accessorKind": "get"
+              }
+            ]
           }
         ],
         "declKind": "Enum",
@@ -2850,6 +3177,13 @@
             "printedName": "Sendable",
             "usr": "s:s8SendableP",
             "mangledName": "$ss8SendableP"
+          },
+          {
+            "kind": "Conformance",
+            "name": "LocalizedError",
+            "printedName": "LocalizedError",
+            "usr": "s:10Foundation14LocalizedErrorP",
+            "mangledName": "$s10Foundation14LocalizedErrorP"
           }
         ]
       },
