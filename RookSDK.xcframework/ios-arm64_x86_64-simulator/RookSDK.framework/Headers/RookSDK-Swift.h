@@ -259,7 +259,9 @@ SWIFT_CLASS_PROPERTY(@property (nonatomic, class, readonly, strong) RookConnectC
 + (RookConnectConfigurationManagerObjc * _Nonnull)shared SWIFT_WARN_UNUSED_RESULT;
 - (nonnull instancetype)init SWIFT_UNAVAILABLE;
 + (nonnull instancetype)new SWIFT_UNAVAILABLE_MSG("-init is unavailable");
-- (void)setConfigurationWithUrlAPI:(NSString * _Nonnull)urlAPI clientUUID:(NSString * _Nonnull)clientUUID secretKey:(NSString * _Nonnull)secretKey;
+- (void)setConfigurationWithClientUUID:(NSString * _Nonnull)clientUUID secretKey:(NSString * _Nonnull)secretKey;
+- (void)setEnvironmentForSandbox;
+- (void)setEnvironmentForProduction;
 - (void)initRook SWIFT_METHOD_FAMILY(none);
 - (void)updateUserId:(NSString * _Nonnull)id completion:(void (^ _Nonnull)(BOOL, NSError * _Nullable))completion;
 - (void)readUserIdWithCompletion:(void (^ _Nonnull)(NSString * _Nullable, NSError * _Nullable))completion;
@@ -581,7 +583,9 @@ SWIFT_CLASS_PROPERTY(@property (nonatomic, class, readonly, strong) RookConnectC
 + (RookConnectConfigurationManagerObjc * _Nonnull)shared SWIFT_WARN_UNUSED_RESULT;
 - (nonnull instancetype)init SWIFT_UNAVAILABLE;
 + (nonnull instancetype)new SWIFT_UNAVAILABLE_MSG("-init is unavailable");
-- (void)setConfigurationWithUrlAPI:(NSString * _Nonnull)urlAPI clientUUID:(NSString * _Nonnull)clientUUID secretKey:(NSString * _Nonnull)secretKey;
+- (void)setConfigurationWithClientUUID:(NSString * _Nonnull)clientUUID secretKey:(NSString * _Nonnull)secretKey;
+- (void)setEnvironmentForSandbox;
+- (void)setEnvironmentForProduction;
 - (void)initRook SWIFT_METHOD_FAMILY(none);
 - (void)updateUserId:(NSString * _Nonnull)id completion:(void (^ _Nonnull)(BOOL, NSError * _Nullable))completion;
 - (void)readUserIdWithCompletion:(void (^ _Nonnull)(NSString * _Nullable, NSError * _Nullable))completion;
