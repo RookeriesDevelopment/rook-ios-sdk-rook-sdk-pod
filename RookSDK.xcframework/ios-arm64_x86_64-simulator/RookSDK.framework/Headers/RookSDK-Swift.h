@@ -251,6 +251,17 @@ using UInt = size_t;
 #endif
 
 #if defined(__OBJC__)
+
+SWIFT_CLASS("_TtC7RookSDK8IOSClass")
+@interface IOSClass : NSObject
+SWIFT_CLASS_PROPERTY(@property (nonatomic, class, readonly, strong) IOSClass * _Nonnull shared;)
++ (IOSClass * _Nonnull)shared SWIFT_WARN_UNUSED_RESULT;
+- (nonnull instancetype)init SWIFT_UNAVAILABLE;
++ (nonnull instancetype)new SWIFT_UNAVAILABLE_MSG("-init is unavailable");
+- (void)test;
+- (void)disableTest;
+@end
+
 @class NSString;
 
 SWIFT_CLASS("_TtC7RookSDK35RookConnectConfigurationManagerObjc")
@@ -575,6 +586,17 @@ using UInt = size_t;
 #endif
 
 #if defined(__OBJC__)
+
+SWIFT_CLASS("_TtC7RookSDK8IOSClass")
+@interface IOSClass : NSObject
+SWIFT_CLASS_PROPERTY(@property (nonatomic, class, readonly, strong) IOSClass * _Nonnull shared;)
++ (IOSClass * _Nonnull)shared SWIFT_WARN_UNUSED_RESULT;
+- (nonnull instancetype)init SWIFT_UNAVAILABLE;
++ (nonnull instancetype)new SWIFT_UNAVAILABLE_MSG("-init is unavailable");
+- (void)test;
+- (void)disableTest;
+@end
+
 @class NSString;
 
 SWIFT_CLASS("_TtC7RookSDK35RookConnectConfigurationManagerObjc")
