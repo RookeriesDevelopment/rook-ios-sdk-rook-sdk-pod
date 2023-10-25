@@ -106,6 +106,12 @@ extension RookSDK.RookSummaryManger {
   @objc final public func syncBodySummaryObjc(from date: Foundation.Date, completion: @escaping (Swift.Bool, Swift.Error?) -> Swift.Void)
   @objc final public func syncPendingSummariesObjc(completion: @escaping (Swift.Bool, Swift.Error?) -> Swift.Void)
 }
+@_inheritsConvenienceInitializers @_hasMissingDesignatedInitializers @objc final public class IOSClass : ObjectiveC.NSObject {
+  @objc public static let shared: RookSDK.IOSClass
+  @objc final public func test()
+  @objc final public func disableTest()
+  @objc deinit
+}
 extension RookSDK.RookEnvironment : Swift.Equatable {}
 extension RookSDK.RookEnvironment : Swift.Hashable {}
 extension RookSDK.RookConnectErrors : Swift.Equatable {}
