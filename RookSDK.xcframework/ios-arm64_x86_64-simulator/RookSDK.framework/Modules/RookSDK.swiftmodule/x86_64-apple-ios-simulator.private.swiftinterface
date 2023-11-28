@@ -44,6 +44,7 @@ public enum RookEnvironment {
   final public func initRook(completion: @escaping (Swift.Result<Swift.Bool, Swift.Error>) -> Swift.Void)
   final public func updateUserId(_ id: Swift.String, completion: @escaping (Swift.Result<Swift.Bool, Swift.Error>) -> Swift.Void)
   final public func clearUser(completion: @escaping (Swift.Result<Swift.Bool, Swift.Error>) -> Swift.Void)
+  final public func removeUserFromRook(completion: @escaping (Swift.Result<Swift.Bool, Swift.Error>) -> Swift.Void)
   final public func syncUserTimeZone(completion: @escaping (Swift.Result<Swift.Bool, Swift.Error>) -> Swift.Void)
   @objc deinit
 }
@@ -56,6 +57,7 @@ public enum RookEnvironment {
   @objc final public func updateUserId(_ id: Swift.String, completion: @escaping (Swift.Bool, Swift.Error?) -> Swift.Void)
   @objc final public func readUserId(completion: @escaping (Swift.String?, Swift.Error?) -> Swift.Void)
   @objc final public func clearUser(completion: @escaping (Swift.Bool, Swift.Error?) -> Swift.Void)
+  @objc final public func removeUserFromRook(completion: @escaping (Swift.Bool, Swift.Error?) -> Swift.Void)
   @objc final public func syncUserTimeZone(completion: @escaping (Swift.Bool, Swift.Error?) -> Swift.Void)
   @objc deinit
 }
@@ -63,9 +65,9 @@ public enum RookEnvironment {
   @objc override dynamic public init()
   final public func requestAllPermissions(completion: @escaping (Swift.Result<Swift.Bool, Swift.Error>) -> Swift.Void)
   final public func requestSleepPermissions(completion: @escaping (Swift.Result<Swift.Bool, Swift.Error>) -> Swift.Void)
-  final public func requestUserInfoPersmissions(completion: @escaping (Swift.Result<Swift.Bool, Swift.Error>) -> Swift.Void)
+  final public func requestUserInfoPermissions(completion: @escaping (Swift.Result<Swift.Bool, Swift.Error>) -> Swift.Void)
   final public func requestPhysicalPermissions(completion: @escaping (Swift.Result<Swift.Bool, Swift.Error>) -> Swift.Void)
-  final public func requesBodyPermissions(completion: @escaping (Swift.Result<Swift.Bool, Swift.Error>) -> Swift.Void)
+  final public func requestBodyPermissions(completion: @escaping (Swift.Result<Swift.Bool, Swift.Error>) -> Swift.Void)
   @objc deinit
 }
 public enum RookConnectErrors : Swift.Error {
@@ -88,9 +90,9 @@ extension RookSDK.RookConnectErrors : Foundation.LocalizedError {
 extension RookSDK.RookConnectPermissionsManager {
   @objc final public func requestAllPermissionsObjc(completion: @escaping (Swift.Bool, Swift.Error?) -> Swift.Void)
   @objc final public func requestSleepPermissionsObjc(completion: @escaping (Swift.Bool, Swift.Error?) -> Swift.Void)
-  @objc final public func requestUserInfoPersmissionsObjc(completion: @escaping (Swift.Bool, Swift.Error?) -> Swift.Void)
+  @objc final public func requestUserInfoPermissionsObjc(completion: @escaping (Swift.Bool, Swift.Error?) -> Swift.Void)
   @objc final public func requestPhysicalPermissionsObjc(completion: @escaping (Swift.Bool, Swift.Error?) -> Swift.Void)
-  @objc final public func requesBodyPermissionsObjc(completion: @escaping (Swift.Bool, Swift.Error?) -> Swift.Void)
+  @objc final public func requestBodyPermissionsObjc(completion: @escaping (Swift.Bool, Swift.Error?) -> Swift.Void)
 }
 @_inheritsConvenienceInitializers @objc final public class RookSummaryManger : ObjectiveC.NSObject {
   @objc override dynamic public init()

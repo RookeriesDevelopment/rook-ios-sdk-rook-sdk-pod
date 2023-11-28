@@ -1381,6 +1381,59 @@
           },
           {
             "kind": "Function",
+            "name": "removeUserFromRook",
+            "printedName": "removeUserFromRook(completion:)",
+            "children": [
+              {
+                "kind": "TypeNominal",
+                "name": "Void",
+                "printedName": "()"
+              },
+              {
+                "kind": "TypeFunc",
+                "name": "Function",
+                "printedName": "(Swift.Result<Swift.Bool, Swift.Error>) -> ()",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "Void",
+                    "printedName": "()"
+                  },
+                  {
+                    "kind": "TypeNominal",
+                    "name": "Result",
+                    "printedName": "Swift.Result<Swift.Bool, Swift.Error>",
+                    "children": [
+                      {
+                        "kind": "TypeNominal",
+                        "name": "Bool",
+                        "printedName": "Swift.Bool",
+                        "usr": "s:Sb"
+                      },
+                      {
+                        "kind": "TypeNominal",
+                        "name": "Error",
+                        "printedName": "Swift.Error",
+                        "usr": "s:s5ErrorP"
+                      }
+                    ],
+                    "usr": "s:s6ResultO"
+                  }
+                ]
+              }
+            ],
+            "declKind": "Func",
+            "usr": "s:7RookSDK0A27ConnectConfigurationManagerC014removeUserFromA010completionyys6ResultOySbs5Error_pGc_tF",
+            "mangledName": "$s7RookSDK0A27ConnectConfigurationManagerC014removeUserFromA010completionyys6ResultOySbs5Error_pGc_tF",
+            "moduleName": "RookSDK",
+            "declAttributes": [
+              "Final",
+              "AccessControl"
+            ],
+            "funcSelfKind": "NonMutating"
+          },
+          {
+            "kind": "Function",
             "name": "syncUserTimeZone",
             "printedName": "syncUserTimeZone(completion:)",
             "children": [
@@ -1832,6 +1885,68 @@
           },
           {
             "kind": "Function",
+            "name": "removeUserFromRook",
+            "printedName": "removeUserFromRook(completion:)",
+            "children": [
+              {
+                "kind": "TypeNominal",
+                "name": "Void",
+                "printedName": "()"
+              },
+              {
+                "kind": "TypeFunc",
+                "name": "Function",
+                "printedName": "(Swift.Bool, Swift.Error?) -> ()",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "Void",
+                    "printedName": "()"
+                  },
+                  {
+                    "kind": "TypeNominal",
+                    "name": "Tuple",
+                    "printedName": "(Swift.Bool, Swift.Error?)",
+                    "children": [
+                      {
+                        "kind": "TypeNominal",
+                        "name": "Bool",
+                        "printedName": "Swift.Bool",
+                        "usr": "s:Sb"
+                      },
+                      {
+                        "kind": "TypeNominal",
+                        "name": "Optional",
+                        "printedName": "Swift.Error?",
+                        "children": [
+                          {
+                            "kind": "TypeNominal",
+                            "name": "Error",
+                            "printedName": "Swift.Error",
+                            "usr": "s:s5ErrorP"
+                          }
+                        ],
+                        "usr": "s:Sq"
+                      }
+                    ]
+                  }
+                ]
+              }
+            ],
+            "declKind": "Func",
+            "usr": "c:@M@RookSDK@objc(cs)RookConnectConfigurationManagerObjc(im)removeUserFromRookWithCompletion:",
+            "mangledName": "$s7RookSDK0A31ConnectConfigurationManagerObjcC014removeUserFromA010completionyySb_s5Error_pSgtc_tF",
+            "moduleName": "RookSDK",
+            "objc_name": "removeUserFromRookWithCompletion:",
+            "declAttributes": [
+              "Final",
+              "AccessControl",
+              "ObjC"
+            ],
+            "funcSelfKind": "NonMutating"
+          },
+          {
+            "kind": "Function",
             "name": "syncUserTimeZone",
             "printedName": "syncUserTimeZone(completion:)",
             "children": [
@@ -2190,8 +2305,8 @@
           },
           {
             "kind": "Function",
-            "name": "requestUserInfoPersmissions",
-            "printedName": "requestUserInfoPersmissions(completion:)",
+            "name": "requestUserInfoPermissions",
+            "printedName": "requestUserInfoPermissions(completion:)",
             "children": [
               {
                 "kind": "TypeNominal",
@@ -2232,8 +2347,8 @@
               }
             ],
             "declKind": "Func",
-            "usr": "s:7RookSDK0A25ConnectPermissionsManagerC27requestUserInfoPersmissions10completionyys6ResultOySbs5Error_pGc_tF",
-            "mangledName": "$s7RookSDK0A25ConnectPermissionsManagerC27requestUserInfoPersmissions10completionyys6ResultOySbs5Error_pGc_tF",
+            "usr": "s:7RookSDK0A25ConnectPermissionsManagerC015requestUserInfoD010completionyys6ResultOySbs5Error_pGc_tF",
+            "mangledName": "$s7RookSDK0A25ConnectPermissionsManagerC015requestUserInfoD010completionyys6ResultOySbs5Error_pGc_tF",
             "moduleName": "RookSDK",
             "declAttributes": [
               "Final",
@@ -2296,8 +2411,8 @@
           },
           {
             "kind": "Function",
-            "name": "requesBodyPermissions",
-            "printedName": "requesBodyPermissions(completion:)",
+            "name": "requestBodyPermissions",
+            "printedName": "requestBodyPermissions(completion:)",
             "children": [
               {
                 "kind": "TypeNominal",
@@ -2338,8 +2453,8 @@
               }
             ],
             "declKind": "Func",
-            "usr": "s:7RookSDK0A25ConnectPermissionsManagerC010requesBodyD010completionyys6ResultOySbs5Error_pGc_tF",
-            "mangledName": "$s7RookSDK0A25ConnectPermissionsManagerC010requesBodyD010completionyys6ResultOySbs5Error_pGc_tF",
+            "usr": "s:7RookSDK0A25ConnectPermissionsManagerC011requestBodyD010completionyys6ResultOySbs5Error_pGc_tF",
+            "mangledName": "$s7RookSDK0A25ConnectPermissionsManagerC011requestBodyD010completionyys6ResultOySbs5Error_pGc_tF",
             "moduleName": "RookSDK",
             "declAttributes": [
               "Final",
@@ -2475,8 +2590,8 @@
           },
           {
             "kind": "Function",
-            "name": "requestUserInfoPersmissionsObjc",
-            "printedName": "requestUserInfoPersmissionsObjc(completion:)",
+            "name": "requestUserInfoPermissionsObjc",
+            "printedName": "requestUserInfoPermissionsObjc(completion:)",
             "children": [
               {
                 "kind": "TypeNominal",
@@ -2524,10 +2639,10 @@
               }
             ],
             "declKind": "Func",
-            "usr": "c:@CM@RookSDK@objc(cs)RookConnectPermissionsManager(im)requestUserInfoPersmissionsObjcWithCompletion:",
-            "mangledName": "$s7RookSDK0A25ConnectPermissionsManagerC31requestUserInfoPersmissionsObjc10completionyySb_s5Error_pSgtc_tF",
+            "usr": "c:@CM@RookSDK@objc(cs)RookConnectPermissionsManager(im)requestUserInfoPermissionsObjcWithCompletion:",
+            "mangledName": "$s7RookSDK0A25ConnectPermissionsManagerC015requestUserInfoD4Objc10completionyySb_s5Error_pSgtc_tF",
             "moduleName": "RookSDK",
-            "objc_name": "requestUserInfoPersmissionsObjcWithCompletion:",
+            "objc_name": "requestUserInfoPermissionsObjcWithCompletion:",
             "declAttributes": [
               "Final",
               "AccessControl",
@@ -2601,8 +2716,8 @@
           },
           {
             "kind": "Function",
-            "name": "requesBodyPermissionsObjc",
-            "printedName": "requesBodyPermissionsObjc(completion:)",
+            "name": "requestBodyPermissionsObjc",
+            "printedName": "requestBodyPermissionsObjc(completion:)",
             "children": [
               {
                 "kind": "TypeNominal",
@@ -2650,10 +2765,10 @@
               }
             ],
             "declKind": "Func",
-            "usr": "c:@CM@RookSDK@objc(cs)RookConnectPermissionsManager(im)requesBodyPermissionsObjcWithCompletion:",
-            "mangledName": "$s7RookSDK0A25ConnectPermissionsManagerC010requesBodyD4Objc10completionyySb_s5Error_pSgtc_tF",
+            "usr": "c:@CM@RookSDK@objc(cs)RookConnectPermissionsManager(im)requestBodyPermissionsObjcWithCompletion:",
+            "mangledName": "$s7RookSDK0A25ConnectPermissionsManagerC011requestBodyD4Objc10completionyySb_s5Error_pSgtc_tF",
             "moduleName": "RookSDK",
-            "objc_name": "requesBodyPermissionsObjcWithCompletion:",
+            "objc_name": "requestBodyPermissionsObjcWithCompletion:",
             "declAttributes": [
               "Final",
               "AccessControl",

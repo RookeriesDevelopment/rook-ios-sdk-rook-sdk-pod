@@ -6,7 +6,7 @@
 	<dict>
 		<key>Headers/RookSDK-Swift.h</key>
 		<data>
-		DWsUgdXzW4G0wH4LPiELe9au8/U=
+		JtLjUlQLlQiVDOdTR7WcHRX6pK0=
 		</data>
 		<key>Headers/RookSDK.h</key>
 		<data>
@@ -18,11 +18,11 @@
 		</data>
 		<key>Modules/RookSDK.swiftmodule/arm64-apple-ios.abi.json</key>
 		<data>
-		doEofUPbzuYEapOh1dNaQekmivk=
+		2qJbPczbKwKhgQvXDnSph6A6QV4=
 		</data>
 		<key>Modules/RookSDK.swiftmodule/arm64-apple-ios.private.swiftinterface</key>
 		<data>
-		mWQQfM3d2MszDWMue14pqpkudzA=
+		1LdeJ0Q3/V/5hbc6W14vni8c0Fo=
 		</data>
 		<key>Modules/RookSDK.swiftmodule/arm64-apple-ios.swiftdoc</key>
 		<data>
@@ -30,11 +30,11 @@
 		</data>
 		<key>Modules/RookSDK.swiftmodule/arm64-apple-ios.swiftinterface</key>
 		<data>
-		mWQQfM3d2MszDWMue14pqpkudzA=
+		1LdeJ0Q3/V/5hbc6W14vni8c0Fo=
 		</data>
 		<key>Modules/RookSDK.swiftmodule/arm64-apple-ios.swiftmodule</key>
 		<data>
-		0qwIHbAVuAnLHzgqqVz/W7CS7Ms=
+		cN+tQEs4EyMnoINIwyAUtW/U260=
 		</data>
 		<key>Modules/module.modulemap</key>
 		<data>
@@ -47,7 +47,7 @@
 		<dict>
 			<key>hash2</key>
 			<data>
-			dKHB1McsGrihe+DM3JOB/wNcg8NaDwM9ZWiBVXU2ArQ=
+			rDswx2Xc31wqFv5hydBl45dvU9xw8sSY/8sUmkFxQzI=
 			</data>
 		</dict>
 		<key>Headers/RookSDK.h</key>
@@ -61,14 +61,14 @@
 		<dict>
 			<key>hash2</key>
 			<data>
-			vuBtZMkZghHck9BDVqjv/sETt+AF+PcdbupstnwXtKI=
+			xr3aAeduW3H+YZ5iJ73UKD5BZDHBA34+M3p8p2vkMT4=
 			</data>
 		</dict>
 		<key>Modules/RookSDK.swiftmodule/arm64-apple-ios.private.swiftinterface</key>
 		<dict>
 			<key>hash2</key>
 			<data>
-			Tzv6XZ3iUr69pXTUnTxXBbpTdS8H9/DjGP/3VpGxPBg=
+			dvPxgFf4q+4V8kdz2SUGlb8Loeo0+kBQqjjlROtKCbw=
 			</data>
 		</dict>
 		<key>Modules/RookSDK.swiftmodule/arm64-apple-ios.swiftdoc</key>
@@ -82,14 +82,14 @@
 		<dict>
 			<key>hash2</key>
 			<data>
-			Tzv6XZ3iUr69pXTUnTxXBbpTdS8H9/DjGP/3VpGxPBg=
+			dvPxgFf4q+4V8kdz2SUGlb8Loeo0+kBQqjjlROtKCbw=
 			</data>
 		</dict>
 		<key>Modules/RookSDK.swiftmodule/arm64-apple-ios.swiftmodule</key>
 		<dict>
 			<key>hash2</key>
 			<data>
-			/AWwkQAtqqmomrPM2PbyQvRyBij6QcwRaSTTUGolkls=
+			dQ7pRD0ltSi9sHeXGTua9fSVUS39K8bmi+Ak/3UmIiY=
 			</data>
 		</dict>
 		<key>Modules/module.modulemap</key>
