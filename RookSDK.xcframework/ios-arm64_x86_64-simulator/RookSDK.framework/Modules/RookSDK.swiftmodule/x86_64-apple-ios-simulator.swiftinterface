@@ -17,6 +17,9 @@ import _StringProcessing
   final public func syncBodyOxygenationEvent(date: Foundation.Date, completion: @escaping (Swift.Result<Swift.Bool, Swift.Error>) -> Swift.Void)
   final public func syncPhysicalOxygenationEvent(date: Foundation.Date, completion: @escaping (Swift.Result<Swift.Bool, Swift.Error>) -> Swift.Void)
   final public func syncTrainingEvent(date: Foundation.Date, completion: @escaping (Swift.Result<Swift.Bool, Swift.Error>) -> Swift.Void)
+  final public func syncTemperatureEvents(date: Foundation.Date, completion: @escaping (Swift.Result<Swift.Bool, Swift.Error>) -> Swift.Void)
+  final public func syncBloodPressureEvents(date: Foundation.Date, completion: @escaping (Swift.Result<Swift.Bool, Swift.Error>) -> Swift.Void)
+  final public func syncBloodGlucoseEvents(date: Foundation.Date, completion: @escaping (Swift.Result<Swift.Bool, Swift.Error>) -> Swift.Void)
   final public func syncPendingEvents(completion: @escaping (Swift.Result<Swift.Bool, Swift.Error>) -> Swift.Void)
   @objc deinit
 }
@@ -26,6 +29,9 @@ extension RookSDK.RookEventsManager {
   @objc final public func syncBodyOxygenationEventObjc(date: Foundation.Date, completion: @escaping (Swift.Bool, Swift.Error?) -> Swift.Void)
   @objc final public func syncPhysicalOxygenationEventObjc(date: Foundation.Date, completion: @escaping (Swift.Bool, Swift.Error?) -> Swift.Void)
   @objc final public func syncTrainingEventObjc(date: Foundation.Date, completion: @escaping (Swift.Bool, Swift.Error?) -> Swift.Void)
+  @objc final public func syncTemperatureEventsObjc(date: Foundation.Date, completion: @escaping (Swift.Bool, Swift.Error?) -> Swift.Void)
+  @objc final public func syncPressureEventsObjc(date: Foundation.Date, completion: @escaping (Swift.Bool, Swift.Error?) -> Swift.Void)
+  @objc final public func syncGlucoseEventsObjc(date: Foundation.Date, completion: @escaping (Swift.Bool, Swift.Error?) -> Swift.Void)
 }
 public enum RookEnvironment {
   case sandbox

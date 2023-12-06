@@ -361,6 +361,183 @@
           },
           {
             "kind": "Function",
+            "name": "syncTemperatureEvents",
+            "printedName": "syncTemperatureEvents(date:completion:)",
+            "children": [
+              {
+                "kind": "TypeNominal",
+                "name": "Void",
+                "printedName": "()"
+              },
+              {
+                "kind": "TypeNominal",
+                "name": "Date",
+                "printedName": "Foundation.Date",
+                "usr": "s:10Foundation4DateV"
+              },
+              {
+                "kind": "TypeFunc",
+                "name": "Function",
+                "printedName": "(Swift.Result<Swift.Bool, Swift.Error>) -> ()",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "Void",
+                    "printedName": "()"
+                  },
+                  {
+                    "kind": "TypeNominal",
+                    "name": "Result",
+                    "printedName": "Swift.Result<Swift.Bool, Swift.Error>",
+                    "children": [
+                      {
+                        "kind": "TypeNominal",
+                        "name": "Bool",
+                        "printedName": "Swift.Bool",
+                        "usr": "s:Sb"
+                      },
+                      {
+                        "kind": "TypeNominal",
+                        "name": "Error",
+                        "printedName": "Swift.Error",
+                        "usr": "s:s5ErrorP"
+                      }
+                    ],
+                    "usr": "s:s6ResultO"
+                  }
+                ]
+              }
+            ],
+            "declKind": "Func",
+            "usr": "s:7RookSDK0A13EventsManagerC015syncTemperatureC04date10completiony10Foundation4DateV_ys6ResultOySbs5Error_pGctF",
+            "mangledName": "$s7RookSDK0A13EventsManagerC015syncTemperatureC04date10completiony10Foundation4DateV_ys6ResultOySbs5Error_pGctF",
+            "moduleName": "RookSDK",
+            "declAttributes": [
+              "Final",
+              "AccessControl"
+            ],
+            "funcSelfKind": "NonMutating"
+          },
+          {
+            "kind": "Function",
+            "name": "syncBloodPressureEvents",
+            "printedName": "syncBloodPressureEvents(date:completion:)",
+            "children": [
+              {
+                "kind": "TypeNominal",
+                "name": "Void",
+                "printedName": "()"
+              },
+              {
+                "kind": "TypeNominal",
+                "name": "Date",
+                "printedName": "Foundation.Date",
+                "usr": "s:10Foundation4DateV"
+              },
+              {
+                "kind": "TypeFunc",
+                "name": "Function",
+                "printedName": "(Swift.Result<Swift.Bool, Swift.Error>) -> ()",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "Void",
+                    "printedName": "()"
+                  },
+                  {
+                    "kind": "TypeNominal",
+                    "name": "Result",
+                    "printedName": "Swift.Result<Swift.Bool, Swift.Error>",
+                    "children": [
+                      {
+                        "kind": "TypeNominal",
+                        "name": "Bool",
+                        "printedName": "Swift.Bool",
+                        "usr": "s:Sb"
+                      },
+                      {
+                        "kind": "TypeNominal",
+                        "name": "Error",
+                        "printedName": "Swift.Error",
+                        "usr": "s:s5ErrorP"
+                      }
+                    ],
+                    "usr": "s:s6ResultO"
+                  }
+                ]
+              }
+            ],
+            "declKind": "Func",
+            "usr": "s:7RookSDK0A13EventsManagerC017syncBloodPressureC04date10completiony10Foundation4DateV_ys6ResultOySbs5Error_pGctF",
+            "mangledName": "$s7RookSDK0A13EventsManagerC017syncBloodPressureC04date10completiony10Foundation4DateV_ys6ResultOySbs5Error_pGctF",
+            "moduleName": "RookSDK",
+            "declAttributes": [
+              "Final",
+              "AccessControl"
+            ],
+            "funcSelfKind": "NonMutating"
+          },
+          {
+            "kind": "Function",
+            "name": "syncBloodGlucoseEvents",
+            "printedName": "syncBloodGlucoseEvents(date:completion:)",
+            "children": [
+              {
+                "kind": "TypeNominal",
+                "name": "Void",
+                "printedName": "()"
+              },
+              {
+                "kind": "TypeNominal",
+                "name": "Date",
+                "printedName": "Foundation.Date",
+                "usr": "s:10Foundation4DateV"
+              },
+              {
+                "kind": "TypeFunc",
+                "name": "Function",
+                "printedName": "(Swift.Result<Swift.Bool, Swift.Error>) -> ()",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "Void",
+                    "printedName": "()"
+                  },
+                  {
+                    "kind": "TypeNominal",
+                    "name": "Result",
+                    "printedName": "Swift.Result<Swift.Bool, Swift.Error>",
+                    "children": [
+                      {
+                        "kind": "TypeNominal",
+                        "name": "Bool",
+                        "printedName": "Swift.Bool",
+                        "usr": "s:Sb"
+                      },
+                      {
+                        "kind": "TypeNominal",
+                        "name": "Error",
+                        "printedName": "Swift.Error",
+                        "usr": "s:s5ErrorP"
+                      }
+                    ],
+                    "usr": "s:s6ResultO"
+                  }
+                ]
+              }
+            ],
+            "declKind": "Func",
+            "usr": "s:7RookSDK0A13EventsManagerC016syncBloodGlucoseC04date10completiony10Foundation4DateV_ys6ResultOySbs5Error_pGctF",
+            "mangledName": "$s7RookSDK0A13EventsManagerC016syncBloodGlucoseC04date10completiony10Foundation4DateV_ys6ResultOySbs5Error_pGctF",
+            "moduleName": "RookSDK",
+            "declAttributes": [
+              "Final",
+              "AccessControl"
+            ],
+            "funcSelfKind": "NonMutating"
+          },
+          {
+            "kind": "Function",
             "name": "syncPendingEvents",
             "printedName": "syncPendingEvents(completion:)",
             "children": [
@@ -749,6 +926,213 @@
             "mangledName": "$s7RookSDK0A13EventsManagerC21syncTrainingEventObjc4date10completiony10Foundation4DateV_ySb_s5Error_pSgtctF",
             "moduleName": "RookSDK",
             "objc_name": "syncTrainingEventObjcWithDate:completion:",
+            "declAttributes": [
+              "Final",
+              "AccessControl",
+              "ObjC"
+            ],
+            "isFromExtension": true,
+            "funcSelfKind": "NonMutating"
+          },
+          {
+            "kind": "Function",
+            "name": "syncTemperatureEventsObjc",
+            "printedName": "syncTemperatureEventsObjc(date:completion:)",
+            "children": [
+              {
+                "kind": "TypeNominal",
+                "name": "Void",
+                "printedName": "()"
+              },
+              {
+                "kind": "TypeNominal",
+                "name": "Date",
+                "printedName": "Foundation.Date",
+                "usr": "s:10Foundation4DateV"
+              },
+              {
+                "kind": "TypeFunc",
+                "name": "Function",
+                "printedName": "(Swift.Bool, Swift.Error?) -> ()",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "Void",
+                    "printedName": "()"
+                  },
+                  {
+                    "kind": "TypeNominal",
+                    "name": "Tuple",
+                    "printedName": "(Swift.Bool, Swift.Error?)",
+                    "children": [
+                      {
+                        "kind": "TypeNominal",
+                        "name": "Bool",
+                        "printedName": "Swift.Bool",
+                        "usr": "s:Sb"
+                      },
+                      {
+                        "kind": "TypeNominal",
+                        "name": "Optional",
+                        "printedName": "Swift.Error?",
+                        "children": [
+                          {
+                            "kind": "TypeNominal",
+                            "name": "Error",
+                            "printedName": "Swift.Error",
+                            "usr": "s:s5ErrorP"
+                          }
+                        ],
+                        "usr": "s:Sq"
+                      }
+                    ]
+                  }
+                ]
+              }
+            ],
+            "declKind": "Func",
+            "usr": "c:@CM@RookSDK@objc(cs)RookEventsManager(im)syncTemperatureEventsObjcWithDate:completion:",
+            "mangledName": "$s7RookSDK0A13EventsManagerC015syncTemperatureC4Objc4date10completiony10Foundation4DateV_ySb_s5Error_pSgtctF",
+            "moduleName": "RookSDK",
+            "objc_name": "syncTemperatureEventsObjcWithDate:completion:",
+            "declAttributes": [
+              "Final",
+              "AccessControl",
+              "ObjC"
+            ],
+            "isFromExtension": true,
+            "funcSelfKind": "NonMutating"
+          },
+          {
+            "kind": "Function",
+            "name": "syncPressureEventsObjc",
+            "printedName": "syncPressureEventsObjc(date:completion:)",
+            "children": [
+              {
+                "kind": "TypeNominal",
+                "name": "Void",
+                "printedName": "()"
+              },
+              {
+                "kind": "TypeNominal",
+                "name": "Date",
+                "printedName": "Foundation.Date",
+                "usr": "s:10Foundation4DateV"
+              },
+              {
+                "kind": "TypeFunc",
+                "name": "Function",
+                "printedName": "(Swift.Bool, Swift.Error?) -> ()",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "Void",
+                    "printedName": "()"
+                  },
+                  {
+                    "kind": "TypeNominal",
+                    "name": "Tuple",
+                    "printedName": "(Swift.Bool, Swift.Error?)",
+                    "children": [
+                      {
+                        "kind": "TypeNominal",
+                        "name": "Bool",
+                        "printedName": "Swift.Bool",
+                        "usr": "s:Sb"
+                      },
+                      {
+                        "kind": "TypeNominal",
+                        "name": "Optional",
+                        "printedName": "Swift.Error?",
+                        "children": [
+                          {
+                            "kind": "TypeNominal",
+                            "name": "Error",
+                            "printedName": "Swift.Error",
+                            "usr": "s:s5ErrorP"
+                          }
+                        ],
+                        "usr": "s:Sq"
+                      }
+                    ]
+                  }
+                ]
+              }
+            ],
+            "declKind": "Func",
+            "usr": "c:@CM@RookSDK@objc(cs)RookEventsManager(im)syncPressureEventsObjcWithDate:completion:",
+            "mangledName": "$s7RookSDK0A13EventsManagerC012syncPressureC4Objc4date10completiony10Foundation4DateV_ySb_s5Error_pSgtctF",
+            "moduleName": "RookSDK",
+            "objc_name": "syncPressureEventsObjcWithDate:completion:",
+            "declAttributes": [
+              "Final",
+              "AccessControl",
+              "ObjC"
+            ],
+            "isFromExtension": true,
+            "funcSelfKind": "NonMutating"
+          },
+          {
+            "kind": "Function",
+            "name": "syncGlucoseEventsObjc",
+            "printedName": "syncGlucoseEventsObjc(date:completion:)",
+            "children": [
+              {
+                "kind": "TypeNominal",
+                "name": "Void",
+                "printedName": "()"
+              },
+              {
+                "kind": "TypeNominal",
+                "name": "Date",
+                "printedName": "Foundation.Date",
+                "usr": "s:10Foundation4DateV"
+              },
+              {
+                "kind": "TypeFunc",
+                "name": "Function",
+                "printedName": "(Swift.Bool, Swift.Error?) -> ()",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "Void",
+                    "printedName": "()"
+                  },
+                  {
+                    "kind": "TypeNominal",
+                    "name": "Tuple",
+                    "printedName": "(Swift.Bool, Swift.Error?)",
+                    "children": [
+                      {
+                        "kind": "TypeNominal",
+                        "name": "Bool",
+                        "printedName": "Swift.Bool",
+                        "usr": "s:Sb"
+                      },
+                      {
+                        "kind": "TypeNominal",
+                        "name": "Optional",
+                        "printedName": "Swift.Error?",
+                        "children": [
+                          {
+                            "kind": "TypeNominal",
+                            "name": "Error",
+                            "printedName": "Swift.Error",
+                            "usr": "s:s5ErrorP"
+                          }
+                        ],
+                        "usr": "s:Sq"
+                      }
+                    ]
+                  }
+                ]
+              }
+            ],
+            "declKind": "Func",
+            "usr": "c:@CM@RookSDK@objc(cs)RookEventsManager(im)syncGlucoseEventsObjcWithDate:completion:",
+            "mangledName": "$s7RookSDK0A13EventsManagerC011syncGlucoseC4Objc4date10completiony10Foundation4DateV_ySb_s5Error_pSgtctF",
+            "moduleName": "RookSDK",
+            "objc_name": "syncGlucoseEventsObjcWithDate:completion:",
             "declAttributes": [
               "Final",
               "AccessControl",
@@ -2165,6 +2549,30 @@
         "moduleName": "RookSDK"
       },
       {
+        "kind": "Import",
+        "name": "Foundation",
+        "printedName": "Foundation",
+        "declKind": "Import",
+        "moduleName": "RookSDK",
+        "declAttributes": [
+          "RawDocComment"
+        ]
+      },
+      {
+        "kind": "Import",
+        "name": "RookAppleHealth",
+        "printedName": "RookAppleHealth",
+        "declKind": "Import",
+        "moduleName": "RookSDK"
+      },
+      {
+        "kind": "Import",
+        "name": "RookConnectTransmission",
+        "printedName": "RookConnectTransmission",
+        "declKind": "Import",
+        "moduleName": "RookSDK"
+      },
+      {
         "kind": "TypeDecl",
         "name": "RookConnectPermissionsManager",
         "printedName": "RookConnectPermissionsManager",
@@ -3396,6 +3804,30 @@
       },
       {
         "kind": "Import",
+        "name": "RookAppleHealth",
+        "printedName": "RookAppleHealth",
+        "declKind": "Import",
+        "moduleName": "RookSDK"
+      },
+      {
+        "kind": "Import",
+        "name": "RookConnectTransmission",
+        "printedName": "RookConnectTransmission",
+        "declKind": "Import",
+        "moduleName": "RookSDK"
+      },
+      {
+        "kind": "Import",
+        "name": "Foundation",
+        "printedName": "Foundation",
+        "declKind": "Import",
+        "moduleName": "RookSDK",
+        "declAttributes": [
+          "RawDocComment"
+        ]
+      },
+      {
+        "kind": "Import",
         "name": "Foundation",
         "printedName": "Foundation",
         "declKind": "Import",
@@ -4037,6 +4469,30 @@
         "declAttributes": [
           "RawDocComment"
         ]
+      },
+      {
+        "kind": "Import",
+        "name": "Foundation",
+        "printedName": "Foundation",
+        "declKind": "Import",
+        "moduleName": "RookSDK",
+        "declAttributes": [
+          "RawDocComment"
+        ]
+      },
+      {
+        "kind": "Import",
+        "name": "RookAppleHealth",
+        "printedName": "RookAppleHealth",
+        "declKind": "Import",
+        "moduleName": "RookSDK"
+      },
+      {
+        "kind": "Import",
+        "name": "RookConnectTransmission",
+        "printedName": "RookConnectTransmission",
+        "declKind": "Import",
+        "moduleName": "RookSDK"
       },
       {
         "kind": "Import",
