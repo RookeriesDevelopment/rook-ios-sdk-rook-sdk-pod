@@ -310,6 +310,9 @@ SWIFT_CLASS("_TtC7RookSDK17RookEventsManager")
 - (void)syncBodyOxygenationEventObjcWithDate:(NSDate * _Nonnull)date completion:(void (^ _Nonnull)(BOOL, NSError * _Nullable))completion;
 - (void)syncPhysicalOxygenationEventObjcWithDate:(NSDate * _Nonnull)date completion:(void (^ _Nonnull)(BOOL, NSError * _Nullable))completion;
 - (void)syncTrainingEventObjcWithDate:(NSDate * _Nonnull)date completion:(void (^ _Nonnull)(BOOL, NSError * _Nullable))completion;
+- (void)syncTemperatureEventsObjcWithDate:(NSDate * _Nonnull)date completion:(void (^ _Nonnull)(BOOL, NSError * _Nullable))completion;
+- (void)syncPressureEventsObjcWithDate:(NSDate * _Nonnull)date completion:(void (^ _Nonnull)(BOOL, NSError * _Nullable))completion;
+- (void)syncGlucoseEventsObjcWithDate:(NSDate * _Nonnull)date completion:(void (^ _Nonnull)(BOOL, NSError * _Nullable))completion;
 @end
 
 
