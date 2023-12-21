@@ -300,6 +300,7 @@ SWIFT_CLASS("_TtC7RookSDK29RookConnectPermissionsManager")
 SWIFT_CLASS("_TtC7RookSDK17RookEventsManager")
 @interface RookEventsManager : NSObject
 - (nonnull instancetype)init OBJC_DESIGNATED_INITIALIZER;
+- (void)syncYesterdayEventsWithCompletion:(void (^ _Nonnull)(void))completion;
 @end
 
 @class NSDate;
@@ -319,6 +320,7 @@ SWIFT_CLASS("_TtC7RookSDK17RookEventsManager")
 SWIFT_CLASS("_TtC7RookSDK17RookSummaryManger")
 @interface RookSummaryManger : NSObject
 - (nonnull instancetype)init OBJC_DESIGNATED_INITIALIZER;
+- (void)syncYesterdaySummariesWithCompletion:(void (^ _Nonnull)(void))completion;
 @end
 
 
