@@ -12,6 +12,7 @@ import _Concurrency
 import _StringProcessing
 @_inheritsConvenienceInitializers @objc final public class RookEventsManager : ObjectiveC.NSObject {
   @objc override dynamic public init()
+  @objc final public func syncYesterdayEvents(completion: @escaping () -> Swift.Void)
   final public func syncBodyHeartRateEvent(date: Foundation.Date, completion: @escaping (Swift.Result<Swift.Bool, Swift.Error>) -> Swift.Void)
   final public func syncPhysicalHeartRateEvent(date: Foundation.Date, completion: @escaping (Swift.Result<Swift.Bool, Swift.Error>) -> Swift.Void)
   final public func syncBodyOxygenationEvent(date: Foundation.Date, completion: @escaping (Swift.Result<Swift.Bool, Swift.Error>) -> Swift.Void)
@@ -102,6 +103,7 @@ extension RookSDK.RookConnectPermissionsManager {
 }
 @_inheritsConvenienceInitializers @objc final public class RookSummaryManger : ObjectiveC.NSObject {
   @objc override dynamic public init()
+  @objc final public func syncYesterdaySummaries(completion: @escaping () -> Swift.Void)
   final public func syncSleepSummary(from date: Foundation.Date, completion: @escaping (Swift.Result<Swift.Bool, Swift.Error>) -> Swift.Void)
   final public func syncPhysicalSummary(from date: Foundation.Date, completion: @escaping (Swift.Result<Swift.Bool, Swift.Error>) -> Swift.Void)
   final public func syncBodySummary(from date: Foundation.Date, completion: @escaping (Swift.Result<Swift.Bool, Swift.Error>) -> Swift.Void)
