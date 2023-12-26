@@ -3387,8 +3387,8 @@
         "children": [
           {
             "kind": "Var",
-            "name": "empySummary",
-            "printedName": "empySummary",
+            "name": "emptySummary",
+            "printedName": "emptySummary",
             "children": [
               {
                 "kind": "TypeFunc",
@@ -3418,8 +3418,8 @@
               }
             ],
             "declKind": "EnumElement",
-            "usr": "s:7RookSDK0A13ConnectErrorsO11empySummaryyA2CmF",
-            "mangledName": "$s7RookSDK0A13ConnectErrorsO11empySummaryyA2CmF",
+            "usr": "s:7RookSDK0A13ConnectErrorsO12emptySummaryyA2CmF",
+            "mangledName": "$s7RookSDK0A13ConnectErrorsO12emptySummaryyA2CmF",
             "moduleName": "RookSDK"
           },
           {
@@ -3535,8 +3535,8 @@
           },
           {
             "kind": "Var",
-            "name": "missingConfigurtion",
-            "printedName": "missingConfigurtion",
+            "name": "missingConfiguration",
+            "printedName": "missingConfiguration",
             "children": [
               {
                 "kind": "TypeFunc",
@@ -3566,8 +3566,8 @@
               }
             ],
             "declKind": "EnumElement",
-            "usr": "s:7RookSDK0A13ConnectErrorsO19missingConfigurtionyA2CmF",
-            "mangledName": "$s7RookSDK0A13ConnectErrorsO19missingConfigurtionyA2CmF",
+            "usr": "s:7RookSDK0A13ConnectErrorsO20missingConfigurationyA2CmF",
+            "mangledName": "$s7RookSDK0A13ConnectErrorsO20missingConfigurationyA2CmF",
             "moduleName": "RookSDK"
           },
           {

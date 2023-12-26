@@ -78,11 +78,11 @@ public enum RookEnvironment {
   @objc deinit
 }
 public enum RookConnectErrors : Swift.Error {
-  case empySummary
+  case emptySummary
   case emptySummaries
   case emptyEvent
   case nothingToUpdate
-  case missingConfigurtion
+  case missingConfiguration
   public static func == (a: RookSDK.RookConnectErrors, b: RookSDK.RookConnectErrors) -> Swift.Bool
   public func hash(into hasher: inout Swift.Hasher)
   public var hashValue: Swift.Int {
