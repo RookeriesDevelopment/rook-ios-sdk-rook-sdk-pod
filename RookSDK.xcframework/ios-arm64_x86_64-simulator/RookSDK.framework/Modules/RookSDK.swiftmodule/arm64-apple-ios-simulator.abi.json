@@ -16,6 +16,13 @@
       },
       {
         "kind": "Import",
+        "name": "RookAppleHealth",
+        "printedName": "RookAppleHealth",
+        "declKind": "Import",
+        "moduleName": "RookSDK"
+      },
+      {
+        "kind": "Import",
         "name": "Foundation",
         "printedName": "Foundation",
         "declKind": "Import",
@@ -1270,6 +1277,23 @@
       },
       {
         "kind": "Import",
+        "name": "RookAppleHealth",
+        "printedName": "RookAppleHealth",
+        "declKind": "Import",
+        "moduleName": "RookSDK"
+      },
+      {
+        "kind": "Import",
+        "name": "Foundation",
+        "printedName": "Foundation",
+        "declKind": "Import",
+        "moduleName": "RookSDK",
+        "declAttributes": [
+          "RawDocComment"
+        ]
+      },
+      {
+        "kind": "Import",
         "name": "Foundation",
         "printedName": "Foundation",
         "declKind": "Import",
@@ -1516,6 +1540,13 @@
         "kind": "Import",
         "name": "RookUsersSDK",
         "printedName": "RookUsersSDK",
+        "declKind": "Import",
+        "moduleName": "RookSDK"
+      },
+      {
+        "kind": "Import",
+        "name": "UIKit",
+        "printedName": "UIKit",
         "declKind": "Import",
         "moduleName": "RookSDK"
       },
@@ -1922,6 +1953,70 @@
             "declKind": "Func",
             "usr": "s:7RookSDK0A27ConnectConfigurationManagerC16syncUserTimeZone10completionyys6ResultOySbs5Error_pGc_tF",
             "mangledName": "$s7RookSDK0A27ConnectConfigurationManagerC16syncUserTimeZone10completionyys6ResultOySbs5Error_pGc_tF",
+            "moduleName": "RookSDK",
+            "declAttributes": [
+              "Final",
+              "AccessControl"
+            ],
+            "funcSelfKind": "NonMutating"
+          },
+          {
+            "kind": "Function",
+            "name": "enableYesterdaySync",
+            "printedName": "enableYesterdaySync()",
+            "children": [
+              {
+                "kind": "TypeNominal",
+                "name": "Void",
+                "printedName": "()"
+              }
+            ],
+            "declKind": "Func",
+            "usr": "s:7RookSDK0A27ConnectConfigurationManagerC19enableYesterdaySyncyyF",
+            "mangledName": "$s7RookSDK0A27ConnectConfigurationManagerC19enableYesterdaySyncyyF",
+            "moduleName": "RookSDK",
+            "declAttributes": [
+              "Final",
+              "AccessControl"
+            ],
+            "funcSelfKind": "NonMutating"
+          },
+          {
+            "kind": "Function",
+            "name": "disableYesterdaySync",
+            "printedName": "disableYesterdaySync()",
+            "children": [
+              {
+                "kind": "TypeNominal",
+                "name": "Void",
+                "printedName": "()"
+              }
+            ],
+            "declKind": "Func",
+            "usr": "s:7RookSDK0A27ConnectConfigurationManagerC20disableYesterdaySyncyyF",
+            "mangledName": "$s7RookSDK0A27ConnectConfigurationManagerC20disableYesterdaySyncyyF",
+            "moduleName": "RookSDK",
+            "declAttributes": [
+              "Final",
+              "AccessControl"
+            ],
+            "funcSelfKind": "NonMutating"
+          },
+          {
+            "kind": "Function",
+            "name": "isYesterdaySyncEnable",
+            "printedName": "isYesterdaySyncEnable()",
+            "children": [
+              {
+                "kind": "TypeNominal",
+                "name": "Bool",
+                "printedName": "Swift.Bool",
+                "usr": "s:Sb"
+              }
+            ],
+            "declKind": "Func",
+            "usr": "s:7RookSDK0A27ConnectConfigurationManagerC21isYesterdaySyncEnableSbyF",
+            "mangledName": "$s7RookSDK0A27ConnectConfigurationManagerC21isYesterdaySyncEnableSbyF",
             "moduleName": "RookSDK",
             "declAttributes": [
               "Final",
@@ -2444,6 +2539,73 @@
             "mangledName": "$s7RookSDK0A31ConnectConfigurationManagerObjcC16syncUserTimeZone10completionyySb_s5Error_pSgtc_tF",
             "moduleName": "RookSDK",
             "objc_name": "syncUserTimeZoneWithCompletion:",
+            "declAttributes": [
+              "Final",
+              "AccessControl",
+              "ObjC"
+            ],
+            "funcSelfKind": "NonMutating"
+          },
+          {
+            "kind": "Function",
+            "name": "enableYesterdaySync",
+            "printedName": "enableYesterdaySync()",
+            "children": [
+              {
+                "kind": "TypeNominal",
+                "name": "Void",
+                "printedName": "()"
+              }
+            ],
+            "declKind": "Func",
+            "usr": "c:@M@RookSDK@objc(cs)RookConnectConfigurationManagerObjc(im)enableYesterdaySync",
+            "mangledName": "$s7RookSDK0A31ConnectConfigurationManagerObjcC19enableYesterdaySyncyyF",
+            "moduleName": "RookSDK",
+            "declAttributes": [
+              "Final",
+              "AccessControl",
+              "ObjC"
+            ],
+            "funcSelfKind": "NonMutating"
+          },
+          {
+            "kind": "Function",
+            "name": "disableYesterdaySync",
+            "printedName": "disableYesterdaySync()",
+            "children": [
+              {
+                "kind": "TypeNominal",
+                "name": "Void",
+                "printedName": "()"
+              }
+            ],
+            "declKind": "Func",
+            "usr": "c:@M@RookSDK@objc(cs)RookConnectConfigurationManagerObjc(im)disableYesterdaySync",
+            "mangledName": "$s7RookSDK0A31ConnectConfigurationManagerObjcC20disableYesterdaySyncyyF",
+            "moduleName": "RookSDK",
+            "declAttributes": [
+              "Final",
+              "AccessControl",
+              "ObjC"
+            ],
+            "funcSelfKind": "NonMutating"
+          },
+          {
+            "kind": "Function",
+            "name": "isYesterdaySyncEnable",
+            "printedName": "isYesterdaySyncEnable()",
+            "children": [
+              {
+                "kind": "TypeNominal",
+                "name": "Bool",
+                "printedName": "Swift.Bool",
+                "usr": "s:Sb"
+              }
+            ],
+            "declKind": "Func",
+            "usr": "c:@M@RookSDK@objc(cs)RookConnectConfigurationManagerObjc(im)isYesterdaySyncEnable",
+            "mangledName": "$s7RookSDK0A31ConnectConfigurationManagerObjcC21isYesterdaySyncEnableSbyF",
+            "moduleName": "RookSDK",
             "declAttributes": [
               "Final",
               "AccessControl",
@@ -3381,6 +3543,16 @@
         ]
       },
       {
+        "kind": "Import",
+        "name": "Foundation",
+        "printedName": "Foundation",
+        "declKind": "Import",
+        "moduleName": "RookSDK",
+        "declAttributes": [
+          "RawDocComment"
+        ]
+      },
+      {
         "kind": "TypeDecl",
         "name": "RookConnectErrors",
         "printedName": "RookConnectErrors",
@@ -3851,6 +4023,16 @@
         "printedName": "RookConnectTransmission",
         "declKind": "Import",
         "moduleName": "RookSDK"
+      },
+      {
+        "kind": "Import",
+        "name": "Foundation",
+        "printedName": "Foundation",
+        "declKind": "Import",
+        "moduleName": "RookSDK",
+        "declAttributes": [
+          "RawDocComment"
+        ]
       },
       {
         "kind": "Import",
@@ -4883,6 +5065,13 @@
     "json_format_version": 8
   },
   "ConstValues": [
+    {
+      "filePath": "\/Users\/franciscoguerreroescamilla\/Developer\/Rook\/SDK's\/RookSDK\/RookSDK\/Source\/Configuration\/Constants\/ForeGroundConstants.swift",
+      "kind": "StringLiteral",
+      "offset": 211,
+      "length": 29,
+      "value": "\"rook_isForeGroundSyncEnable\""
+    },
     {
       "filePath": "\/Users\/franciscoguerreroescamilla\/Developer\/Rook\/SDK's\/RookSDK\/RookSDK\/Source\/Configuration\/Dev\/IOSClass.swift",
       "kind": "BooleanLiteral",

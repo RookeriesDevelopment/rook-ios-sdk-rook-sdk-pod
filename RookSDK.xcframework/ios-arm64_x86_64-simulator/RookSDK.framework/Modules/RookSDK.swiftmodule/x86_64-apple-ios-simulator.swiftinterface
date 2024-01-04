@@ -8,6 +8,7 @@ import RookConnectTransmission
 @_exported import RookSDK
 import RookUsersSDK
 import Swift
+import UIKit
 import _Concurrency
 import _StringProcessing
 @_inheritsConvenienceInitializers @objc final public class RookEventsManager : ObjectiveC.NSObject {
@@ -53,6 +54,9 @@ public enum RookEnvironment {
   final public func clearUser(completion: @escaping (Swift.Result<Swift.Bool, Swift.Error>) -> Swift.Void)
   final public func removeUserFromRook(completion: @escaping (Swift.Result<Swift.Bool, Swift.Error>) -> Swift.Void)
   final public func syncUserTimeZone(completion: @escaping (Swift.Result<Swift.Bool, Swift.Error>) -> Swift.Void)
+  final public func enableYesterdaySync()
+  final public func disableYesterdaySync()
+  final public func isYesterdaySyncEnable() -> Swift.Bool
   @objc deinit
 }
 @_inheritsConvenienceInitializers @_hasMissingDesignatedInitializers @objc final public class RookConnectConfigurationManagerObjc : ObjectiveC.NSObject {
@@ -66,6 +70,9 @@ public enum RookEnvironment {
   @objc final public func clearUser(completion: @escaping (Swift.Bool, Swift.Error?) -> Swift.Void)
   @objc final public func removeUserFromRook(completion: @escaping (Swift.Bool, Swift.Error?) -> Swift.Void)
   @objc final public func syncUserTimeZone(completion: @escaping (Swift.Bool, Swift.Error?) -> Swift.Void)
+  @objc final public func enableYesterdaySync()
+  @objc final public func disableYesterdaySync()
+  @objc final public func isYesterdaySyncEnable() -> Swift.Bool
   @objc deinit
 }
 @_inheritsConvenienceInitializers @objc final public class RookConnectPermissionsManager : ObjectiveC.NSObject {
