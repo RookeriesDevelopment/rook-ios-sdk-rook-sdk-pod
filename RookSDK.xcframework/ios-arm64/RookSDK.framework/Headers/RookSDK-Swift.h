@@ -279,6 +279,9 @@ SWIFT_CLASS_PROPERTY(@property (nonatomic, class, readonly, strong) RookConnectC
 - (void)clearUserWithCompletion:(void (^ _Nonnull)(BOOL, NSError * _Nullable))completion;
 - (void)removeUserFromRookWithCompletion:(void (^ _Nonnull)(BOOL, NSError * _Nullable))completion;
 - (void)syncUserTimeZoneWithCompletion:(void (^ _Nonnull)(BOOL, NSError * _Nullable))completion;
+- (void)enableYesterdaySync;
+- (void)disableYesterdaySync;
+- (BOOL)isYesterdaySyncEnable SWIFT_WARN_UNUSED_RESULT;
 @end
 
 
