@@ -262,6 +262,25 @@ SWIFT_CLASS_PROPERTY(@property (nonatomic, class, readonly, strong) IOSClass * _
 - (void)disableTest;
 @end
 
+
+SWIFT_CLASS("_TtC7RookSDK18RookBackGroundSync")
+@interface RookBackGroundSync : NSObject
+SWIFT_CLASS_PROPERTY(@property (nonatomic, class, readonly, strong) RookBackGroundSync * _Nonnull shared;)
++ (RookBackGroundSync * _Nonnull)shared SWIFT_WARN_UNUSED_RESULT;
+@property (nonatomic, copy) void (^ _Nullable handleSummariesUploaded)(void);
+@property (nonatomic, copy) void (^ _Nullable handleActivityEventsUploaded)(void);
+- (nonnull instancetype)init SWIFT_UNAVAILABLE;
++ (nonnull instancetype)new SWIFT_UNAVAILABLE_MSG("-init is unavailable");
+- (void)setBackListeners;
+- (void)enableBackGroundForSummaries;
+- (void)disableBackGroundForSummaries;
+@end
+
+
+@interface RookBackGroundSync (SWIFT_EXTENSION(RookSDK))
+- (void)enableBackGroundForActivityEvents;
+@end
+
 @class NSString;
 
 SWIFT_CLASS("_TtC7RookSDK35RookConnectConfigurationManagerObjc")
