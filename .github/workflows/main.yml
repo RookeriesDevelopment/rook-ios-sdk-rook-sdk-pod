@@ -21,4 +21,4 @@ jobs:
         pod lib lint
         pod trunk push RookSDK.podspec
       env:
-        RookSDK: ${{ secrets.COCOAPODS_TRUNK_TOKEN }}
+        COCOAPODS_TRUNK_TOKEN: ${{ secrets.COCOAPODS_TRUNK_TOKEN }}
