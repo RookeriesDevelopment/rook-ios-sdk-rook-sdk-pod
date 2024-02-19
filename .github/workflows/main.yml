@@ -17,6 +17,6 @@ jobs:
       
     - name: Deploy to Cocoapods
       run: |
-        pod trunk push RookSDK.podspec
+        pod trunk push secrets.podspec
       env:
-        COCOAPODS_TRUNK_TOKEN: ${{ RookSDK.COCOAPODS_TRUNK_TOKEN }}
+        RookSDK: ${{ secrets.COCOAPODS_TRUNK_TOKEN }}
