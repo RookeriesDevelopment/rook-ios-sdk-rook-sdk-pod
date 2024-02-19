@@ -14,11 +14,11 @@
 		</data>
 		<key>Info.plist</key>
 		<data>
-		09kwTN2hT9eP25vvSHtUoumDr4U=
+		4n6pUdSc5eIsTfo7O2d44zZhshU=
 		</data>
 		<key>Modules/RookSDK.swiftmodule/arm64-apple-ios-simulator.abi.json</key>
 		<data>
-		U/jh5J9CoJ29IcTi9bJ2yWQXAlI=
+		1YiTGnQfi4jQnwa655oN86DXR/c=
 		</data>
 		<key>Modules/RookSDK.swiftmodule/arm64-apple-ios-simulator.private.swiftinterface</key>
 		<data>
@@ -34,11 +34,11 @@
 		</data>
 		<key>Modules/RookSDK.swiftmodule/arm64-apple-ios-simulator.swiftmodule</key>
 		<data>
-		VzyL7GVk0QZOJj7m1OtPXasu0Ns=
+		Ag9OQYZXSm80hsXMU1FlDDL8OuQ=
 		</data>
 		<key>Modules/RookSDK.swiftmodule/x86_64-apple-ios-simulator.abi.json</key>
 		<data>
-		U/jh5J9CoJ29IcTi9bJ2yWQXAlI=
+		1YiTGnQfi4jQnwa655oN86DXR/c=
 		</data>
 		<key>Modules/RookSDK.swiftmodule/x86_64-apple-ios-simulator.private.swiftinterface</key>
 		<data>
@@ -54,7 +54,7 @@
 		</data>
 		<key>Modules/RookSDK.swiftmodule/x86_64-apple-ios-simulator.swiftmodule</key>
 		<data>
-		P1hQ9krQqd6icmRU7qg6xO1DnGY=
+		pKJ4Wpf6z3FWYUc3r2/EBTl/Z0k=
 		</data>
 		<key>Modules/module.modulemap</key>
 		<data>
@@ -81,7 +81,7 @@
 		<dict>
 			<key>hash2</key>
 			<data>
-			omVgC4etGat4S3Wxunm+PPzFWJhegoZh7aIHISbjUVg=
+			Y4bBJQNKG/vM78lNMcruKcZ0CA6JuQycZ2fFjjlg+EE=
 			</data>
 		</dict>
 		<key>Modules/RookSDK.swiftmodule/arm64-apple-ios-simulator.private.swiftinterface</key>
@@ -109,14 +109,14 @@
 		<dict>
 			<key>hash2</key>
 			<data>
-			EL/F35KaQjztoyhni03cFreY1alSd3LnzCQhweTwO0s=
+			fKuLCkrD5FHHlJDIA/0CfSIR0aDSZbXj+2BmHbuBWO8=
 			</data>
 		</dict>
 		<key>Modules/RookSDK.swiftmodule/x86_64-apple-ios-simulator.abi.json</key>
 		<dict>
 			<key>hash2</key>
 			<data>
-			omVgC4etGat4S3Wxunm+PPzFWJhegoZh7aIHISbjUVg=
+			Y4bBJQNKG/vM78lNMcruKcZ0CA6JuQycZ2fFjjlg+EE=
 			</data>
 		</dict>
 		<key>Modules/RookSDK.swiftmodule/x86_64-apple-ios-simulator.private.swiftinterface</key>
@@ -144,7 +144,7 @@
 		<dict>
 			<key>hash2</key>
 			<data>
-			P+09DPpolKZs/qoUduh5dqfaWdS/vLZIRLRsiRV8+Ec=
+			StI/kRuxVkzDU/vrbMlwx+Zpi5lgH9T/S33BMlmN8hg=
 			</data>
 		</dict>
 		<key>Modules/module.modulemap</key>
