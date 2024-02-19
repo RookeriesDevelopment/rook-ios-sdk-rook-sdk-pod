@@ -17,6 +17,8 @@ jobs:
       
     - name: Deploy to Cocoapods
       run: |
+        set -eo pipefail
+        pod lib lint
         pod trunk push RookSDK.podspec
       env:
         RookSDK: ${{ secrets.COCOAPODS_TRUNK_TOKEN }}
