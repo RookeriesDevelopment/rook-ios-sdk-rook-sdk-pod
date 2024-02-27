@@ -1732,6 +1732,65 @@
           },
           {
             "kind": "Function",
+            "name": "syncBodyMetricsEvents",
+            "printedName": "syncBodyMetricsEvents(date:completion:)",
+            "children": [
+              {
+                "kind": "TypeNominal",
+                "name": "Void",
+                "printedName": "()"
+              },
+              {
+                "kind": "TypeNominal",
+                "name": "Date",
+                "printedName": "Foundation.Date",
+                "usr": "s:10Foundation4DateV"
+              },
+              {
+                "kind": "TypeFunc",
+                "name": "Function",
+                "printedName": "(Swift.Result<Swift.Bool, Swift.Error>) -> ()",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "Void",
+                    "printedName": "()"
+                  },
+                  {
+                    "kind": "TypeNominal",
+                    "name": "Result",
+                    "printedName": "Swift.Result<Swift.Bool, Swift.Error>",
+                    "children": [
+                      {
+                        "kind": "TypeNominal",
+                        "name": "Bool",
+                        "printedName": "Swift.Bool",
+                        "usr": "s:Sb"
+                      },
+                      {
+                        "kind": "TypeNominal",
+                        "name": "Error",
+                        "printedName": "Swift.Error",
+                        "usr": "s:s5ErrorP"
+                      }
+                    ],
+                    "usr": "s:s6ResultO"
+                  }
+                ]
+              }
+            ],
+            "declKind": "Func",
+            "usr": "s:7RookSDK0A13EventsManagerC015syncBodyMetricsC04date10completiony10Foundation4DateV_ys6ResultOySbs5Error_pGctF",
+            "mangledName": "$s7RookSDK0A13EventsManagerC015syncBodyMetricsC04date10completiony10Foundation4DateV_ys6ResultOySbs5Error_pGctF",
+            "moduleName": "RookSDK",
+            "declAttributes": [
+              "Final",
+              "AccessControl"
+            ],
+            "funcSelfKind": "NonMutating"
+          },
+          {
+            "kind": "Function",
             "name": "syncPendingEvents",
             "printedName": "syncPendingEvents(completion:)",
             "children": [
@@ -2327,6 +2386,75 @@
             "mangledName": "$s7RookSDK0A13EventsManagerC011syncGlucoseC4Objc4date10completiony10Foundation4DateV_ySb_s5Error_pSgtctF",
             "moduleName": "RookSDK",
             "objc_name": "syncGlucoseEventsObjcWithDate:completion:",
+            "declAttributes": [
+              "Final",
+              "AccessControl",
+              "ObjC"
+            ],
+            "isFromExtension": true,
+            "funcSelfKind": "NonMutating"
+          },
+          {
+            "kind": "Function",
+            "name": "syncBodyMetricsEventsObjc",
+            "printedName": "syncBodyMetricsEventsObjc(date:completion:)",
+            "children": [
+              {
+                "kind": "TypeNominal",
+                "name": "Void",
+                "printedName": "()"
+              },
+              {
+                "kind": "TypeNominal",
+                "name": "Date",
+                "printedName": "Foundation.Date",
+                "usr": "s:10Foundation4DateV"
+              },
+              {
+                "kind": "TypeFunc",
+                "name": "Function",
+                "printedName": "(Swift.Bool, Swift.Error?) -> ()",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "Void",
+                    "printedName": "()"
+                  },
+                  {
+                    "kind": "TypeNominal",
+                    "name": "Tuple",
+                    "printedName": "(Swift.Bool, Swift.Error?)",
+                    "children": [
+                      {
+                        "kind": "TypeNominal",
+                        "name": "Bool",
+                        "printedName": "Swift.Bool",
+                        "usr": "s:Sb"
+                      },
+                      {
+                        "kind": "TypeNominal",
+                        "name": "Optional",
+                        "printedName": "Swift.Error?",
+                        "children": [
+                          {
+                            "kind": "TypeNominal",
+                            "name": "Error",
+                            "printedName": "Swift.Error",
+                            "usr": "s:s5ErrorP"
+                          }
+                        ],
+                        "usr": "s:Sq"
+                      }
+                    ]
+                  }
+                ]
+              }
+            ],
+            "declKind": "Func",
+            "usr": "c:@CM@RookSDK@objc(cs)RookEventsManager(im)syncBodyMetricsEventsObjcWithDate:completion:",
+            "mangledName": "$s7RookSDK0A13EventsManagerC015syncBodyMetricsC4Objc4date10completiony10Foundation4DateV_ySb_s5Error_pSgtctF",
+            "moduleName": "RookSDK",
+            "objc_name": "syncBodyMetricsEventsObjcWithDate:completion:",
             "declAttributes": [
               "Final",
               "AccessControl",
@@ -3766,6 +3894,13 @@
       },
       {
         "kind": "Import",
+        "name": "RookConnectTransmission",
+        "printedName": "RookConnectTransmission",
+        "declKind": "Import",
+        "moduleName": "RookSDK"
+      },
+      {
+        "kind": "Import",
         "name": "Foundation",
         "printedName": "Foundation",
         "declKind": "Import",
@@ -3831,6 +3966,30 @@
         "declAttributes": [
           "RawDocComment"
         ]
+      },
+      {
+        "kind": "Import",
+        "name": "RookConnectTransmission",
+        "printedName": "RookConnectTransmission",
+        "declKind": "Import",
+        "moduleName": "RookSDK"
+      },
+      {
+        "kind": "Import",
+        "name": "Foundation",
+        "printedName": "Foundation",
+        "declKind": "Import",
+        "moduleName": "RookSDK",
+        "declAttributes": [
+          "RawDocComment"
+        ]
+      },
+      {
+        "kind": "Import",
+        "name": "RookAppleHealth",
+        "printedName": "RookAppleHealth",
+        "declKind": "Import",
+        "moduleName": "RookSDK"
       },
       {
         "kind": "Import",
@@ -6467,42 +6626,42 @@
   },
   "ConstValues": [
     {
-      "filePath": "\/Volumes\/workspace\/repository\/RookSDK\/RookSDK\/Source\/Summaries\/Domain\/MissingDaysUseCase.swift",
+      "filePath": "\/Users\/franciscoguerreroescamilla\/Developer\/Rook\/SDK's\/rook_apple_health\/RookSDK\/RookSDK\/Source\/Summaries\/Domain\/MissingDaysUseCase.swift",
       "kind": "IntegerLiteral",
       "offset": 435,
       "length": 2,
       "value": "1"
     },
     {
-      "filePath": "\/Volumes\/workspace\/repository\/RookSDK\/RookSDK\/Source\/Summaries\/Domain\/MissingDaysUseCase.swift",
+      "filePath": "\/Users\/franciscoguerreroescamilla\/Developer\/Rook\/SDK's\/rook_apple_health\/RookSDK\/RookSDK\/Source\/Summaries\/Domain\/MissingDaysUseCase.swift",
       "kind": "IntegerLiteral",
       "offset": 486,
       "length": 1,
       "value": "1"
     },
     {
-      "filePath": "\/Volumes\/workspace\/repository\/RookSDK\/RookSDK\/Source\/Configuration\/Constants\/ForeGroundConstants.swift",
+      "filePath": "\/Users\/franciscoguerreroescamilla\/Developer\/Rook\/SDK's\/rook_apple_health\/RookSDK\/RookSDK\/Source\/Configuration\/Constants\/ForeGroundConstants.swift",
       "kind": "StringLiteral",
       "offset": 211,
       "length": 29,
       "value": "\"rook_isForeGroundSyncEnable\""
     },
     {
-      "filePath": "\/Volumes\/workspace\/repository\/RookSDK\/RookSDK\/Source\/Events\/Domain\/MissingEventsDaysUseCase.swift",
+      "filePath": "\/Users\/franciscoguerreroescamilla\/Developer\/Rook\/SDK's\/rook_apple_health\/RookSDK\/RookSDK\/Source\/Events\/Domain\/MissingEventsDaysUseCase.swift",
       "kind": "IntegerLiteral",
       "offset": 467,
       "length": 1,
       "value": "0"
     },
     {
-      "filePath": "\/Volumes\/workspace\/repository\/RookSDK\/RookSDK\/Source\/Events\/Domain\/SyncYesterdayEventsUseCase.swift",
+      "filePath": "\/Users\/franciscoguerreroescamilla\/Developer\/Rook\/SDK's\/rook_apple_health\/RookSDK\/RookSDK\/Source\/Events\/Domain\/SyncYesterdayEventsUseCase.swift",
       "kind": "BooleanLiteral",
-      "offset": 4490,
+      "offset": 5095,
       "length": 4,
       "value": "true"
     },
     {
-      "filePath": "\/Volumes\/workspace\/repository\/RookSDK\/RookSDK\/Source\/Configuration\/Dev\/IOSClass.swift",
+      "filePath": "\/Users\/franciscoguerreroescamilla\/Developer\/Rook\/SDK's\/rook_apple_health\/RookSDK\/RookSDK\/Source\/Configuration\/Dev\/IOSClass.swift",
       "kind": "BooleanLiteral",
       "offset": 365,
       "length": 5,

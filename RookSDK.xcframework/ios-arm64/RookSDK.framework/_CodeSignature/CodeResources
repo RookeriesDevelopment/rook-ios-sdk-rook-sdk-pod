@@ -6,7 +6,7 @@
 	<dict>
 		<key>Headers/RookSDK-Swift.h</key>
 		<data>
-		2u2V92kZHpfKlIO+3UMTbODsXRU=
+		Wrc28AYoPihz5g27I18y5aklQJg=
 		</data>
 		<key>Headers/RookSDK.h</key>
 		<data>
@@ -18,11 +18,11 @@
 		</data>
 		<key>Modules/RookSDK.swiftmodule/arm64-apple-ios.abi.json</key>
 		<data>
-		U/jh5J9CoJ29IcTi9bJ2yWQXAlI=
+		rRdPdlUX3BpFf3MQ2eqLMgeSwIw=
 		</data>
 		<key>Modules/RookSDK.swiftmodule/arm64-apple-ios.private.swiftinterface</key>
 		<data>
-		ww6j56Jkk+kBUwwY8yMl7kUta+g=
+		/e13UNyqVd73CEpRqCR2BtDkhAk=
 		</data>
 		<key>Modules/RookSDK.swiftmodule/arm64-apple-ios.swiftdoc</key>
 		<data>
@@ -30,11 +30,11 @@
 		</data>
 		<key>Modules/RookSDK.swiftmodule/arm64-apple-ios.swiftinterface</key>
 		<data>
-		ww6j56Jkk+kBUwwY8yMl7kUta+g=
+		/e13UNyqVd73CEpRqCR2BtDkhAk=
 		</data>
 		<key>Modules/RookSDK.swiftmodule/arm64-apple-ios.swiftmodule</key>
 		<data>
-		gwx4cT/EHJ5TR42ke3YnZvThXVs=
+		2mCJqHHKHyrd1Apdhm0wMQEQURw=
 		</data>
 		<key>Modules/module.modulemap</key>
 		<data>
@@ -47,7 +47,7 @@
 		<dict>
 			<key>hash2</key>
 			<data>
-			Jgk8q9M3v0Pq9xJhWgIeb7Yi0mexgmLDJaabpoZwfq4=
+			0BVUm0iECOIDzkHZzRRFVvKMKryeTU679SZLZQxMm0c=
 			</data>
 		</dict>
 		<key>Headers/RookSDK.h</key>
@@ -61,14 +61,14 @@
 		<dict>
 			<key>hash2</key>
 			<data>
-			omVgC4etGat4S3Wxunm+PPzFWJhegoZh7aIHISbjUVg=
+			cn1i+cT54F1oMROwQeQ3oqXZgvLr04J/+bPFqrr8syY=
 			</data>
 		</dict>
 		<key>Modules/RookSDK.swiftmodule/arm64-apple-ios.private.swiftinterface</key>
 		<dict>
 			<key>hash2</key>
 			<data>
-			+Ps2lJFSv6x5mPbIX6LzAOMuyT72F48aB08S6V1h3LU=
+			VFzkrgt4JD1E+Bv1KUuXuCEPq618AzLr84vnhKWPOkA=
 			</data>
 		</dict>
 		<key>Modules/RookSDK.swiftmodule/arm64-apple-ios.swiftdoc</key>
@@ -82,14 +82,14 @@
 		<dict>
 			<key>hash2</key>
 			<data>
-			+Ps2lJFSv6x5mPbIX6LzAOMuyT72F48aB08S6V1h3LU=
+			VFzkrgt4JD1E+Bv1KUuXuCEPq618AzLr84vnhKWPOkA=
 			</data>
 		</dict>
 		<key>Modules/RookSDK.swiftmodule/arm64-apple-ios.swiftmodule</key>
 		<dict>
 			<key>hash2</key>
 			<data>
-			7KTH+w132dMvtadvsqD7gV9vzEtbHsBR7RQi/QQX1Zs=
+			gs+z0Fw/f4eopWaK4Jw951si8HK5p3Lp2W8YsF9B5mo=
 			</data>
 		</dict>
 		<key>Modules/module.modulemap</key>
