@@ -6,7 +6,7 @@
 	<dict>
 		<key>Headers/RookSDK-Swift.h</key>
 		<data>
-		OU0LSsP7HiMBaaGUFyQ4fsZgx2U=
+		ehiy8yfbSz66SMsv1pQBlkkQVQs=
 		</data>
 		<key>Headers/RookSDK.h</key>
 		<data>
@@ -18,11 +18,11 @@
 		</data>
 		<key>Modules/RookSDK.swiftmodule/arm64-apple-ios-simulator.abi.json</key>
 		<data>
-		rRdPdlUX3BpFf3MQ2eqLMgeSwIw=
+		uWBRrAbQbtxI0qeS8DWeMHVDMUs=
 		</data>
 		<key>Modules/RookSDK.swiftmodule/arm64-apple-ios-simulator.private.swiftinterface</key>
 		<data>
-		DIAeLyuzAgSPNppMAwp3pgHzFWQ=
+		ZqWF+afegt/Zw+qImO/7pGfKWes=
 		</data>
 		<key>Modules/RookSDK.swiftmodule/arm64-apple-ios-simulator.swiftdoc</key>
 		<data>
@@ -30,19 +30,19 @@
 		</data>
 		<key>Modules/RookSDK.swiftmodule/arm64-apple-ios-simulator.swiftinterface</key>
 		<data>
-		DIAeLyuzAgSPNppMAwp3pgHzFWQ=
+		ZqWF+afegt/Zw+qImO/7pGfKWes=
 		</data>
 		<key>Modules/RookSDK.swiftmodule/arm64-apple-ios-simulator.swiftmodule</key>
 		<data>
-		zNYx3eM7hzaVK9aFp5FyNG7wUnM=
+		T2Fjn6M+9Q/2k+8pJAAjcDqaPpU=
 		</data>
 		<key>Modules/RookSDK.swiftmodule/x86_64-apple-ios-simulator.abi.json</key>
 		<data>
-		rRdPdlUX3BpFf3MQ2eqLMgeSwIw=
+		uWBRrAbQbtxI0qeS8DWeMHVDMUs=
 		</data>
 		<key>Modules/RookSDK.swiftmodule/x86_64-apple-ios-simulator.private.swiftinterface</key>
 		<data>
-		gOLazanlA0vabSPxZuJjTZgAb34=
+		vULQyjmERu+60xkRyGSJyWiaans=
 		</data>
 		<key>Modules/RookSDK.swiftmodule/x86_64-apple-ios-simulator.swiftdoc</key>
 		<data>
@@ -50,15 +50,19 @@
 		</data>
 		<key>Modules/RookSDK.swiftmodule/x86_64-apple-ios-simulator.swiftinterface</key>
 		<data>
-		gOLazanlA0vabSPxZuJjTZgAb34=
+		vULQyjmERu+60xkRyGSJyWiaans=
 		</data>
 		<key>Modules/RookSDK.swiftmodule/x86_64-apple-ios-simulator.swiftmodule</key>
 		<data>
-		BqPBfHsfQjN0aG55hJxnMsSnMJE=
+		kP0OPWB/o0FFvgfdb0vwv2QgytY=
 		</data>
 		<key>Modules/module.modulemap</key>
 		<data>
 		of+cR+MKu8nZWsB2H2uvRoJR5E4=
+		</data>
+		<key>PrivacyInfo.xcprivacy</key>
+		<data>
+		o8RC9VHfPEvA66TEgh5o4d/ZT+4=
 		</data>
 	</dict>
 	<key>files2</key>
@@ -67,7 +71,7 @@
 		<dict>
 			<key>hash2</key>
 			<data>
-			frNSSFbbNNe6oJHK/NXBAXSMWzsVVAwSSxfP9luuWiQ=
+			ArsonnoXfx+GhsgN/7kJlQA9HSiLtVnLeVGXIMdTQ8g=
 			</data>
 		</dict>
 		<key>Headers/RookSDK.h</key>
@@ -81,14 +85,14 @@
 		<dict>
 			<key>hash2</key>
 			<data>
-			cn1i+cT54F1oMROwQeQ3oqXZgvLr04J/+bPFqrr8syY=
+			ayN6uh+zMY9mME8x820aWnscFv3zJGu/mLQqvPDeoBI=
 			</data>
 		</dict>
 		<key>Modules/RookSDK.swiftmodule/arm64-apple-ios-simulator.private.swiftinterface</key>
 		<dict>
 			<key>hash2</key>
 			<data>
-			vc2qC9YRFL8IZcKbNm0iV4ONzImVj8cGdKU2dVKS93U=
+			FOx1VIF9XijQbEXhgirSWwHKSFpkvdqdCHe9fLhUJ40=
 			</data>
 		</dict>
 		<key>Modules/RookSDK.swiftmodule/arm64-apple-ios-simulator.swiftdoc</key>
@@ -102,28 +106,28 @@
 		<dict>
 			<key>hash2</key>
 			<data>
-			vc2qC9YRFL8IZcKbNm0iV4ONzImVj8cGdKU2dVKS93U=
+			FOx1VIF9XijQbEXhgirSWwHKSFpkvdqdCHe9fLhUJ40=
 			</data>
 		</dict>
 		<key>Modules/RookSDK.swiftmodule/arm64-apple-ios-simulator.swiftmodule</key>
 		<dict>
 			<key>hash2</key>
 			<data>
-			bdnfI6IBVAbGdtXYfxecebPg2rIh9exu+9u06O/G88w=
+			1tkvZ6UrpLWhJyNhQB509IH1QiJb+FeOyUwPT5kT0zM=
 			</data>
 		</dict>
 		<key>Modules/RookSDK.swiftmodule/x86_64-apple-ios-simulator.abi.json</key>
 		<dict>
 			<key>hash2</key>
 			<data>
-			cn1i+cT54F1oMROwQeQ3oqXZgvLr04J/+bPFqrr8syY=
+			ayN6uh+zMY9mME8x820aWnscFv3zJGu/mLQqvPDeoBI=
 			</data>
 		</dict>
 		<key>Modules/RookSDK.swiftmodule/x86_64-apple-ios-simulator.private.swiftinterface</key>
 		<dict>
 			<key>hash2</key>
 			<data>
-			SQJg2hB0W9ryY5CRaakCvkF9y0V22OdQLoSCIxzYZHA=
+			R9bzF22gQHa+eARIWyX9keGhuFx9uQhauR6KxNKliBA=
 			</data>
 		</dict>
 		<key>Modules/RookSDK.swiftmodule/x86_64-apple-ios-simulator.swiftdoc</key>
@@ -137,14 +141,14 @@
 		<dict>
 			<key>hash2</key>
 			<data>
-			SQJg2hB0W9ryY5CRaakCvkF9y0V22OdQLoSCIxzYZHA=
+			R9bzF22gQHa+eARIWyX9keGhuFx9uQhauR6KxNKliBA=
 			</data>
 		</dict>
 		<key>Modules/RookSDK.swiftmodule/x86_64-apple-ios-simulator.swiftmodule</key>
 		<dict>
 			<key>hash2</key>
 			<data>
-			9gAQoCnRor0vr1nGK5Dvf8lQqSB/XGpaq/kMyHxNk8Q=
+			PvAcDyXObP69t4cxuds88I0jqDtS4z2XCHINl3a4740=
 			</data>
 		</dict>
 		<key>Modules/module.modulemap</key>
@@ -152,6 +156,13 @@
 			<key>hash2</key>
 			<data>
 			tbAnyAl13AaDInWfsGBvUINwQLaeDAuIoaaQ4EP7wbc=
+			</data>
+		</dict>
+		<key>PrivacyInfo.xcprivacy</key>
+		<dict>
+			<key>hash2</key>
+			<data>
+			3auCUp8m8vdoISAEktM5Q0md95vO8ijdAfiqgEp3JVw=
 			</data>
 		</dict>
 	</dict>
