@@ -12,22 +12,32 @@ import Swift
 import UIKit
 import _Concurrency
 import _StringProcessing
-@_inheritsConvenienceInitializers @_hasMissingDesignatedInitializers @objc public class RookBackGroundSync : ObjectiveC.NSObject {
-  @objc public static let shared: RookSDK.RookBackGroundSync
-  @objc public var handleSummariesUploaded: (() -> Swift.Void)?
-  @objc public var handleActivityEventsUploaded: (() -> Swift.Void)?
-  @objc public func setBackListeners()
-  @objc public func enableBackGroundForSummaries()
-  @objc public func disableBackGroundForSummaries()
+@_hasMissingDesignatedInitializers final public class RookConnectConfigurationManager {
+  public static let shared: RookSDK.RookConnectConfigurationManager
+  final public func setConfiguration(clientUUID: Swift.String, secretKey: Swift.String)
+  final public func setEnvironment(_ environment: RookSDK.RookEnvironment)
+  final public func initRook()
+  final public func initRook(completion: @escaping (Swift.Result<Swift.Bool, Swift.Error>) -> Swift.Void)
+  final public func updateUserId(_ id: Swift.String, completion: @escaping (Swift.Result<Swift.Bool, Swift.Error>) -> Swift.Void)
+  final public func getUserId(completion: @escaping (Swift.Result<Swift.String, Swift.Error>) -> Swift.Void)
+  final public func clearUser(completion: @escaping (Swift.Result<Swift.Bool, Swift.Error>) -> Swift.Void)
+  final public func removeUserFromRook(completion: @escaping (Swift.Result<Swift.Bool, Swift.Error>) -> Swift.Void)
+  final public func syncUserTimeZone(completion: @escaping (Swift.Result<Swift.Bool, Swift.Error>) -> Swift.Void)
+  @available(*, deprecated, renamed: "enableSync")
+  final public func enableYesterdaySync()
+  final public func enableSync()
+  @available(*, deprecated, renamed: "disableSync")
+  final public func disableYesterdaySync()
+  final public func disableSync()
+  @available(*, deprecated, renamed: "isSyncEnable")
+  final public func isYesterdaySyncEnable() -> Swift.Bool
+  final public func isSyncEnable() -> Swift.Bool
   @objc deinit
-}
-public struct SummarySyncResponse {
-  public var sleepResponse: Swift.Result<Swift.Bool, Swift.Error>?
-  public var physicalResponse: Swift.Result<Swift.Bool, Swift.Error>?
-  public var bodyResponse: Swift.Result<Swift.Bool, Swift.Error>?
 }
 @_inheritsConvenienceInitializers @objc final public class RookEventsManager : ObjectiveC.NSObject {
   @objc override dynamic public init()
+  @objc final public func syncEvents(completion: @escaping () -> Swift.Void)
+  @available(*, deprecated, renamed: "syncEvents")
   @objc final public func syncYesterdayEvents(completion: @escaping () -> Swift.Void)
   final public func syncBodyHeartRateEvent(date: Foundation.Date, completion: @escaping (Swift.Result<Swift.Bool, Swift.Error>) -> Swift.Void)
   final public func syncPhysicalHeartRateEvent(date: Foundation.Date, completion: @escaping (Swift.Result<Swift.Bool, Swift.Error>) -> Swift.Void)
@@ -40,6 +50,41 @@ public struct SummarySyncResponse {
   final public func syncBodyMetricsEvents(date: Foundation.Date, completion: @escaping (Swift.Result<Swift.Bool, Swift.Error>) -> Swift.Void)
   final public func syncPendingEvents(completion: @escaping (Swift.Result<Swift.Bool, Swift.Error>) -> Swift.Void)
   @objc deinit
+}
+public enum RookEnvironment {
+  case sandbox
+  case production
+  public static func == (a: RookSDK.RookEnvironment, b: RookSDK.RookEnvironment) -> Swift.Bool
+  public func hash(into hasher: inout Swift.Hasher)
+  public var hashValue: Swift.Int {
+    get
+  }
+}
+public struct SummarySyncResponse {
+  public var sleepResponse: Swift.Result<Swift.Bool, Swift.Error>?
+  public var physicalResponse: Swift.Result<Swift.Bool, Swift.Error>?
+  public var bodyResponse: Swift.Result<Swift.Bool, Swift.Error>?
+}
+extension RookSDK.RookConnectPermissionsManager {
+  @objc final public func requestAllPermissionsObjc(completion: @escaping (Swift.Bool, Swift.Error?) -> Swift.Void)
+  @objc final public func requestSleepPermissionsObjc(completion: @escaping (Swift.Bool, Swift.Error?) -> Swift.Void)
+  @objc final public func requestUserInfoPermissionsObjc(completion: @escaping (Swift.Bool, Swift.Error?) -> Swift.Void)
+  @objc final public func requestPhysicalPermissionsObjc(completion: @escaping (Swift.Bool, Swift.Error?) -> Swift.Void)
+  @objc final public func requestBodyPermissionsObjc(completion: @escaping (Swift.Bool, Swift.Error?) -> Swift.Void)
+}
+public enum RookEventType {
+  case heartRate
+  case oxygenation
+  case workout
+  case bloodPressure
+  case bloodGlucose
+  case temperature
+  case bodyMetrics
+  public static func == (a: RookSDK.RookEventType, b: RookSDK.RookEventType) -> Swift.Bool
+  public func hash(into hasher: inout Swift.Hasher)
+  public var hashValue: Swift.Int {
+    get
+  }
 }
 public enum RookConnectErrors : Swift.Error {
   case emptySummary
@@ -57,6 +102,50 @@ extension RookSDK.RookConnectErrors : Foundation.LocalizedError {
   public var errorDescription: Swift.String? {
     get
   }
+}
+extension RookSDK.RookBackGroundSync {
+  @objc dynamic public func enableBackGroundForActivityEvents()
+  @objc dynamic public func enableBackGroundForEvents()
+  public func disableBackGroundForActivityEvents(completion: @escaping (Swift.Result<Swift.Bool, Swift.Error>) -> Swift.Void)
+  public func disableBackGroundForEvents(completion: @escaping (Swift.Result<Swift.Bool, Swift.Error>) -> Swift.Void)
+}
+@_inheritsConvenienceInitializers @_hasMissingDesignatedInitializers @objc final public class IOSClass : ObjectiveC.NSObject {
+  @objc public static let shared: RookSDK.IOSClass
+  @objc final public func test()
+  @objc final public func disableTest()
+  @objc deinit
+}
+@_inheritsConvenienceInitializers @_hasMissingDesignatedInitializers @objc final public class RookConnectConfigurationManagerObjc : ObjectiveC.NSObject {
+  @objc public static let shared: RookSDK.RookConnectConfigurationManagerObjc
+  @objc final public func setConfiguration(clientUUID: Swift.String, secretKey: Swift.String)
+  @objc final public func setEnvironmentForSandbox()
+  @objc final public func setEnvironmentForProduction()
+  @objc final public func initRook()
+  @objc final public func updateUserId(_ id: Swift.String, completion: @escaping (Swift.Bool, Swift.Error?) -> Swift.Void)
+  @objc final public func readUserId(completion: @escaping (Swift.String?, Swift.Error?) -> Swift.Void)
+  @objc final public func clearUser(completion: @escaping (Swift.Bool, Swift.Error?) -> Swift.Void)
+  @objc final public func removeUserFromRook(completion: @escaping (Swift.Bool, Swift.Error?) -> Swift.Void)
+  @objc final public func syncUserTimeZone(completion: @escaping (Swift.Bool, Swift.Error?) -> Swift.Void)
+  @available(*, deprecated, renamed: "enableSync")
+  @objc final public func enableYesterdaySync()
+  @objc final public func enableSync()
+  @available(*, deprecated, renamed: "disableSync")
+  @objc final public func disableYesterdaySync()
+  @objc final public func disableSync()
+  @available(*, deprecated, renamed: "isSyncEnable")
+  @objc final public func isYesterdaySyncEnable() -> Swift.Bool
+  @objc final public func isSyncEnable() -> Swift.Bool
+  @objc deinit
+}
+@_inheritsConvenienceInitializers @_hasMissingDesignatedInitializers @objc public class RookBackGroundSync : ObjectiveC.NSObject {
+  @objc public static let shared: RookSDK.RookBackGroundSync
+  @objc public var handleSummariesUploaded: (() -> Swift.Void)?
+  @objc public var handleActivityEventsUploaded: (() -> Swift.Void)?
+  public var handleEventsUploaded: ((RookSDK.RookEventType) -> Swift.Void)?
+  @objc public func setBackListeners()
+  @objc public func enableBackGroundForSummaries()
+  @objc public func disableBackGroundForSummaries()
+  @objc deinit
 }
 @_inheritsConvenienceInitializers @objc final public class RookConnectPermissionsManager : ObjectiveC.NSObject {
   @objc override dynamic public init()
@@ -78,25 +167,16 @@ extension RookSDK.RookEventsManager {
   @objc final public func syncGlucoseEventsObjc(date: Foundation.Date, completion: @escaping (Swift.Bool, Swift.Error?) -> Swift.Void)
   @objc final public func syncBodyMetricsEventsObjc(date: Foundation.Date, completion: @escaping (Swift.Bool, Swift.Error?) -> Swift.Void)
 }
-extension RookSDK.RookConnectPermissionsManager {
-  @objc final public func requestAllPermissionsObjc(completion: @escaping (Swift.Bool, Swift.Error?) -> Swift.Void)
-  @objc final public func requestSleepPermissionsObjc(completion: @escaping (Swift.Bool, Swift.Error?) -> Swift.Void)
-  @objc final public func requestUserInfoPermissionsObjc(completion: @escaping (Swift.Bool, Swift.Error?) -> Swift.Void)
-  @objc final public func requestPhysicalPermissionsObjc(completion: @escaping (Swift.Bool, Swift.Error?) -> Swift.Void)
-  @objc final public func requestBodyPermissionsObjc(completion: @escaping (Swift.Bool, Swift.Error?) -> Swift.Void)
-}
-@_inheritsConvenienceInitializers @_hasMissingDesignatedInitializers @objc final public class IOSClass : ObjectiveC.NSObject {
-  @objc public static let shared: RookSDK.IOSClass
-  @objc final public func test()
-  @objc final public func disableTest()
-  @objc deinit
-}
-extension RookSDK.RookBackGroundSync {
-  @objc dynamic public func enableBackGroundForActivityEvents()
-  public func disableBackGroundForActivityEvents(completion: @escaping (Swift.Result<Swift.Bool, Swift.Error>) -> Swift.Void)
+extension RookSDK.RookSummaryManger {
+  @objc final public func syncSleepSummaryObjc(form date: Foundation.Date, completion: @escaping (Swift.Bool, Swift.Error?) -> Swift.Void)
+  @objc final public func syncPhysicalSummaryObjc(form date: Foundation.Date, completion: @escaping (Swift.Bool, Swift.Error?) -> Swift.Void)
+  @objc final public func syncBodySummaryObjc(from date: Foundation.Date, completion: @escaping (Swift.Bool, Swift.Error?) -> Swift.Void)
+  @objc final public func syncPendingSummariesObjc(completion: @escaping (Swift.Bool, Swift.Error?) -> Swift.Void)
 }
 @_inheritsConvenienceInitializers @objc final public class RookSummaryManger : ObjectiveC.NSObject {
   @objc override dynamic public init()
+  @objc final public func syncSummaries(completion: @escaping () -> Swift.Void)
+  @available(*, deprecated, renamed: "syncSummaries")
   @objc final public func syncYesterdaySummaries(completion: @escaping () -> Swift.Void)
   final public func syncSleepSummary(from date: Foundation.Date, completion: @escaping (Swift.Result<Swift.Bool, Swift.Error>) -> Swift.Void)
   final public func syncPhysicalSummary(from date: Foundation.Date, completion: @escaping (Swift.Result<Swift.Bool, Swift.Error>) -> Swift.Void)
@@ -104,54 +184,9 @@ extension RookSDK.RookBackGroundSync {
   final public func syncPendingSummaries(completion: @escaping (Swift.Result<Swift.Bool, Swift.Error>) -> Swift.Void)
   @objc deinit
 }
-@_hasMissingDesignatedInitializers final public class RookConnectConfigurationManager {
-  public static let shared: RookSDK.RookConnectConfigurationManager
-  final public func setConfiguration(clientUUID: Swift.String, secretKey: Swift.String)
-  final public func setEnvironment(_ environment: RookSDK.RookEnvironment)
-  final public func initRook()
-  final public func initRook(completion: @escaping (Swift.Result<Swift.Bool, Swift.Error>) -> Swift.Void)
-  final public func updateUserId(_ id: Swift.String, completion: @escaping (Swift.Result<Swift.Bool, Swift.Error>) -> Swift.Void)
-  final public func getUserId(completion: @escaping (Swift.Result<Swift.String, Swift.Error>) -> Swift.Void)
-  final public func clearUser(completion: @escaping (Swift.Result<Swift.Bool, Swift.Error>) -> Swift.Void)
-  final public func removeUserFromRook(completion: @escaping (Swift.Result<Swift.Bool, Swift.Error>) -> Swift.Void)
-  final public func syncUserTimeZone(completion: @escaping (Swift.Result<Swift.Bool, Swift.Error>) -> Swift.Void)
-  final public func enableYesterdaySync()
-  final public func disableYesterdaySync()
-  final public func isYesterdaySyncEnable() -> Swift.Bool
-  @objc deinit
-}
-extension RookSDK.RookSummaryManger {
-  @objc final public func syncSleepSummaryObjc(form date: Foundation.Date, completion: @escaping (Swift.Bool, Swift.Error?) -> Swift.Void)
-  @objc final public func syncPhysicalSummaryObjc(form date: Foundation.Date, completion: @escaping (Swift.Bool, Swift.Error?) -> Swift.Void)
-  @objc final public func syncBodySummaryObjc(from date: Foundation.Date, completion: @escaping (Swift.Bool, Swift.Error?) -> Swift.Void)
-  @objc final public func syncPendingSummariesObjc(completion: @escaping (Swift.Bool, Swift.Error?) -> Swift.Void)
-}
-public enum RookEnvironment {
-  case sandbox
-  case production
-  public static func == (a: RookSDK.RookEnvironment, b: RookSDK.RookEnvironment) -> Swift.Bool
-  public func hash(into hasher: inout Swift.Hasher)
-  public var hashValue: Swift.Int {
-    get
-  }
-}
-@_inheritsConvenienceInitializers @_hasMissingDesignatedInitializers @objc final public class RookConnectConfigurationManagerObjc : ObjectiveC.NSObject {
-  @objc public static let shared: RookSDK.RookConnectConfigurationManagerObjc
-  @objc final public func setConfiguration(clientUUID: Swift.String, secretKey: Swift.String)
-  @objc final public func setEnvironmentForSandbox()
-  @objc final public func setEnvironmentForProduction()
-  @objc final public func initRook()
-  @objc final public func updateUserId(_ id: Swift.String, completion: @escaping (Swift.Bool, Swift.Error?) -> Swift.Void)
-  @objc final public func readUserId(completion: @escaping (Swift.String?, Swift.Error?) -> Swift.Void)
-  @objc final public func clearUser(completion: @escaping (Swift.Bool, Swift.Error?) -> Swift.Void)
-  @objc final public func removeUserFromRook(completion: @escaping (Swift.Bool, Swift.Error?) -> Swift.Void)
-  @objc final public func syncUserTimeZone(completion: @escaping (Swift.Bool, Swift.Error?) -> Swift.Void)
-  @objc final public func enableYesterdaySync()
-  @objc final public func disableYesterdaySync()
-  @objc final public func isYesterdaySyncEnable() -> Swift.Bool
-  @objc deinit
-}
-extension RookSDK.RookConnectErrors : Swift.Equatable {}
-extension RookSDK.RookConnectErrors : Swift.Hashable {}
 extension RookSDK.RookEnvironment : Swift.Equatable {}
 extension RookSDK.RookEnvironment : Swift.Hashable {}
+extension RookSDK.RookEventType : Swift.Equatable {}
+extension RookSDK.RookEventType : Swift.Hashable {}
+extension RookSDK.RookConnectErrors : Swift.Equatable {}
+extension RookSDK.RookConnectErrors : Swift.Hashable {}

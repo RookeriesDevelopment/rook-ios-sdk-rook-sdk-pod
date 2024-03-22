@@ -277,8 +277,16 @@ SWIFT_CLASS_PROPERTY(@property (nonatomic, class, readonly, strong) RookBackGrou
 @end
 
 
+
+
+
+
+
+
+
 @interface RookBackGroundSync (SWIFT_EXTENSION(RookSDK))
 - (void)enableBackGroundForActivityEvents;
+- (void)enableBackGroundForEvents;
 @end
 
 @class NSString;
@@ -298,9 +306,12 @@ SWIFT_CLASS_PROPERTY(@property (nonatomic, class, readonly, strong) RookConnectC
 - (void)clearUserWithCompletion:(void (^ _Nonnull)(BOOL, NSError * _Nullable))completion;
 - (void)removeUserFromRookWithCompletion:(void (^ _Nonnull)(BOOL, NSError * _Nullable))completion;
 - (void)syncUserTimeZoneWithCompletion:(void (^ _Nonnull)(BOOL, NSError * _Nullable))completion;
-- (void)enableYesterdaySync;
-- (void)disableYesterdaySync;
-- (BOOL)isYesterdaySyncEnable SWIFT_WARN_UNUSED_RESULT;
+- (void)enableYesterdaySync SWIFT_DEPRECATED_MSG("", "enableSync");
+- (void)enableSync;
+- (void)disableYesterdaySync SWIFT_DEPRECATED_MSG("", "disableSync");
+- (void)disableSync;
+- (BOOL)isYesterdaySyncEnable SWIFT_WARN_UNUSED_RESULT SWIFT_DEPRECATED_MSG("", "isSyncEnable");
+- (BOOL)isSyncEnable SWIFT_WARN_UNUSED_RESULT;
 @end
 
 
@@ -322,7 +333,8 @@ SWIFT_CLASS("_TtC7RookSDK29RookConnectPermissionsManager")
 SWIFT_CLASS("_TtC7RookSDK17RookEventsManager")
 @interface RookEventsManager : NSObject
 - (nonnull instancetype)init OBJC_DESIGNATED_INITIALIZER;
-- (void)syncYesterdayEventsWithCompletion:(void (^ _Nonnull)(void))completion;
+- (void)syncEventsWithCompletion:(void (^ _Nonnull)(void))completion;
+- (void)syncYesterdayEventsWithCompletion:(void (^ _Nonnull)(void))completion SWIFT_DEPRECATED_MSG("", "syncEventsWithCompletion:");
 @end
 
 @class NSDate;
@@ -343,7 +355,8 @@ SWIFT_CLASS("_TtC7RookSDK17RookEventsManager")
 SWIFT_CLASS("_TtC7RookSDK17RookSummaryManger")
 @interface RookSummaryManger : NSObject
 - (nonnull instancetype)init OBJC_DESIGNATED_INITIALIZER;
-- (void)syncYesterdaySummariesWithCompletion:(void (^ _Nonnull)(void))completion;
+- (void)syncSummariesWithCompletion:(void (^ _Nonnull)(void))completion;
+- (void)syncYesterdaySummariesWithCompletion:(void (^ _Nonnull)(void))completion SWIFT_DEPRECATED_MSG("", "syncSummariesWithCompletion:");
 @end
 
 
@@ -641,8 +654,16 @@ SWIFT_CLASS_PROPERTY(@property (nonatomic, class, readonly, strong) RookBackGrou
 @end
 
 
+
+
+
+
+
+
+
 @interface RookBackGroundSync (SWIFT_EXTENSION(RookSDK))
 - (void)enableBackGroundForActivityEvents;
+- (void)enableBackGroundForEvents;
 @end
 
 @class NSString;
@@ -662,9 +683,12 @@ SWIFT_CLASS_PROPERTY(@property (nonatomic, class, readonly, strong) RookConnectC
 - (void)clearUserWithCompletion:(void (^ _Nonnull)(BOOL, NSError * _Nullable))completion;
 - (void)removeUserFromRookWithCompletion:(void (^ _Nonnull)(BOOL, NSError * _Nullable))completion;
 - (void)syncUserTimeZoneWithCompletion:(void (^ _Nonnull)(BOOL, NSError * _Nullable))completion;
-- (void)enableYesterdaySync;
-- (void)disableYesterdaySync;
-- (BOOL)isYesterdaySyncEnable SWIFT_WARN_UNUSED_RESULT;
+- (void)enableYesterdaySync SWIFT_DEPRECATED_MSG("", "enableSync");
+- (void)enableSync;
+- (void)disableYesterdaySync SWIFT_DEPRECATED_MSG("", "disableSync");
+- (void)disableSync;
+- (BOOL)isYesterdaySyncEnable SWIFT_WARN_UNUSED_RESULT SWIFT_DEPRECATED_MSG("", "isSyncEnable");
+- (BOOL)isSyncEnable SWIFT_WARN_UNUSED_RESULT;
 @end
 
 
@@ -686,7 +710,8 @@ SWIFT_CLASS("_TtC7RookSDK29RookConnectPermissionsManager")
 SWIFT_CLASS("_TtC7RookSDK17RookEventsManager")
 @interface RookEventsManager : NSObject
 - (nonnull instancetype)init OBJC_DESIGNATED_INITIALIZER;
-- (void)syncYesterdayEventsWithCompletion:(void (^ _Nonnull)(void))completion;
+- (void)syncEventsWithCompletion:(void (^ _Nonnull)(void))completion;
+- (void)syncYesterdayEventsWithCompletion:(void (^ _Nonnull)(void))completion SWIFT_DEPRECATED_MSG("", "syncEventsWithCompletion:");
 @end
 
 @class NSDate;
@@ -707,7 +732,8 @@ SWIFT_CLASS("_TtC7RookSDK17RookEventsManager")
 SWIFT_CLASS("_TtC7RookSDK17RookSummaryManger")
 @interface RookSummaryManger : NSObject
 - (nonnull instancetype)init OBJC_DESIGNATED_INITIALIZER;
-- (void)syncYesterdaySummariesWithCompletion:(void (^ _Nonnull)(void))completion;
+- (void)syncSummariesWithCompletion:(void (^ _Nonnull)(void))completion;
+- (void)syncYesterdaySummariesWithCompletion:(void (^ _Nonnull)(void))completion SWIFT_DEPRECATED_MSG("", "syncSummariesWithCompletion:");
 @end
 
 
