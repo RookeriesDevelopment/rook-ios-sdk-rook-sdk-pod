@@ -287,6 +287,7 @@ SWIFT_CLASS_PROPERTY(@property (nonatomic, class, readonly, strong) RookBackGrou
 @interface RookBackGroundSync (SWIFT_EXTENSION(RookSDK))
 - (void)enableBackGroundForActivityEvents;
 - (void)enableBackGroundForEvents;
+- (void)disableBackGroundForEvents;
 @end
 
 @class NSString;
@@ -664,6 +665,7 @@ SWIFT_CLASS_PROPERTY(@property (nonatomic, class, readonly, strong) RookBackGrou
 @interface RookBackGroundSync (SWIFT_EXTENSION(RookSDK))
 - (void)enableBackGroundForActivityEvents;
 - (void)enableBackGroundForEvents;
+- (void)disableBackGroundForEvents;
 @end
 
 @class NSString;

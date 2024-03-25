@@ -5665,11 +5665,13 @@
               }
             ],
             "declKind": "Func",
-            "usr": "s:7RookSDK0A14BackGroundSyncC07disablecD9ForEventsyyF",
+            "usr": "c:@CM@RookSDK@objc(cs)RookBackGroundSync(im)disableBackGroundForEvents",
             "mangledName": "$s7RookSDK0A14BackGroundSyncC07disablecD9ForEventsyyF",
             "moduleName": "RookSDK",
             "declAttributes": [
-              "AccessControl"
+              "Dynamic",
+              "AccessControl",
+              "ObjC"
             ],
             "isFromExtension": true,
             "funcSelfKind": "NonMutating"
