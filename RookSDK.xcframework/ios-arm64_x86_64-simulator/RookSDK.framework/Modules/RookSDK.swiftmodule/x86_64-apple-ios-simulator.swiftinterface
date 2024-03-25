@@ -107,7 +107,7 @@ extension RookSDK.RookBackGroundSync {
   @objc dynamic public func enableBackGroundForActivityEvents()
   @objc dynamic public func enableBackGroundForEvents()
   public func disableBackGroundForActivityEvents(completion: @escaping (Swift.Result<Swift.Bool, Swift.Error>) -> Swift.Void)
-  public func disableBackGroundForEvents()
+  @objc dynamic public func disableBackGroundForEvents()
 }
 @_inheritsConvenienceInitializers @_hasMissingDesignatedInitializers @objc final public class IOSClass : ObjectiveC.NSObject {
   @objc public static let shared: RookSDK.IOSClass
