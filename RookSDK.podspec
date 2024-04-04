@@ -2,7 +2,7 @@
 Pod::Spec.new do |spec|
 
   spec.name         = "RookSDK"
-  spec.version      = "1.3.4"
+  spec.version      = "1.3.5"
   spec.summary      = "Rook Connect Apple Health"
 
   spec.description  = "Rook connect apple health allows to synchronize health data from apple health container with the rook servers"
@@ -23,7 +23,7 @@ Pod::Spec.new do |spec|
   spec.ios.deployment_target = '13.0'
   spec.swift_version = '5.0'
 
-  spec.source       = { :git =>  "https://github.com/RookeriesDevelopment/rook-ios-sdk-rook-sdk-pod.git", :tag => "1.3.4" }
+  spec.source       = { :git =>  "https://github.com/RookeriesDevelopment/rook-ios-sdk-rook-sdk-pod.git", :tag => "1.3.5" }
 
   spec.ios.vendored_frameworks = 'RookSDK.xcframework'
 
