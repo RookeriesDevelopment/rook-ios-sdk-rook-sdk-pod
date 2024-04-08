@@ -14,11 +14,11 @@
 		</data>
 		<key>Info.plist</key>
 		<data>
-		09kwTN2hT9eP25vvSHtUoumDr4U=
+		Rg7HcIMzQAXSbbb4BvYARxoeFdA=
 		</data>
 		<key>Modules/RookSDK.swiftmodule/arm64-apple-ios-simulator.abi.json</key>
 		<data>
-		J4l8zg8385ow7w2UV0CQ0I9KsMM=
+		Pt3L2kfJHNy02uy2oU1ipbSbIYA=
 		</data>
 		<key>Modules/RookSDK.swiftmodule/arm64-apple-ios-simulator.private.swiftinterface</key>
 		<data>
@@ -34,11 +34,11 @@
 		</data>
 		<key>Modules/RookSDK.swiftmodule/arm64-apple-ios-simulator.swiftmodule</key>
 		<data>
-		t4hO9cFd9LZ5wkfNxW8kwXAMzcY=
+		87sWuAata34hfY2T3NiMIrwqdRs=
 		</data>
 		<key>Modules/RookSDK.swiftmodule/x86_64-apple-ios-simulator.abi.json</key>
 		<data>
-		J4l8zg8385ow7w2UV0CQ0I9KsMM=
+		Pt3L2kfJHNy02uy2oU1ipbSbIYA=
 		</data>
 		<key>Modules/RookSDK.swiftmodule/x86_64-apple-ios-simulator.private.swiftinterface</key>
 		<data>
@@ -54,7 +54,7 @@
 		</data>
 		<key>Modules/RookSDK.swiftmodule/x86_64-apple-ios-simulator.swiftmodule</key>
 		<data>
-		ZD6r5ZFWjzZtcXKetZe7s2+zCWE=
+		4nS7PcxRh9y3igj4Fqe1ieAHqXY=
 		</data>
 		<key>Modules/module.modulemap</key>
 		<data>
@@ -85,7 +85,7 @@
 		<dict>
 			<key>hash2</key>
 			<data>
-			XOBSNttwfNb8/fm2hROuc6qZ0IETwzmMI6KLpWmtyIY=
+			3FagXpWzV3BqE57dXFMqbzl2tPCdSFTBp2HsjhEmWAU=
 			</data>
 		</dict>
 		<key>Modules/RookSDK.swiftmodule/arm64-apple-ios-simulator.private.swiftinterface</key>
@@ -113,14 +113,14 @@
 		<dict>
 			<key>hash2</key>
 			<data>
-			aC77Ii5nyAqvRtbUj+CHVK9u8dOKpTSJHYEk4F0whfM=
+			zUnqd9bm8fdeLJTT/TLnKpcKyyUjpUU+I0xcswGmWTY=
 			</data>
 		</dict>
 		<key>Modules/RookSDK.swiftmodule/x86_64-apple-ios-simulator.abi.json</key>
 		<dict>
 			<key>hash2</key>
 			<data>
-			XOBSNttwfNb8/fm2hROuc6qZ0IETwzmMI6KLpWmtyIY=
+			3FagXpWzV3BqE57dXFMqbzl2tPCdSFTBp2HsjhEmWAU=
 			</data>
 		</dict>
 		<key>Modules/RookSDK.swiftmodule/x86_64-apple-ios-simulator.private.swiftinterface</key>
@@ -148,7 +148,7 @@
 		<dict>
 			<key>hash2</key>
 			<data>
-			/+30lPFolv1mjqCpSMC1ZzMtVBWiRFuenhuLwyy3O3c=
+			Chrh6isfjyhdRnzy9GyJZIEgQ8rRIVBplM2bUPye+40=
 			</data>
 		</dict>
 		<key>Modules/module.modulemap</key>
