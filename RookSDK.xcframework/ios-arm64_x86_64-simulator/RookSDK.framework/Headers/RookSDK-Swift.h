@@ -230,6 +230,7 @@ using UInt = size_t;
 #if __has_warning("-Watimport-in-framework-header")
 #pragma clang diagnostic ignored "-Watimport-in-framework-header"
 #endif
+@import Foundation;
 @import ObjectiveC;
 #endif
 
@@ -251,6 +252,15 @@ using UInt = size_t;
 #endif
 
 #if defined(__OBJC__)
+@class NSString;
+
+SWIFT_CLASS("_TtC7RookSDK21DataSourceManagerObjc")
+@interface DataSourceManagerObjc : NSObject
+- (nonnull instancetype)init OBJC_DESIGNATED_INITIALIZER;
+- (void)getAvailableDataSourcesWithCompletion:(void (^ _Nonnull)(NSArray<NSDictionary<NSString *, id> *> * _Nullable, NSError * _Nullable))completion;
+- (void)presentDataSourceViewWithCompletion:(void (^ _Nonnull)(BOOL, NSError * _Nullable))completion;
+@end
+
 
 SWIFT_CLASS("_TtC7RookSDK8IOSClass")
 @interface IOSClass : NSObject
@@ -290,7 +300,6 @@ SWIFT_CLASS_PROPERTY(@property (nonatomic, class, readonly, strong) RookBackGrou
 - (void)disableBackGroundForEvents;
 @end
 
-@class NSString;
 
 SWIFT_CLASS("_TtC7RookSDK35RookConnectConfigurationManagerObjc")
 @interface RookConnectConfigurationManagerObjc : NSObject
@@ -608,6 +617,7 @@ using UInt = size_t;
 #if __has_warning("-Watimport-in-framework-header")
 #pragma clang diagnostic ignored "-Watimport-in-framework-header"
 #endif
+@import Foundation;
 @import ObjectiveC;
 #endif
 
@@ -629,6 +639,15 @@ using UInt = size_t;
 #endif
 
 #if defined(__OBJC__)
+@class NSString;
+
+SWIFT_CLASS("_TtC7RookSDK21DataSourceManagerObjc")
+@interface DataSourceManagerObjc : NSObject
+- (nonnull instancetype)init OBJC_DESIGNATED_INITIALIZER;
+- (void)getAvailableDataSourcesWithCompletion:(void (^ _Nonnull)(NSArray<NSDictionary<NSString *, id> *> * _Nullable, NSError * _Nullable))completion;
+- (void)presentDataSourceViewWithCompletion:(void (^ _Nonnull)(BOOL, NSError * _Nullable))completion;
+@end
+
 
 SWIFT_CLASS("_TtC7RookSDK8IOSClass")
 @interface IOSClass : NSObject
@@ -668,7 +687,6 @@ SWIFT_CLASS_PROPERTY(@property (nonatomic, class, readonly, strong) RookBackGrou
 - (void)disableBackGroundForEvents;
 @end
 
-@class NSString;
 
 SWIFT_CLASS("_TtC7RookSDK35RookConnectConfigurationManagerObjc")
 @interface RookConnectConfigurationManagerObjc : NSObject
