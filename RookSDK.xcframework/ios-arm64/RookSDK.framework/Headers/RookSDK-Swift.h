@@ -353,15 +353,15 @@ SWIFT_CLASS("_TtC7RookSDK17RookEventsManager")
 @end
 
 
-SWIFT_CLASS("_TtC7RookSDK17RookSummaryManger")
-@interface RookSummaryManger : NSObject
+SWIFT_CLASS("_TtC7RookSDK18RookSummaryManager")
+@interface RookSummaryManager : NSObject
 - (nonnull instancetype)init OBJC_DESIGNATED_INITIALIZER;
 - (void)syncSummariesWithCompletion:(void (^ _Nonnull)(void))completion;
 - (void)syncYesterdaySummariesWithCompletion:(void (^ _Nonnull)(void))completion SWIFT_DEPRECATED_MSG("", "syncSummariesWithCompletion:");
 @end
 
 
-@interface RookSummaryManger (SWIFT_EXTENSION(RookSDK))
+@interface RookSummaryManager (SWIFT_EXTENSION(RookSDK))
 - (void)syncSleepSummaryObjcWithForm:(NSDate * _Nonnull)date completion:(void (^ _Nonnull)(BOOL, NSError * _Nullable))completion;
 - (void)syncPhysicalSummaryObjcWithForm:(NSDate * _Nonnull)date completion:(void (^ _Nonnull)(BOOL, NSError * _Nullable))completion;
 - (void)syncBodySummaryObjcFrom:(NSDate * _Nonnull)date completion:(void (^ _Nonnull)(BOOL, NSError * _Nullable))completion;

@@ -137,6 +137,12 @@ extension RookSDK.RookBackGroundSync {
   @objc final public func isSyncEnable() -> Swift.Bool
   @objc deinit
 }
+final public class DataSourcesManager {
+  public init()
+  final public func getAvailableDataSources(completion: @escaping (Swift.Result<[RookSDK.RookDataSource], Swift.Error>) -> Swift.Void)
+  final public func presentDataSourceView(completion: @escaping (Swift.Result<Swift.Bool, Swift.Error>) -> Swift.Void)
+  @objc deinit
+}
 @_inheritsConvenienceInitializers @_hasMissingDesignatedInitializers @objc public class RookBackGroundSync : ObjectiveC.NSObject {
   @objc public static let shared: RookSDK.RookBackGroundSync
   @objc public var handleSummariesUploaded: (() -> Swift.Void)?
@@ -167,13 +173,13 @@ extension RookSDK.RookEventsManager {
   @objc final public func syncGlucoseEventsObjc(date: Foundation.Date, completion: @escaping (Swift.Bool, Swift.Error?) -> Swift.Void)
   @objc final public func syncBodyMetricsEventsObjc(date: Foundation.Date, completion: @escaping (Swift.Bool, Swift.Error?) -> Swift.Void)
 }
-extension RookSDK.RookSummaryManger {
+extension RookSDK.RookSummaryManager {
   @objc final public func syncSleepSummaryObjc(form date: Foundation.Date, completion: @escaping (Swift.Bool, Swift.Error?) -> Swift.Void)
   @objc final public func syncPhysicalSummaryObjc(form date: Foundation.Date, completion: @escaping (Swift.Bool, Swift.Error?) -> Swift.Void)
   @objc final public func syncBodySummaryObjc(from date: Foundation.Date, completion: @escaping (Swift.Bool, Swift.Error?) -> Swift.Void)
   @objc final public func syncPendingSummariesObjc(completion: @escaping (Swift.Bool, Swift.Error?) -> Swift.Void)
 }
-@_inheritsConvenienceInitializers @objc final public class RookSummaryManger : ObjectiveC.NSObject {
+@_inheritsConvenienceInitializers @objc final public class RookSummaryManager : ObjectiveC.NSObject {
   @objc override dynamic public init()
   @objc final public func syncSummaries(completion: @escaping () -> Swift.Void)
   @available(*, deprecated, renamed: "syncSummaries")
@@ -183,6 +189,13 @@ extension RookSDK.RookSummaryManger {
   final public func syncBodySummary(from date: Foundation.Date, completion: @escaping (Swift.Result<Swift.Bool, Swift.Error>) -> Swift.Void)
   final public func syncPendingSummaries(completion: @escaping (Swift.Result<Swift.Bool, Swift.Error>) -> Swift.Void)
   @objc deinit
+}
+public struct RookDataSource {
+  public let name: Swift.String
+  public let description: Swift.String
+  public let imageUrl: Swift.String
+  public let connected: Swift.Bool
+  public let authorizationURL: Swift.String?
 }
 extension RookSDK.RookEnvironment : Swift.Equatable {}
 extension RookSDK.RookEnvironment : Swift.Hashable {}
