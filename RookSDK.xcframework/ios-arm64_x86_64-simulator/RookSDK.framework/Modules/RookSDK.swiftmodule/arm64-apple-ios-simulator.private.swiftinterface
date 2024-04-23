@@ -60,6 +60,12 @@ public enum RookEnvironment {
     get
   }
 }
+@_inheritsConvenienceInitializers @objc final public class DataSourceManagerObjc : ObjectiveC.NSObject {
+  @objc override dynamic public init()
+  @objc final public func getAvailableDataSources(completion: @escaping ([[Swift.String : Any]]?, Swift.Error?) -> Swift.Void)
+  @objc final public func presentDataSourceView(completion: @escaping (Swift.Bool, Swift.Error?) -> Swift.Void)
+  @objc deinit
+}
 public struct SummarySyncResponse {
   public var sleepResponse: Swift.Result<Swift.Bool, Swift.Error>?
   public var physicalResponse: Swift.Result<Swift.Bool, Swift.Error>?
