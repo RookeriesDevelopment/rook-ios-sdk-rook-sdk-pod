@@ -32,6 +32,7 @@ import _StringProcessing
   @available(*, deprecated, renamed: "isSyncEnable")
   final public func isYesterdaySyncEnable() -> Swift.Bool
   final public func isSyncEnable() -> Swift.Bool
+  @objc final public func setConsoleLogAvailable(_ value: Swift.Bool)
   @objc deinit
 }
 @_inheritsConvenienceInitializers @objc final public class RookEventsManager : ObjectiveC.NSObject {
