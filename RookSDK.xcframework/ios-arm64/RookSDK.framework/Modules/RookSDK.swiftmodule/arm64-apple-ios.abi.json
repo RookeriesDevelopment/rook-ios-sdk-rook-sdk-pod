@@ -5151,6 +5151,34 @@
               "ObjC"
             ],
             "funcSelfKind": "NonMutating"
+          },
+          {
+            "kind": "Function",
+            "name": "setConsoleLogAvailable",
+            "printedName": "setConsoleLogAvailable(_:)",
+            "children": [
+              {
+                "kind": "TypeNominal",
+                "name": "Void",
+                "printedName": "()"
+              },
+              {
+                "kind": "TypeNominal",
+                "name": "Bool",
+                "printedName": "Swift.Bool",
+                "usr": "s:Sb"
+              }
+            ],
+            "declKind": "Func",
+            "usr": "c:@M@RookSDK@objc(cs)RookConnectConfigurationManagerObjc(im)setConsoleLogAvailable:",
+            "mangledName": "$s7RookSDK0A31ConnectConfigurationManagerObjcC22setConsoleLogAvailableyySbF",
+            "moduleName": "RookSDK",
+            "declAttributes": [
+              "Final",
+              "AccessControl",
+              "ObjC"
+            ],
+            "funcSelfKind": "NonMutating"
           }
         ],
         "declKind": "Class",
