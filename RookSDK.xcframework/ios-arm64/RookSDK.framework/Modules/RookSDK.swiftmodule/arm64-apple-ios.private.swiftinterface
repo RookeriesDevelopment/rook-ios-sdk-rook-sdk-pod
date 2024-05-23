@@ -142,6 +142,7 @@ extension RookSDK.RookBackGroundSync {
   @available(*, deprecated, renamed: "isSyncEnable")
   @objc final public func isYesterdaySyncEnable() -> Swift.Bool
   @objc final public func isSyncEnable() -> Swift.Bool
+  @objc final public func setConsoleLogAvailable(_ value: Swift.Bool)
   @objc deinit
 }
 final public class DataSourcesManager {

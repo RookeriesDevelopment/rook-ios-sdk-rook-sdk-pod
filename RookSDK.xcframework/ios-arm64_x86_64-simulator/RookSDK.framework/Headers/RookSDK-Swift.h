@@ -321,6 +321,7 @@ SWIFT_CLASS_PROPERTY(@property (nonatomic, class, readonly, strong) RookConnectC
 - (void)disableSync;
 - (BOOL)isYesterdaySyncEnable SWIFT_WARN_UNUSED_RESULT SWIFT_DEPRECATED_MSG("", "isSyncEnable");
 - (BOOL)isSyncEnable SWIFT_WARN_UNUSED_RESULT;
+- (void)setConsoleLogAvailable:(BOOL)value;
 @end
 
 
@@ -707,6 +708,7 @@ SWIFT_CLASS_PROPERTY(@property (nonatomic, class, readonly, strong) RookConnectC
 - (void)disableSync;
 - (BOOL)isYesterdaySyncEnable SWIFT_WARN_UNUSED_RESULT SWIFT_DEPRECATED_MSG("", "isSyncEnable");
 - (BOOL)isSyncEnable SWIFT_WARN_UNUSED_RESULT;
+- (void)setConsoleLogAvailable:(BOOL)value;
 @end
 
 
