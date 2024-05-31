@@ -252,6 +252,26 @@ using UInt = size_t;
 #endif
 
 #if defined(__OBJC__)
+
+SWIFT_CLASS("_TtC7RookSDK31AnalyticsExtractionConfigurator")
+@interface AnalyticsExtractionConfigurator : NSObject
+SWIFT_CLASS_PROPERTY(@property (nonatomic, class, readonly, strong) AnalyticsExtractionConfigurator * _Nonnull shared;)
++ (AnalyticsExtractionConfigurator * _Nonnull)shared SWIFT_WARN_UNUSED_RESULT;
+- (nonnull instancetype)init SWIFT_UNAVAILABLE;
++ (nonnull instancetype)new SWIFT_UNAVAILABLE_MSG("-init is unavailable");
+- (void)setPlatformToReact;
+@end
+
+
+SWIFT_CLASS("_TtC7RookSDK33AnalyticsTransmissionConfigurator")
+@interface AnalyticsTransmissionConfigurator : NSObject
+SWIFT_CLASS_PROPERTY(@property (nonatomic, class, readonly, strong) AnalyticsTransmissionConfigurator * _Nonnull shared;)
++ (AnalyticsTransmissionConfigurator * _Nonnull)shared SWIFT_WARN_UNUSED_RESULT;
+- (nonnull instancetype)init SWIFT_UNAVAILABLE;
++ (nonnull instancetype)new SWIFT_UNAVAILABLE_MSG("-init is unavailable");
+- (void)setPlatformToReact;
+@end
+
 @class NSString;
 
 SWIFT_CLASS("_TtC7RookSDK21DataSourceManagerObjc")
@@ -260,6 +280,8 @@ SWIFT_CLASS("_TtC7RookSDK21DataSourceManagerObjc")
 - (void)getAvailableDataSourcesWithCompletion:(void (^ _Nonnull)(NSArray<NSDictionary<NSString *, id> *> * _Nullable, NSError * _Nullable))completion;
 - (void)presentDataSourceViewWithCompletion:(void (^ _Nonnull)(BOOL, NSError * _Nullable))completion;
 @end
+
+
 
 
 SWIFT_CLASS("_TtC7RookSDK8IOSClass")
@@ -271,6 +293,27 @@ SWIFT_CLASS_PROPERTY(@property (nonatomic, class, readonly, strong) IOSClass * _
 - (void)test;
 - (void)disableTest;
 @end
+
+
+SWIFT_CLASS("_TtC7RookSDK24RookBackGroundExtraction")
+@interface RookBackGroundExtraction : NSObject
+@property (nonatomic, readonly, copy) NSString * _Nonnull notificationSteps;
+@property (nonatomic, readonly, copy) NSString * _Nonnull notificationCalories;
+@property (nonatomic, copy) void (^ _Nullable handleStepsUpdate)(NSInteger);
+@property (nonatomic, copy) void (^ _Nullable handleCaloriesUpdate)(NSInteger);
+SWIFT_CLASS_PROPERTY(@property (nonatomic, class, readonly, strong) RookBackGroundExtraction * _Nonnull shared;)
++ (RookBackGroundExtraction * _Nonnull)shared SWIFT_WARN_UNUSED_RESULT;
+- (nonnull instancetype)init SWIFT_UNAVAILABLE;
++ (nonnull instancetype)new SWIFT_UNAVAILABLE_MSG("-init is unavailable");
+- (void)setBackGroundListeners;
+- (void)enableBackGroundForSteps;
+- (void)isStepsBackgroundEnableWithCompletion:(void (^ _Nonnull)(BOOL))completion;
+- (void)disableBackGroundForStepsObjcWithCompletion:(void (^ _Nonnull)(BOOL, NSError * _Nullable))completion;
+- (void)enableBackGroundForCalories;
+- (void)isCaloriesBackgroundEnableWithCompletion:(void (^ _Nonnull)(BOOL))completion;
+- (void)disableBackGroundForCaloriesObjcWithCompletion:(void (^ _Nonnull)(BOOL, NSError * _Nullable))completion;
+@end
+
 
 
 SWIFT_CLASS("_TtC7RookSDK18RookBackGroundSync")
@@ -297,6 +340,12 @@ SWIFT_CLASS_PROPERTY(@property (nonatomic, class, readonly, strong) RookBackGrou
 - (void)enableBackGroundForActivityEvents;
 - (void)enableBackGroundForEvents;
 - (void)disableBackGroundForEvents;
+@end
+
+
+SWIFT_CLASS("_TtC7RookSDK27RookBodyTransmissionManager")
+@interface RookBodyTransmissionManager : NSObject
+- (nonnull instancetype)init OBJC_DESIGNATED_INITIALIZER;
 @end
 
 
@@ -362,6 +411,34 @@ SWIFT_CLASS("_TtC7RookSDK17RookEventsManager")
 @end
 
 
+SWIFT_CLASS("_TtC7RookSDK21RookExtractionManager")
+@interface RookExtractionManager : NSObject
+- (nonnull instancetype)init OBJC_DESIGNATED_INITIALIZER;
+@end
+
+
+SWIFT_CLASS("_TtC7RookSDK24RookPermissionExtraction")
+@interface RookPermissionExtraction : NSObject
+- (nonnull instancetype)init OBJC_DESIGNATED_INITIALIZER;
+- (void)requestAllPermissionsObjcWithCompletion:(void (^ _Nonnull)(BOOL, NSError * _Nullable))completion;
+- (void)requestSleepPermissionsObjcWithCompletion:(void (^ _Nonnull)(BOOL, NSError * _Nullable))completion;
+- (void)requestPhysicalPermissionsObjcWithCompletion:(void (^ _Nonnull)(BOOL, NSError * _Nullable))completion;
+- (void)requestBodyPermissionsObjcWithCompletion:(void (^ _Nonnull)(BOOL, NSError * _Nullable))completion;
+@end
+
+
+SWIFT_CLASS("_TtC7RookSDK31RookPhysicalTransmissionManager")
+@interface RookPhysicalTransmissionManager : NSObject
+- (nonnull instancetype)init OBJC_DESIGNATED_INITIALIZER;
+@end
+
+
+SWIFT_CLASS("_TtC7RookSDK28RookSleepTransmissionManager")
+@interface RookSleepTransmissionManager : NSObject
+- (nonnull instancetype)init OBJC_DESIGNATED_INITIALIZER;
+@end
+
+
 SWIFT_CLASS("_TtC7RookSDK18RookSummaryManager")
 @interface RookSummaryManager : NSObject
 - (nonnull instancetype)init OBJC_DESIGNATED_INITIALIZER;
@@ -375,6 +452,18 @@ SWIFT_CLASS("_TtC7RookSDK18RookSummaryManager")
 - (void)syncPhysicalSummaryObjcWithForm:(NSDate * _Nonnull)date completion:(void (^ _Nonnull)(BOOL, NSError * _Nullable))completion;
 - (void)syncBodySummaryObjcFrom:(NSDate * _Nonnull)date completion:(void (^ _Nonnull)(BOOL, NSError * _Nullable))completion;
 - (void)syncPendingSummariesObjcWithCompletion:(void (^ _Nonnull)(BOOL, NSError * _Nullable))completion;
+@end
+
+
+SWIFT_CLASS("_TtC7RookSDK29RookVariableExtractionManager")
+@interface RookVariableExtractionManager : NSObject
+- (nonnull instancetype)init OBJC_DESIGNATED_INITIALIZER;
+@end
+
+
+@interface RookVariableExtractionManager (SWIFT_EXTENSION(RookSDK))
+- (void)getTodayStepsWithCompletion:(void (^ _Nonnull)(NSInteger, NSError * _Nullable))completion;
+- (void)getTodayActiveCaloriesBurnedWithCompletion:(void (^ _Nonnull)(NSInteger, NSError * _Nullable))completion;
 @end
 
 #endif
