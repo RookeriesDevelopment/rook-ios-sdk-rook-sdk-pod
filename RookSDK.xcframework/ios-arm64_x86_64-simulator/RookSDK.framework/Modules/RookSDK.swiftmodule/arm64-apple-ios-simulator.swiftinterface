@@ -30,7 +30,10 @@ final public class RookTimeZoneManager {
   final public func uploadUserTimeZone(timezone: Swift.String, offset: Swift.Int, completion: @escaping (Swift.Result<Swift.Bool, Swift.Error>) -> Swift.Void)
   @objc deinit
 }
-public enum RookDataType : Swift.String {
+public enum RookDataType : Swift.String, Swift.CaseIterable, Swift.Identifiable {
+  public var id: RookSDK.RookDataType {
+    get
+  }
   case sleepSummary
   case physicalSummary
   case bodySummary
@@ -45,7 +48,12 @@ public enum RookDataType : Swift.String {
   case nutritionEvent
   case bloodPressureEvent
   public init?(rawValue: Swift.String)
+  public typealias AllCases = [RookSDK.RookDataType]
+  public typealias ID = RookSDK.RookDataType
   public typealias RawValue = Swift.String
+  public static var allCases: [RookSDK.RookDataType] {
+    get
+  }
   public var rawValue: Swift.String {
     get
   }
@@ -1231,7 +1239,7 @@ public struct PressureAverageSystolicDiastolicGranularItem : Swift.Codable {
   public func encode(to encoder: Swift.Encoder) throws
   public init(from decoder: Swift.Decoder) throws
 }
-public enum RookTransmissionEventType : Swift.String {
+public enum RookTransmissionEventType : Swift.String, Swift.CaseIterable {
   case heartRateBodyEvent
   case heartRatePhysicalEvent
   case oxygenationBodyEvent
@@ -1242,7 +1250,11 @@ public enum RookTransmissionEventType : Swift.String {
   case bloodPressureEvent
   case bodyMetricsEvent
   public init?(rawValue: Swift.String)
+  public typealias AllCases = [RookSDK.RookTransmissionEventType]
   public typealias RawValue = Swift.String
+  public static var allCases: [RookSDK.RookTransmissionEventType] {
+    get
+  }
   public var rawValue: Swift.String {
     get
   }
@@ -1509,12 +1521,16 @@ public struct RookPositionGranularItem : Swift.Encodable {
   @objc final public func presentDataSourceView(completion: @escaping (Swift.Bool, Swift.Error?) -> Swift.Void)
   @objc deinit
 }
-public enum RookTransmissionSummaryType : Swift.String {
+public enum RookTransmissionSummaryType : Swift.String, Swift.CaseIterable {
   case sleep
   case physical
   case body
   public init?(rawValue: Swift.String)
+  public typealias AllCases = [RookSDK.RookTransmissionSummaryType]
   public typealias RawValue = Swift.String
+  public static var allCases: [RookSDK.RookTransmissionSummaryType] {
+    get
+  }
   public var rawValue: Swift.String {
     get
   }

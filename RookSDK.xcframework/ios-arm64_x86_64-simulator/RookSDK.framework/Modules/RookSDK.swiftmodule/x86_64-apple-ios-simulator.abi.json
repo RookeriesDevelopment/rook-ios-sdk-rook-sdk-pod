@@ -623,6 +623,46 @@
         "children": [
           {
             "kind": "Var",
+            "name": "id",
+            "printedName": "id",
+            "children": [
+              {
+                "kind": "TypeNominal",
+                "name": "RookDataType",
+                "printedName": "RookSDK.RookDataType",
+                "usr": "s:7RookSDK0A8DataTypeO"
+              }
+            ],
+            "declKind": "Var",
+            "usr": "s:7RookSDK0A8DataTypeO2idACvp",
+            "mangledName": "$s7RookSDK0A8DataTypeO2idACvp",
+            "moduleName": "RookSDK",
+            "declAttributes": [
+              "AccessControl"
+            ],
+            "accessors": [
+              {
+                "kind": "Accessor",
+                "name": "Get",
+                "printedName": "Get()",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "RookDataType",
+                    "printedName": "RookSDK.RookDataType",
+                    "usr": "s:7RookSDK0A8DataTypeO"
+                  }
+                ],
+                "declKind": "Accessor",
+                "usr": "s:7RookSDK0A8DataTypeO2idACvg",
+                "mangledName": "$s7RookSDK0A8DataTypeO2idACvg",
+                "moduleName": "RookSDK",
+                "accessorKind": "get"
+              }
+            ]
+          },
+          {
+            "kind": "Var",
             "name": "sleepSummary",
             "printedName": "sleepSummary",
             "children": [
@@ -1173,6 +1213,63 @@
                 "accessorKind": "get"
               }
             ]
+          },
+          {
+            "kind": "Var",
+            "name": "allCases",
+            "printedName": "allCases",
+            "children": [
+              {
+                "kind": "TypeNominal",
+                "name": "Array",
+                "printedName": "[RookSDK.RookDataType]",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "RookDataType",
+                    "printedName": "RookSDK.RookDataType",
+                    "usr": "s:7RookSDK0A8DataTypeO"
+                  }
+                ],
+                "usr": "s:Sa"
+              }
+            ],
+            "declKind": "Var",
+            "usr": "s:7RookSDK0A8DataTypeO8allCasesSayACGvpZ",
+            "mangledName": "$s7RookSDK0A8DataTypeO8allCasesSayACGvpZ",
+            "moduleName": "RookSDK",
+            "static": true,
+            "implicit": true,
+            "accessors": [
+              {
+                "kind": "Accessor",
+                "name": "Get",
+                "printedName": "Get()",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "Array",
+                    "printedName": "[RookSDK.RookDataType]",
+                    "children": [
+                      {
+                        "kind": "TypeNominal",
+                        "name": "RookDataType",
+                        "printedName": "RookSDK.RookDataType",
+                        "usr": "s:7RookSDK0A8DataTypeO"
+                      }
+                    ],
+                    "usr": "s:Sa"
+                  }
+                ],
+                "declKind": "Accessor",
+                "usr": "s:7RookSDK0A8DataTypeO8allCasesSayACGvgZ",
+                "mangledName": "$s7RookSDK0A8DataTypeO8allCasesSayACGvgZ",
+                "moduleName": "RookSDK",
+                "static": true,
+                "implicit": true,
+                "accessorKind": "get"
+              }
+            ]
           }
         ],
         "declKind": "Enum",
@@ -1219,6 +1316,58 @@
             ],
             "usr": "s:SY",
             "mangledName": "$sSY"
+          },
+          {
+            "kind": "Conformance",
+            "name": "CaseIterable",
+            "printedName": "CaseIterable",
+            "children": [
+              {
+                "kind": "TypeWitness",
+                "name": "AllCases",
+                "printedName": "AllCases",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "Array",
+                    "printedName": "[RookSDK.RookDataType]",
+                    "children": [
+                      {
+                        "kind": "TypeNominal",
+                        "name": "RookDataType",
+                        "printedName": "RookSDK.RookDataType",
+                        "usr": "s:7RookSDK0A8DataTypeO"
+                      }
+                    ],
+                    "usr": "s:Sa"
+                  }
+                ]
+              }
+            ],
+            "usr": "s:s12CaseIterableP",
+            "mangledName": "$ss12CaseIterableP"
+          },
+          {
+            "kind": "Conformance",
+            "name": "Identifiable",
+            "printedName": "Identifiable",
+            "children": [
+              {
+                "kind": "TypeWitness",
+                "name": "ID",
+                "printedName": "ID",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "RookDataType",
+                    "printedName": "RookSDK.RookDataType",
+                    "usr": "s:7RookSDK0A8DataTypeO"
+                  }
+                ]
+              }
+            ],
+            "usr": "s:s12IdentifiableP",
+            "mangledName": "$ss12IdentifiableP"
           }
         ]
       },
@@ -47910,6 +48059,16 @@
       },
       {
         "kind": "Import",
+        "name": "Foundation",
+        "printedName": "Foundation",
+        "declKind": "Import",
+        "moduleName": "RookSDK",
+        "declAttributes": [
+          "RawDocComment"
+        ]
+      },
+      {
+        "kind": "Import",
         "name": "HealthKit",
         "printedName": "HealthKit",
         "declKind": "Import",
@@ -57888,6 +58047,63 @@
                 "accessorKind": "get"
               }
             ]
+          },
+          {
+            "kind": "Var",
+            "name": "allCases",
+            "printedName": "allCases",
+            "children": [
+              {
+                "kind": "TypeNominal",
+                "name": "Array",
+                "printedName": "[RookSDK.RookTransmissionEventType]",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "RookTransmissionEventType",
+                    "printedName": "RookSDK.RookTransmissionEventType",
+                    "usr": "s:7RookSDK0A21TransmissionEventTypeO"
+                  }
+                ],
+                "usr": "s:Sa"
+              }
+            ],
+            "declKind": "Var",
+            "usr": "s:7RookSDK0A21TransmissionEventTypeO8allCasesSayACGvpZ",
+            "mangledName": "$s7RookSDK0A21TransmissionEventTypeO8allCasesSayACGvpZ",
+            "moduleName": "RookSDK",
+            "static": true,
+            "implicit": true,
+            "accessors": [
+              {
+                "kind": "Accessor",
+                "name": "Get",
+                "printedName": "Get()",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "Array",
+                    "printedName": "[RookSDK.RookTransmissionEventType]",
+                    "children": [
+                      {
+                        "kind": "TypeNominal",
+                        "name": "RookTransmissionEventType",
+                        "printedName": "RookSDK.RookTransmissionEventType",
+                        "usr": "s:7RookSDK0A21TransmissionEventTypeO"
+                      }
+                    ],
+                    "usr": "s:Sa"
+                  }
+                ],
+                "declKind": "Accessor",
+                "usr": "s:7RookSDK0A21TransmissionEventTypeO8allCasesSayACGvgZ",
+                "mangledName": "$s7RookSDK0A21TransmissionEventTypeO8allCasesSayACGvgZ",
+                "moduleName": "RookSDK",
+                "static": true,
+                "implicit": true,
+                "accessorKind": "get"
+              }
+            ]
           }
         ],
         "declKind": "Enum",
@@ -57934,6 +58150,36 @@
             ],
             "usr": "s:SY",
             "mangledName": "$sSY"
+          },
+          {
+            "kind": "Conformance",
+            "name": "CaseIterable",
+            "printedName": "CaseIterable",
+            "children": [
+              {
+                "kind": "TypeWitness",
+                "name": "AllCases",
+                "printedName": "AllCases",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "Array",
+                    "printedName": "[RookSDK.RookTransmissionEventType]",
+                    "children": [
+                      {
+                        "kind": "TypeNominal",
+                        "name": "RookTransmissionEventType",
+                        "printedName": "RookSDK.RookTransmissionEventType",
+                        "usr": "s:7RookSDK0A21TransmissionEventTypeO"
+                      }
+                    ],
+                    "usr": "s:Sa"
+                  }
+                ]
+              }
+            ],
+            "usr": "s:s12CaseIterableP",
+            "mangledName": "$ss12CaseIterableP"
           }
         ]
       },
@@ -70066,6 +70312,63 @@
                 "accessorKind": "get"
               }
             ]
+          },
+          {
+            "kind": "Var",
+            "name": "allCases",
+            "printedName": "allCases",
+            "children": [
+              {
+                "kind": "TypeNominal",
+                "name": "Array",
+                "printedName": "[RookSDK.RookTransmissionSummaryType]",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "RookTransmissionSummaryType",
+                    "printedName": "RookSDK.RookTransmissionSummaryType",
+                    "usr": "s:7RookSDK0A23TransmissionSummaryTypeO"
+                  }
+                ],
+                "usr": "s:Sa"
+              }
+            ],
+            "declKind": "Var",
+            "usr": "s:7RookSDK0A23TransmissionSummaryTypeO8allCasesSayACGvpZ",
+            "mangledName": "$s7RookSDK0A23TransmissionSummaryTypeO8allCasesSayACGvpZ",
+            "moduleName": "RookSDK",
+            "static": true,
+            "implicit": true,
+            "accessors": [
+              {
+                "kind": "Accessor",
+                "name": "Get",
+                "printedName": "Get()",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "Array",
+                    "printedName": "[RookSDK.RookTransmissionSummaryType]",
+                    "children": [
+                      {
+                        "kind": "TypeNominal",
+                        "name": "RookTransmissionSummaryType",
+                        "printedName": "RookSDK.RookTransmissionSummaryType",
+                        "usr": "s:7RookSDK0A23TransmissionSummaryTypeO"
+                      }
+                    ],
+                    "usr": "s:Sa"
+                  }
+                ],
+                "declKind": "Accessor",
+                "usr": "s:7RookSDK0A23TransmissionSummaryTypeO8allCasesSayACGvgZ",
+                "mangledName": "$s7RookSDK0A23TransmissionSummaryTypeO8allCasesSayACGvgZ",
+                "moduleName": "RookSDK",
+                "static": true,
+                "implicit": true,
+                "accessorKind": "get"
+              }
+            ]
           }
         ],
         "declKind": "Enum",
@@ -70112,6 +70415,36 @@
             ],
             "usr": "s:SY",
             "mangledName": "$sSY"
+          },
+          {
+            "kind": "Conformance",
+            "name": "CaseIterable",
+            "printedName": "CaseIterable",
+            "children": [
+              {
+                "kind": "TypeWitness",
+                "name": "AllCases",
+                "printedName": "AllCases",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "Array",
+                    "printedName": "[RookSDK.RookTransmissionSummaryType]",
+                    "children": [
+                      {
+                        "kind": "TypeNominal",
+                        "name": "RookTransmissionSummaryType",
+                        "printedName": "RookSDK.RookTransmissionSummaryType",
+                        "usr": "s:7RookSDK0A23TransmissionSummaryTypeO"
+                      }
+                    ],
+                    "usr": "s:Sa"
+                  }
+                ]
+              }
+            ],
+            "usr": "s:s12CaseIterableP",
+            "mangledName": "$ss12CaseIterableP"
           }
         ]
       },
@@ -86348,182 +86681,182 @@
     {
       "filePath": "\/Users\/franciscoguerreroescamilla\/Developer\/Rook\/SDK's\/RookAuthenticationSDK\/RookSDK\/Source\/Modules\/Extraction\/Data\/Storage\/Constants\/UserDefaultsKeys.swift",
       "kind": "StringLiteral",
-      "offset": 193,
+      "offset": 259,
       "length": 33,
       "value": "\"rook_last_sleep_date_extraction\""
     },
     {
       "filePath": "\/Users\/franciscoguerreroescamilla\/Developer\/Rook\/SDK's\/RookAuthenticationSDK\/RookSDK\/Source\/Modules\/Extraction\/Data\/Storage\/Constants\/UserDefaultsKeys.swift",
       "kind": "StringLiteral",
-      "offset": 252,
+      "offset": 318,
       "length": 36,
       "value": "\"rook_last_physical_date_extraction\""
     },
     {
       "filePath": "\/Users\/franciscoguerreroescamilla\/Developer\/Rook\/SDK's\/RookAuthenticationSDK\/RookSDK\/Source\/Modules\/Extraction\/Data\/Storage\/Constants\/UserDefaultsKeys.swift",
       "kind": "StringLiteral",
-      "offset": 310,
+      "offset": 376,
       "length": 32,
       "value": "\"rook_last_body_date_extraction\""
     },
     {
       "filePath": "\/Users\/franciscoguerreroescamilla\/Developer\/Rook\/SDK's\/RookAuthenticationSDK\/RookSDK\/Source\/Modules\/Extraction\/Data\/Storage\/Constants\/UserDefaultsKeys.swift",
       "kind": "StringLiteral",
-      "offset": 368,
+      "offset": 434,
       "length": 37,
       "value": "\"rook_last_user_info_date_extraction\""
     },
     {
       "filePath": "\/Users\/franciscoguerreroescamilla\/Developer\/Rook\/SDK's\/RookAuthenticationSDK\/RookSDK\/Source\/Modules\/Extraction\/Data\/Storage\/Constants\/UserDefaultsKeys.swift",
       "kind": "StringLiteral",
-      "offset": 434,
+      "offset": 500,
       "length": 38,
       "value": "\"rook_last_heart_rate_body_extraction\""
     },
     {
       "filePath": "\/Users\/franciscoguerreroescamilla\/Developer\/Rook\/SDK's\/RookAuthenticationSDK\/RookSDK\/Source\/Modules\/Extraction\/Data\/Storage\/Constants\/UserDefaultsKeys.swift",
       "kind": "StringLiteral",
-      "offset": 505,
+      "offset": 571,
       "length": 42,
       "value": "\"rook_last_heart_rate_physical_extraction\""
     },
     {
       "filePath": "\/Users\/franciscoguerreroescamilla\/Developer\/Rook\/SDK's\/RookAuthenticationSDK\/RookSDK\/Source\/Modules\/Extraction\/Data\/Storage\/Constants\/UserDefaultsKeys.swift",
       "kind": "StringLiteral",
-      "offset": 578,
+      "offset": 644,
       "length": 39,
       "value": "\"rook_last_oxygenation_body_extraction\""
     },
     {
       "filePath": "\/Users\/franciscoguerreroescamilla\/Developer\/Rook\/SDK's\/RookAuthenticationSDK\/RookSDK\/Source\/Modules\/Extraction\/Data\/Storage\/Constants\/UserDefaultsKeys.swift",
       "kind": "StringLiteral",
-      "offset": 652,
+      "offset": 718,
       "length": 43,
       "value": "\"rook_last_oxygenation_physical_extraction\""
     },
     {
       "filePath": "\/Users\/franciscoguerreroescamilla\/Developer\/Rook\/SDK's\/RookAuthenticationSDK\/RookSDK\/Source\/Modules\/Extraction\/Data\/Storage\/Constants\/UserDefaultsKeys.swift",
       "kind": "StringLiteral",
-      "offset": 719,
+      "offset": 785,
       "length": 31,
       "value": "\"rook_last_activity_extraction\""
     },
     {
       "filePath": "\/Users\/franciscoguerreroescamilla\/Developer\/Rook\/SDK's\/RookAuthenticationSDK\/RookSDK\/Source\/Modules\/Extraction\/Data\/Storage\/Constants\/UserDefaultsKeys.swift",
       "kind": "StringLiteral",
-      "offset": 777,
+      "offset": 843,
       "length": 34,
       "value": "\"rook_last_temperature_extraction\""
     },
     {
       "filePath": "\/Users\/franciscoguerreroescamilla\/Developer\/Rook\/SDK's\/RookAuthenticationSDK\/RookSDK\/Source\/Modules\/Extraction\/Data\/Storage\/Constants\/UserDefaultsKeys.swift",
       "kind": "StringLiteral",
-      "offset": 839,
+      "offset": 905,
       "length": 36,
       "value": "\"rook_last_blood_glucose_extraction\""
     },
     {
       "filePath": "\/Users\/franciscoguerreroescamilla\/Developer\/Rook\/SDK's\/RookAuthenticationSDK\/RookSDK\/Source\/Modules\/Extraction\/Data\/Storage\/Constants\/UserDefaultsKeys.swift",
       "kind": "StringLiteral",
-      "offset": 900,
+      "offset": 966,
       "length": 32,
       "value": "\"rook_last_nutrition_extraction\""
     },
     {
       "filePath": "\/Users\/franciscoguerreroescamilla\/Developer\/Rook\/SDK's\/RookAuthenticationSDK\/RookSDK\/Source\/Modules\/Extraction\/Data\/Storage\/Constants\/UserDefaultsKeys.swift",
       "kind": "StringLiteral",
-      "offset": 961,
+      "offset": 1027,
       "length": 37,
       "value": "\"rook_last_blood_pressure_extraction\""
     },
     {
       "filePath": "\/Users\/franciscoguerreroescamilla\/Developer\/Rook\/SDK's\/RookAuthenticationSDK\/RookSDK\/Source\/Modules\/Extraction\/Data\/Storage\/Constants\/UserDefaultsKeys.swift",
       "kind": "StringLiteral",
-      "offset": 193,
+      "offset": 259,
       "length": 33,
       "value": "\"rook_last_sleep_date_extraction\""
     },
     {
       "filePath": "\/Users\/franciscoguerreroescamilla\/Developer\/Rook\/SDK's\/RookAuthenticationSDK\/RookSDK\/Source\/Modules\/Extraction\/Data\/Storage\/Constants\/UserDefaultsKeys.swift",
       "kind": "StringLiteral",
-      "offset": 252,
+      "offset": 318,
       "length": 36,
       "value": "\"rook_last_physical_date_extraction\""
     },
     {
       "filePath": "\/Users\/franciscoguerreroescamilla\/Developer\/Rook\/SDK's\/RookAuthenticationSDK\/RookSDK\/Source\/Modules\/Extraction\/Data\/Storage\/Constants\/UserDefaultsKeys.swift",
       "kind": "StringLiteral",
-      "offset": 310,
+      "offset": 376,
       "length": 32,
       "value": "\"rook_last_body_date_extraction\""
     },
     {
       "filePath": "\/Users\/franciscoguerreroescamilla\/Developer\/Rook\/SDK's\/RookAuthenticationSDK\/RookSDK\/Source\/Modules\/Extraction\/Data\/Storage\/Constants\/UserDefaultsKeys.swift",
       "kind": "StringLiteral",
-      "offset": 368,
+      "offset": 434,
       "length": 37,
       "value": "\"rook_last_user_info_date_extraction\""
     },
     {
       "filePath": "\/Users\/franciscoguerreroescamilla\/Developer\/Rook\/SDK's\/RookAuthenticationSDK\/RookSDK\/Source\/Modules\/Extraction\/Data\/Storage\/Constants\/UserDefaultsKeys.swift",
       "kind": "StringLiteral",
-      "offset": 434,
+      "offset": 500,
       "length": 38,
       "value": "\"rook_last_heart_rate_body_extraction\""
     },
     {
       "filePath": "\/Users\/franciscoguerreroescamilla\/Developer\/Rook\/SDK's\/RookAuthenticationSDK\/RookSDK\/Source\/Modules\/Extraction\/Data\/Storage\/Constants\/UserDefaultsKeys.swift",
       "kind": "StringLiteral",
-      "offset": 505,
+      "offset": 571,
       "length": 42,
       "value": "\"rook_last_heart_rate_physical_extraction\""
     },
     {
       "filePath": "\/Users\/franciscoguerreroescamilla\/Developer\/Rook\/SDK's\/RookAuthenticationSDK\/RookSDK\/Source\/Modules\/Extraction\/Data\/Storage\/Constants\/UserDefaultsKeys.swift",
       "kind": "StringLiteral",
-      "offset": 578,
+      "offset": 644,
       "length": 39,
       "value": "\"rook_last_oxygenation_body_extraction\""
     },
     {
       "filePath": "\/Users\/franciscoguerreroescamilla\/Developer\/Rook\/SDK's\/RookAuthenticationSDK\/RookSDK\/Source\/Modules\/Extraction\/Data\/Storage\/Constants\/UserDefaultsKeys.swift",
       "kind": "StringLiteral",
-      "offset": 652,
+      "offset": 718,
       "length": 43,
       "value": "\"rook_last_oxygenation_physical_extraction\""
     },
     {
       "filePath": "\/Users\/franciscoguerreroescamilla\/Developer\/Rook\/SDK's\/RookAuthenticationSDK\/RookSDK\/Source\/Modules\/Extraction\/Data\/Storage\/Constants\/UserDefaultsKeys.swift",
       "kind": "StringLiteral",
-      "offset": 719,
+      "offset": 785,
       "length": 31,
       "value": "\"rook_last_activity_extraction\""
     },
     {
       "filePath": "\/Users\/franciscoguerreroescamilla\/Developer\/Rook\/SDK's\/RookAuthenticationSDK\/RookSDK\/Source\/Modules\/Extraction\/Data\/Storage\/Constants\/UserDefaultsKeys.swift",
       "kind": "StringLiteral",
-      "offset": 777,
+      "offset": 843,
       "length": 34,
       "value": "\"rook_last_temperature_extraction\""
     },
     {
       "filePath": "\/Users\/franciscoguerreroescamilla\/Developer\/Rook\/SDK's\/RookAuthenticationSDK\/RookSDK\/Source\/Modules\/Extraction\/Data\/Storage\/Constants\/UserDefaultsKeys.swift",
       "kind": "StringLiteral",
-      "offset": 839,
+      "offset": 905,
       "length": 36,
       "value": "\"rook_last_blood_glucose_extraction\""
     },
     {
       "filePath": "\/Users\/franciscoguerreroescamilla\/Developer\/Rook\/SDK's\/RookAuthenticationSDK\/RookSDK\/Source\/Modules\/Extraction\/Data\/Storage\/Constants\/UserDefaultsKeys.swift",
       "kind": "StringLiteral",
-      "offset": 900,
+      "offset": 966,
       "length": 32,
       "value": "\"rook_last_nutrition_extraction\""
     },
     {
       "filePath": "\/Users\/franciscoguerreroescamilla\/Developer\/Rook\/SDK's\/RookAuthenticationSDK\/RookSDK\/Source\/Modules\/Extraction\/Data\/Storage\/Constants\/UserDefaultsKeys.swift",
       "kind": "StringLiteral",
-      "offset": 961,
+      "offset": 1027,
       "length": 37,
       "value": "\"rook_last_blood_pressure_extraction\""
     },
@@ -87034,14 +87367,14 @@
     {
       "filePath": "\/Users\/franciscoguerreroescamilla\/Developer\/Rook\/SDK's\/RookAuthenticationSDK\/RookSDK\/Source\/Modules\/Configuration\/RookConnectConfigurationManager.swift",
       "kind": "BooleanLiteral",
-      "offset": 1391,
+      "offset": 1392,
       "length": 5,
       "value": "false"
     },
     {
       "filePath": "\/Users\/franciscoguerreroescamilla\/Developer\/Rook\/SDK's\/RookAuthenticationSDK\/RookSDK\/Source\/Modules\/Configuration\/RookConnectConfigurationManager.swift",
       "kind": "BooleanLiteral",
-      "offset": 1440,
+      "offset": 1441,
       "length": 5,
       "value": "false"
     },
@@ -95539,126 +95872,126 @@
     {
       "filePath": "\/Users\/franciscoguerreroescamilla\/Developer\/Rook\/SDK's\/RookAuthenticationSDK\/RookSDK\/Source\/Modules\/Transmission\/Data\/Storage\/TransmissionLocalDataSource\/Entities\/RookTransmissionEventType.swift",
       "kind": "StringLiteral",
-      "offset": 226,
+      "offset": 240,
       "length": 40,
       "value": "\"rook_last_heart_rate_body_transmission\""
     },
     {
       "filePath": "\/Users\/franciscoguerreroescamilla\/Developer\/Rook\/SDK's\/RookAuthenticationSDK\/RookSDK\/Source\/Modules\/Transmission\/Data\/Storage\/TransmissionLocalDataSource\/Entities\/RookTransmissionEventType.swift",
       "kind": "StringLiteral",
-      "offset": 299,
+      "offset": 313,
       "length": 44,
       "value": "\"rook_last_heart_rate_physical_transmission\""
     },
     {
       "filePath": "\/Users\/franciscoguerreroescamilla\/Developer\/Rook\/SDK's\/RookAuthenticationSDK\/RookSDK\/Source\/Modules\/Transmission\/Data\/Storage\/TransmissionLocalDataSource\/Entities\/RookTransmissionEventType.swift",
       "kind": "StringLiteral",
-      "offset": 374,
+      "offset": 388,
       "length": 41,
       "value": "\"rook_last_oxygenation_body_transmission\""
     },
     {
       "filePath": "\/Users\/franciscoguerreroescamilla\/Developer\/Rook\/SDK's\/RookAuthenticationSDK\/RookSDK\/Source\/Modules\/Transmission\/Data\/Storage\/TransmissionLocalDataSource\/Entities\/RookTransmissionEventType.swift",
       "kind": "StringLiteral",
-      "offset": 450,
+      "offset": 464,
       "length": 45,
       "value": "\"rook_last_oxygenation_physical_transmission\""
     },
     {
       "filePath": "\/Users\/franciscoguerreroescamilla\/Developer\/Rook\/SDK's\/RookAuthenticationSDK\/RookSDK\/Source\/Modules\/Transmission\/Data\/Storage\/TransmissionLocalDataSource\/Entities\/RookTransmissionEventType.swift",
       "kind": "StringLiteral",
-      "offset": 519,
+      "offset": 533,
       "length": 33,
       "value": "\"rook_last_activity_transmission\""
     },
     {
       "filePath": "\/Users\/franciscoguerreroescamilla\/Developer\/Rook\/SDK's\/RookAuthenticationSDK\/RookSDK\/Source\/Modules\/Transmission\/Data\/Storage\/TransmissionLocalDataSource\/Entities\/RookTransmissionEventType.swift",
       "kind": "StringLiteral",
-      "offset": 579,
+      "offset": 593,
       "length": 36,
       "value": "\"rook_last_temperature_transmission\""
     },
     {
       "filePath": "\/Users\/franciscoguerreroescamilla\/Developer\/Rook\/SDK's\/RookAuthenticationSDK\/RookSDK\/Source\/Modules\/Transmission\/Data\/Storage\/TransmissionLocalDataSource\/Entities\/RookTransmissionEventType.swift",
       "kind": "StringLiteral",
-      "offset": 643,
+      "offset": 657,
       "length": 38,
       "value": "\"rook_last_blood_glucose_transmission\""
     },
     {
       "filePath": "\/Users\/franciscoguerreroescamilla\/Developer\/Rook\/SDK's\/RookAuthenticationSDK\/RookSDK\/Source\/Modules\/Transmission\/Data\/Storage\/TransmissionLocalDataSource\/Entities\/RookTransmissionEventType.swift",
       "kind": "StringLiteral",
-      "offset": 710,
+      "offset": 724,
       "length": 39,
       "value": "\"rook_last_blood_pressure_transmission\""
     },
     {
       "filePath": "\/Users\/franciscoguerreroescamilla\/Developer\/Rook\/SDK's\/RookAuthenticationSDK\/RookSDK\/Source\/Modules\/Transmission\/Data\/Storage\/TransmissionLocalDataSource\/Entities\/RookTransmissionEventType.swift",
       "kind": "StringLiteral",
-      "offset": 776,
+      "offset": 790,
       "length": 37,
       "value": "\"rook_last_body_metrics_transmission\""
     },
     {
       "filePath": "\/Users\/franciscoguerreroescamilla\/Developer\/Rook\/SDK's\/RookAuthenticationSDK\/RookSDK\/Source\/Modules\/Transmission\/Data\/Storage\/TransmissionLocalDataSource\/Entities\/RookTransmissionEventType.swift",
       "kind": "StringLiteral",
-      "offset": 226,
+      "offset": 240,
       "length": 40,
       "value": "\"rook_last_heart_rate_body_transmission\""
     },
     {
       "filePath": "\/Users\/franciscoguerreroescamilla\/Developer\/Rook\/SDK's\/RookAuthenticationSDK\/RookSDK\/Source\/Modules\/Transmission\/Data\/Storage\/TransmissionLocalDataSource\/Entities\/RookTransmissionEventType.swift",
       "kind": "StringLiteral",
-      "offset": 299,
+      "offset": 313,
       "length": 44,
       "value": "\"rook_last_heart_rate_physical_transmission\""
     },
     {
       "filePath": "\/Users\/franciscoguerreroescamilla\/Developer\/Rook\/SDK's\/RookAuthenticationSDK\/RookSDK\/Source\/Modules\/Transmission\/Data\/Storage\/TransmissionLocalDataSource\/Entities\/RookTransmissionEventType.swift",
       "kind": "StringLiteral",
-      "offset": 374,
+      "offset": 388,
       "length": 41,
       "value": "\"rook_last_oxygenation_body_transmission\""
     },
     {
       "filePath": "\/Users\/franciscoguerreroescamilla\/Developer\/Rook\/SDK's\/RookAuthenticationSDK\/RookSDK\/Source\/Modules\/Transmission\/Data\/Storage\/TransmissionLocalDataSource\/Entities\/RookTransmissionEventType.swift",
       "kind": "StringLiteral",
-      "offset": 450,
+      "offset": 464,
       "length": 45,
       "value": "\"rook_last_oxygenation_physical_transmission\""
     },
     {
       "filePath": "\/Users\/franciscoguerreroescamilla\/Developer\/Rook\/SDK's\/RookAuthenticationSDK\/RookSDK\/Source\/Modules\/Transmission\/Data\/Storage\/TransmissionLocalDataSource\/Entities\/RookTransmissionEventType.swift",
       "kind": "StringLiteral",
-      "offset": 519,
+      "offset": 533,
       "length": 33,
       "value": "\"rook_last_activity_transmission\""
     },
     {
       "filePath": "\/Users\/franciscoguerreroescamilla\/Developer\/Rook\/SDK's\/RookAuthenticationSDK\/RookSDK\/Source\/Modules\/Transmission\/Data\/Storage\/TransmissionLocalDataSource\/Entities\/RookTransmissionEventType.swift",
       "kind": "StringLiteral",
-      "offset": 579,
+      "offset": 593,
       "length": 36,
       "value": "\"rook_last_temperature_transmission\""
     },
     {
       "filePath": "\/Users\/franciscoguerreroescamilla\/Developer\/Rook\/SDK's\/RookAuthenticationSDK\/RookSDK\/Source\/Modules\/Transmission\/Data\/Storage\/TransmissionLocalDataSource\/Entities\/RookTransmissionEventType.swift",
       "kind": "StringLiteral",
-      "offset": 643,
+      "offset": 657,
       "length": 38,
       "value": "\"rook_last_blood_glucose_transmission\""
     },
     {
       "filePath": "\/Users\/franciscoguerreroescamilla\/Developer\/Rook\/SDK's\/RookAuthenticationSDK\/RookSDK\/Source\/Modules\/Transmission\/Data\/Storage\/TransmissionLocalDataSource\/Entities\/RookTransmissionEventType.swift",
       "kind": "StringLiteral",
-      "offset": 710,
+      "offset": 724,
       "length": 39,
       "value": "\"rook_last_blood_pressure_transmission\""
     },
     {
       "filePath": "\/Users\/franciscoguerreroescamilla\/Developer\/Rook\/SDK's\/RookAuthenticationSDK\/RookSDK\/Source\/Modules\/Transmission\/Data\/Storage\/TransmissionLocalDataSource\/Entities\/RookTransmissionEventType.swift",
       "kind": "StringLiteral",
-      "offset": 776,
+      "offset": 790,
       "length": 37,
       "value": "\"rook_last_body_metrics_transmission\""
     },
@@ -96381,7 +96714,7 @@
       "kind": "StringLiteral",
       "offset": 1255,
       "length": 7,
-      "value": "\"1.5.1\""
+      "value": "\"1.5.2\""
     },
     {
       "filePath": "\/Users\/franciscoguerreroescamilla\/Developer\/Rook\/SDK's\/RookAuthenticationSDK\/RookSDK\/Source\/Modules\/Transmission\/TransmissionManager\/RookEvents\/RookActivityEventTransmission\/Entities\/Granular\/RookActivityLevelGranularTransmission.swift",
@@ -98255,42 +98588,42 @@
     {
       "filePath": "\/Users\/franciscoguerreroescamilla\/Developer\/Rook\/SDK's\/RookAuthenticationSDK\/RookSDK\/Source\/Modules\/Transmission\/Data\/Storage\/TransmissionLocalDataSource\/Entities\/RookTransmissionSummmaryType.swift",
       "kind": "StringLiteral",
-      "offset": 217,
+      "offset": 231,
       "length": 35,
       "value": "\"rook_last_sleep_date_transmission\""
     },
     {
       "filePath": "\/Users\/franciscoguerreroescamilla\/Developer\/Rook\/SDK's\/RookAuthenticationSDK\/RookSDK\/Source\/Modules\/Transmission\/Data\/Storage\/TransmissionLocalDataSource\/Entities\/RookTransmissionSummmaryType.swift",
       "kind": "StringLiteral",
-      "offset": 271,
+      "offset": 285,
       "length": 38,
       "value": "\"rook_last_physical_date_transmission\""
     },
     {
       "filePath": "\/Users\/franciscoguerreroescamilla\/Developer\/Rook\/SDK's\/RookAuthenticationSDK\/RookSDK\/Source\/Modules\/Transmission\/Data\/Storage\/TransmissionLocalDataSource\/Entities\/RookTransmissionSummmaryType.swift",
       "kind": "StringLiteral",
-      "offset": 324,
+      "offset": 338,
       "length": 34,
       "value": "\"rook_last_body_date_transmission\""
     },
     {
       "filePath": "\/Users\/franciscoguerreroescamilla\/Developer\/Rook\/SDK's\/RookAuthenticationSDK\/RookSDK\/Source\/Modules\/Transmission\/Data\/Storage\/TransmissionLocalDataSource\/Entities\/RookTransmissionSummmaryType.swift",
       "kind": "StringLiteral",
-      "offset": 217,
+      "offset": 231,
       "length": 35,
       "value": "\"rook_last_sleep_date_transmission\""
     },
     {
       "filePath": "\/Users\/franciscoguerreroescamilla\/Developer\/Rook\/SDK's\/RookAuthenticationSDK\/RookSDK\/Source\/Modules\/Transmission\/Data\/Storage\/TransmissionLocalDataSource\/Entities\/RookTransmissionSummmaryType.swift",
       "kind": "StringLiteral",
-      "offset": 271,
+      "offset": 285,
       "length": 38,
       "value": "\"rook_last_physical_date_transmission\""
     },
     {
       "filePath": "\/Users\/franciscoguerreroescamilla\/Developer\/Rook\/SDK's\/RookAuthenticationSDK\/RookSDK\/Source\/Modules\/Transmission\/Data\/Storage\/TransmissionLocalDataSource\/Entities\/RookTransmissionSummmaryType.swift",
       "kind": "StringLiteral",
-      "offset": 324,
+      "offset": 338,
       "length": 34,
       "value": "\"rook_last_body_date_transmission\""
     },
