@@ -21,8 +21,8 @@ public struct RookLapGranularItem : Swift.Encodable {
 }
 final public class DataSourcesManager {
   public init()
-  final public func getAvailableDataSources(completion: @escaping (Swift.Result<[RookSDK.RookDataSource], Swift.Error>) -> Swift.Void)
-  final public func presentDataSourceView(completion: @escaping (Swift.Result<Swift.Bool, Swift.Error>) -> Swift.Void)
+  final public func getAvailableDataSources(redirectURL: Swift.String?, completion: @escaping (Swift.Result<[RookSDK.RookDataSource], Swift.Error>) -> Swift.Void)
+  final public func presentDataSourceView(redirectURL: Swift.String?, completion: @escaping (Swift.Result<Swift.Bool, Swift.Error>) -> Swift.Void)
   @objc deinit
 }
 final public class RookTimeZoneManager {
@@ -153,7 +153,7 @@ public struct VoltageECGMeasurement {
 }
 @_hasMissingDesignatedInitializers final public class RookConnectConfigurationManager {
   public static let shared: RookSDK.RookConnectConfigurationManager
-  final public func setConfiguration(clientUUID: Swift.String, secretKey: Swift.String)
+  final public func setConfiguration(clientUUID: Swift.String, secretKey: Swift.String, enableBackgroundSync: Swift.Bool)
   final public func setEnvironment(_ environment: RookSDK.RookEnvironment)
   final public func initRook()
   final public func initRook(completion: @escaping (Swift.Result<Swift.Bool, Swift.Error>) -> Swift.Void)
@@ -437,17 +437,6 @@ public struct RookVelocityVectorItemTransmission : Swift.Codable {
   public init(speedMetersPerSecond: Swift.Int, direction: Swift.String)
   public func encode(to encoder: Swift.Encoder) throws
   public init(from decoder: Swift.Decoder) throws
-}
-@_inheritsConvenienceInitializers @objc final public class RookSleepTransmissionManager : ObjectiveC.NSObject {
-  @objc override dynamic public init()
-  final public func enqueueSleepSummary(with extractionData: Foundation.Data, completion: @escaping (Swift.Result<Swift.Bool, Swift.Error>) -> Swift.Void)
-  final public func getSleepSummariesStored(completion: @escaping (Swift.Result<[RookSDK.RookSleepData], Swift.Error>) -> Swift.Void)
-  #if compiler(>=5.3) && $AsyncAwait
-  final public func uploadSleepSummariesAsync() async throws -> Swift.Bool
-  #endif
-  final public func uploadSleepSummaries(completion: @escaping (Swift.Result<Swift.Bool, Swift.Error>) -> Swift.Void)
-  final public func getLastSleepSummaryTransmittedDate() -> Foundation.Date?
-  @objc deinit
 }
 public struct RookHRVSdnnGranularTransmission : Swift.Codable {
   public let datetime: Foundation.Date
@@ -1340,17 +1329,6 @@ public struct RookCadenceGranularItemTransmission : Swift.Codable {
   public func encode(to encoder: Swift.Encoder) throws
   public init(from decoder: Swift.Decoder) throws
 }
-@_inheritsConvenienceInitializers @objc final public class RookPhysicalTransmissionManager : ObjectiveC.NSObject {
-  @objc override dynamic public init()
-  final public func enqueuePhysicalSummary(with extractionData: Foundation.Data, completion: @escaping (Swift.Result<Swift.Bool, Swift.Error>) -> Swift.Void)
-  final public func getPhysicalSummariesStored(completion: @escaping (Swift.Result<[RookSDK.RookPhysicalData], Swift.Error>) -> Swift.Void)
-  #if compiler(>=5.3) && $AsyncAwait
-  final public func uploadPhysicalSummariesAsync() async throws -> Swift.Bool
-  #endif
-  final public func uploadPhysicalSummaries(completion: @escaping (Swift.Result<Swift.Bool, Swift.Error>) -> Swift.Void)
-  final public func getLastPhysicalSummaryTransmittedDate() -> Foundation.Date?
-  @objc deinit
-}
 public struct RookActivityLevelGranularTransmission : Swift.Codable {
   public let dateTime: Foundation.Date
   public let activityLevel: Swift.Int
@@ -1437,7 +1415,7 @@ public enum HTTPMethod : Swift.String {
 }
 @_inheritsConvenienceInitializers @_hasMissingDesignatedInitializers @objc final public class RookConnectConfigurationManagerObjc : ObjectiveC.NSObject {
   @objc public static let shared: RookSDK.RookConnectConfigurationManagerObjc
-  @objc final public func setConfiguration(clientUUID: Swift.String, secretKey: Swift.String)
+  @objc final public func setConfiguration(clientUUID: Swift.String, secretKey: Swift.String, enableBackgroundSync: Swift.Bool)
   @objc final public func setEnvironmentForSandbox()
   @objc final public func setEnvironmentForProduction()
   @objc final public func initRook()
@@ -1517,8 +1495,8 @@ public struct RookPositionGranularItem : Swift.Encodable {
 }
 @_inheritsConvenienceInitializers @objc final public class DataSourceManagerObjc : ObjectiveC.NSObject {
   @objc override dynamic public init()
-  @objc final public func getAvailableDataSources(completion: @escaping ([[Swift.String : Any]]?, Swift.Error?) -> Swift.Void)
-  @objc final public func presentDataSourceView(completion: @escaping (Swift.Bool, Swift.Error?) -> Swift.Void)
+  @objc final public func getAvailableDataSources(redirectURL: Swift.String?, completion: @escaping ([[Swift.String : Any]]?, Swift.Error?) -> Swift.Void)
+  @objc final public func presentDataSourceView(redirectURL: Swift.String?, completion: @escaping (Swift.Bool, Swift.Error?) -> Swift.Void)
   @objc deinit
 }
 public enum RookTransmissionSummaryType : Swift.String, Swift.CaseIterable {
@@ -1799,17 +1777,6 @@ extension RookSDK.RookTransmissionError : Foundation.LocalizedError {
   public var errorDescription: Swift.String? {
     get
   }
-}
-@_inheritsConvenienceInitializers @objc final public class RookBodyTransmissionManager : ObjectiveC.NSObject {
-  @objc override dynamic public init()
-  final public func enqueueBodySummary(with extractionData: Foundation.Data, completion: @escaping (Swift.Result<Swift.Bool, Swift.Error>) -> Swift.Void)
-  final public func getBodySummariesStored(completion: @escaping (Swift.Result<[RookSDK.RookBodyData], Swift.Error>) -> Swift.Void)
-  #if compiler(>=5.3) && $AsyncAwait
-  final public func uploadBodySummariesAsync() async throws -> Swift.Bool
-  #endif
-  final public func uploadBodySummaries(completion: @escaping (Swift.Result<Swift.Bool, Swift.Error>) -> Swift.Void)
-  final public func getLastBodySummaryTransmittedDate() -> Foundation.Date?
-  @objc deinit
 }
 public struct RookMovementData : Swift.Encodable {
   public let speedNormalizedMetersPerSecond: Swift.Int?
