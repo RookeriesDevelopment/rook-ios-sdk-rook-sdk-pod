@@ -2,7 +2,7 @@
 Pod::Spec.new do |spec|
 
   spec.name         = "RookSDK"
-  spec.version      = "1.5.6"
+  spec.version      = "1.5.7"
   spec.summary      = "Rook Connect Apple Health"
 
   spec.description  = "Rook connect apple health allows to synchronize health data from apple health container with the rook servers"
