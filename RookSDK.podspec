@@ -20,7 +20,7 @@ Pod::Spec.new do |spec|
   spec.ios.deployment_target = '13.0'
   spec.swift_version = '5.0'
 
-  spec.source       = { :git =>  "https://github.com/RookeriesDevelopment/rook-ios-sdk-rook-sdk-pod.git", :tag => "1.5.6" }
+  spec.source       = { :git =>  "https://github.com/RookeriesDevelopment/rook-ios-sdk-rook-sdk-pod.git", :tag => "1.5.7" }
 
   spec.ios.vendored_frameworks = 'RookSDK.xcframework'
 
