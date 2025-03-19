@@ -1015,6 +1015,7 @@ public struct StatusDataSources {
   public let appleHealth: Swift.Bool?
   public let healthConnect: Swift.Bool?
   public let android: Swift.Bool?
+  public let dexcom: Swift.Bool?
 }
 public struct DataSourceStatus {
   public let source: Swift.String
