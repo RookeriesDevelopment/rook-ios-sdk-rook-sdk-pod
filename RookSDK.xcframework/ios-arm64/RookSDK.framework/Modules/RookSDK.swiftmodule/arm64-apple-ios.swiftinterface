@@ -27,7 +27,7 @@ final public class DataSourcesManager {
   @available(*, deprecated, message: "This method is deprecated and it will be removed in a future version")
   final public func presentDataSourceView(redirectURL: Swift.String?, completion: @escaping (Swift.Result<Swift.Bool, any Swift.Error>) -> Swift.Void)
   final public func getAuthorizedDataSources(completion: @escaping (Swift.Result<RookSDK.StatusDataSources, any Swift.Error>) -> Swift.Void)
-  final public func getAuthorizedDataSources(completion: @escaping (Swift.Result<[RookSDK.DataSourceStatus], any Swift.Error>) -> Swift.Void)
+  final public func getAuthorizedSources(completion: @escaping (Swift.Result<[RookSDK.DataSourceStatus], any Swift.Error>) -> Swift.Void)
   final public func getDataSourceAuthorizer(dataSource: Swift.String, redirectUrl: Swift.String? = nil, completion: @escaping (Swift.Result<RookSDK.DataSourceAuthorizer, any Swift.Error>) -> Swift.Void)
   #if compiler(>=5.3) && $AsyncAwait
   @available(*, deprecated, message: "This method is deprecated and it will be removed in a future version")
