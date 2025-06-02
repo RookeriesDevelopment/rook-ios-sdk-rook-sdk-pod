@@ -38578,20 +38578,20 @@
       "filePath": "\/Users\/franciscoguerreroescamilla\/Developer\/Rook\/SDK's\/RookAuthenticationSDK\/RookSDK\/Source\/Modules\/AutomaticUpload\/BackGround\/Domain\/MissingDaysUseCase.swift",
       "kind": "IntegerLiteral",
       "offset": 486,
-      "length": 1,
-      "value": "1"
-    },
-    {
-      "filePath": "\/Users\/franciscoguerreroescamilla\/Developer\/Rook\/SDK's\/RookAuthenticationSDK\/RookSDK\/Source\/Modules\/AutomaticUpload\/BackGround\/Domain\/MissingDaysUseCase.swift",
-      "kind": "IntegerLiteral",
-      "offset": 536,
       "length": 2,
       "value": "30"
     },
     {
       "filePath": "\/Users\/franciscoguerreroescamilla\/Developer\/Rook\/SDK's\/RookAuthenticationSDK\/RookSDK\/Source\/Modules\/AutomaticUpload\/BackGround\/Domain\/MissingDaysUseCase.swift",
       "kind": "IntegerLiteral",
-      "offset": 572,
+      "offset": 522,
+      "length": 1,
+      "value": "1"
+    },
+    {
+      "filePath": "\/Users\/franciscoguerreroescamilla\/Developer\/Rook\/SDK's\/RookAuthenticationSDK\/RookSDK\/Source\/Modules\/AutomaticUpload\/BackGround\/Domain\/MissingDaysUseCase.swift",
+      "kind": "IntegerLiteral",
+      "offset": 555,
       "length": 1,
       "value": "1"
     },
@@ -41932,7 +41932,7 @@
       "kind": "StringLiteral",
       "offset": 1494,
       "length": 12,
-      "value": "\"1.7.5-rc.1\""
+      "value": "\"1.7.5-rc.2\""
     },
     {
       "filePath": "\/Users\/franciscoguerreroescamilla\/Developer\/Rook\/SDK's\/RookAuthenticationSDK\/RookSDK\/Source\/ConfigFiles\/ConfigConstants.swift",
