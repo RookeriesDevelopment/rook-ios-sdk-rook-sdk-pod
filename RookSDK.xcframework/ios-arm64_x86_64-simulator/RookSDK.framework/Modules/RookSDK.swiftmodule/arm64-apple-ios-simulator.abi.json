@@ -795,6 +795,35 @@
             ],
             "throwing": true,
             "funcSelfKind": "NonMutating"
+          },
+          {
+            "kind": "Function",
+            "name": "updateAppleHealthStatus",
+            "printedName": "updateAppleHealthStatus(_:)",
+            "children": [
+              {
+                "kind": "TypeNominal",
+                "name": "Bool",
+                "printedName": "Swift.Bool",
+                "usr": "s:Sb"
+              },
+              {
+                "kind": "TypeNominal",
+                "name": "Bool",
+                "printedName": "Swift.Bool",
+                "usr": "s:Sb"
+              }
+            ],
+            "declKind": "Func",
+            "usr": "s:7RookSDK18DataSourcesManagerC23updateAppleHealthStatusyS2bYaKF",
+            "mangledName": "$s7RookSDK18DataSourcesManagerC23updateAppleHealthStatusyS2bYaKF",
+            "moduleName": "RookSDK",
+            "declAttributes": [
+              "Final",
+              "AccessControl"
+            ],
+            "throwing": true,
+            "funcSelfKind": "NonMutating"
           }
         ],
         "declKind": "Class",
@@ -10030,6 +10059,16 @@
       },
       {
         "kind": "Import",
+        "name": "Foundation",
+        "printedName": "Foundation",
+        "declKind": "Import",
+        "moduleName": "RookSDK",
+        "declAttributes": [
+          "RawDocComment"
+        ]
+      },
+      {
+        "kind": "Import",
         "name": "HealthKit",
         "printedName": "HealthKit",
         "declKind": "Import",
@@ -17517,6 +17556,16 @@
         ]
       },
       {
+        "kind": "Import",
+        "name": "Foundation",
+        "printedName": "Foundation",
+        "declKind": "Import",
+        "moduleName": "RookSDK",
+        "declAttributes": [
+          "RawDocComment"
+        ]
+      },
+      {
         "kind": "TypeDecl",
         "name": "RookSpeedGranularItem",
         "printedName": "RookSpeedGranularItem",
@@ -23660,6 +23709,26 @@
         "printedName": "HealthKit",
         "declKind": "Import",
         "moduleName": "RookSDK"
+      },
+      {
+        "kind": "Import",
+        "name": "Foundation",
+        "printedName": "Foundation",
+        "declKind": "Import",
+        "moduleName": "RookSDK",
+        "declAttributes": [
+          "RawDocComment"
+        ]
+      },
+      {
+        "kind": "Import",
+        "name": "Foundation",
+        "printedName": "Foundation",
+        "declKind": "Import",
+        "moduleName": "RookSDK",
+        "declAttributes": [
+          "RawDocComment"
+        ]
       },
       {
         "kind": "Import",
@@ -32551,6 +32620,16 @@
       },
       {
         "kind": "Import",
+        "name": "Foundation",
+        "printedName": "Foundation",
+        "declKind": "Import",
+        "moduleName": "RookSDK",
+        "declAttributes": [
+          "RawDocComment"
+        ]
+      },
+      {
+        "kind": "Import",
         "name": "HealthKit",
         "printedName": "HealthKit",
         "declKind": "Import",
@@ -37933,7 +38012,7 @@
     {
       "filePath": "\/Users\/franciscoguerreroescamilla\/Developer\/Rook\/SDK's\/RookAuthenticationSDK\/RookSDK\/Source\/Modules\/DataSource\/SourceStatus\/Data\/SourceStatusRemoteDataSource.swift",
       "kind": "StringLiteral",
-      "offset": 524,
+      "offset": 1095,
       "length": 9,
       "value": "\"sources\""
     },
@@ -38248,14 +38327,14 @@
     {
       "filePath": "\/Users\/franciscoguerreroescamilla\/Developer\/Rook\/SDK's\/RookAuthenticationSDK\/RookSDK\/Source\/Modules\/DataSource\/SourceStatus\/Presentation\/ViewModel\/DataSourceVieModel.swift",
       "kind": "BooleanLiteral",
-      "offset": 926,
+      "offset": 1134,
       "length": 5,
       "value": "false"
     },
     {
       "filePath": "\/Users\/franciscoguerreroescamilla\/Developer\/Rook\/SDK's\/RookAuthenticationSDK\/RookSDK\/Source\/Modules\/DataSource\/SourceStatus\/Presentation\/ViewModel\/DataSourceVieModel.swift",
       "kind": "Array",
-      "offset": 982,
+      "offset": 1190,
       "length": 2,
       "value": "[]"
     },
@@ -38398,6 +38477,13 @@
       "offset": 2822,
       "length": 27,
       "value": "\"temperature_delta_celsius\""
+    },
+    {
+      "filePath": "\/Users\/franciscoguerreroescamilla\/Developer\/Rook\/SDK's\/RookAuthenticationSDK\/RookSDK\/Source\/Modules\/Physical\/Sync\/BackGround\/Domain\/Constants\/PhysicalValidationConstants.swift",
+      "kind": "IntegerLiteral",
+      "offset": 197,
+      "length": 2,
+      "value": "12"
     },
     {
       "filePath": "\/Users\/franciscoguerreroescamilla\/Developer\/Rook\/SDK's\/RookAuthenticationSDK\/RookSDK\/Source\/Modules\/Extraction\/Data\/AppleHealthProvider\/Constats\/AppleHealthErrors.swift",
@@ -38578,20 +38664,13 @@
       "filePath": "\/Users\/franciscoguerreroescamilla\/Developer\/Rook\/SDK's\/RookAuthenticationSDK\/RookSDK\/Source\/Modules\/AutomaticUpload\/BackGround\/Domain\/MissingDaysUseCase.swift",
       "kind": "IntegerLiteral",
       "offset": 486,
-      "length": 1,
-      "value": "1"
-    },
-    {
-      "filePath": "\/Users\/franciscoguerreroescamilla\/Developer\/Rook\/SDK's\/RookAuthenticationSDK\/RookSDK\/Source\/Modules\/AutomaticUpload\/BackGround\/Domain\/MissingDaysUseCase.swift",
-      "kind": "IntegerLiteral",
-      "offset": 536,
       "length": 2,
       "value": "30"
     },
     {
       "filePath": "\/Users\/franciscoguerreroescamilla\/Developer\/Rook\/SDK's\/RookAuthenticationSDK\/RookSDK\/Source\/Modules\/AutomaticUpload\/BackGround\/Domain\/MissingDaysUseCase.swift",
       "kind": "IntegerLiteral",
-      "offset": 572,
+      "offset": 522,
       "length": 1,
       "value": "1"
     },
@@ -41932,7 +42011,7 @@
       "kind": "StringLiteral",
       "offset": 1494,
       "length": 12,
-      "value": "\"1.7.5-rc.1\""
+      "value": "\"1.7.5-rc.3\""
     },
     {
       "filePath": "\/Users\/franciscoguerreroescamilla\/Developer\/Rook\/SDK's\/RookAuthenticationSDK\/RookSDK\/Source\/ConfigFiles\/ConfigConstants.swift",
