@@ -36,6 +36,7 @@ final public class DataSourcesManager {
   final public func getAuthorizedDataSources() async throws -> RookSDK.StatusDataSources
   final public func getAuthorizedDataSources() async throws -> [RookSDK.DataSourceStatus]
   final public func getDataSourceAuthorizer(dataSource: Swift.String, redirectUrl: Swift.String? = nil) async throws -> RookSDK.DataSourceAuthorizer
+  final public func updateAppleHealthStatus(_ status: Swift.Bool) async throws -> Swift.Bool
   @objc deinit
 }
 final public class RookTimeZoneManager {
