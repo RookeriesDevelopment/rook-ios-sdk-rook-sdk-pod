@@ -47956,6 +47956,13 @@
         "name": "Foundation",
         "printedName": "Foundation",
         "declKind": "Import",
+        "moduleName": "RookSDK"
+      },
+      {
+        "kind": "Import",
+        "name": "Foundation",
+        "printedName": "Foundation",
+        "declKind": "Import",
         "moduleName": "RookSDK",
         "declAttributes": [
           "RawDocComment"
@@ -65162,7 +65169,7 @@
       "kind": "StringLiteral",
       "offset": 1836,
       "length": 7,
-      "value": "\"4.2.2\""
+      "value": "\"4.2.3\""
     },
     {
       "filePath": "\/Users\/franciscoguerreroescamilla\/Developer\/Rook\/SDK\/RookAuthenticationSDK\/RookSDK\/Source\/ConfigFiles\/ConfigConstants.swift",
@@ -66108,6 +66115,13 @@
       "offset": 1114,
       "length": 43,
       "value": "\"protein_percentage_of_calories_percentage\""
+    },
+    {
+      "filePath": "\/Users\/franciscoguerreroescamilla\/Developer\/Rook\/SDK\/RookAuthenticationSDK\/RookSDK\/Source\/Modules\/Extraction\/Analitics\/Domain\/ExtractionAnalyticErrorGuard.swift",
+      "kind": "StringLiteral",
+      "offset": 309,
+      "length": 32,
+      "value": "\"rook_last_error_analytic_date_\""
     },
     {
       "filePath": "\/Users\/franciscoguerreroescamilla\/Developer\/Rook\/SDK\/RookAuthenticationSDK\/RookSDK\/Source\/Modules\/Transmission\/Data\/TrasnmissionNetworking\/Entities\/CommonGranular\/RookTssGranularTransmissionNetworking.swift",
