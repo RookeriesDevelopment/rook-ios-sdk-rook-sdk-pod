@@ -1,24 +1,43 @@
-name: CD
+# Template for .github/workflows/main.yml in
+# RookeriesDevelopment/rook-ios-sdk-rook-sdk-pod.
+#
+# Publishes the podspec to CocoaPods trunk when a version tag (x.y.z or
+# x.y.z-beta.N) is pushed. GitHub runs the copy of this file that is in the
+# tagged commit, so it must be on main (new release branches are created from
+# main) and on every existing release/x.y branch.
+
+name: Publish to CocoaPods
+
 on:
-  release:
-     types: [published]
+  push:
+    tags:
+      - '[0-9]+.[0-9]+.[0-9]+'
+      - '[0-9]+.[0-9]+.[0-9]+-*'
   workflow_dispatch:
 
 jobs:
-  build:
-
+  publish:
     runs-on: macos-15
 
     steps:
-    - uses: actions/checkout@v1
-    
-    - name: Install Cocoapods
-      run: gem install cocoapods
-      
-    - name: Deploy to Cocoapods
-      run: |
-        set -eo pipefail
-        pod spec lint
-        pod trunk push RookSDK.podspec
-      env:
-        COCOAPODS_TRUNK_TOKEN: ${{ secrets.COCOAPODS_TRUNK_TOKEN }}
+      - uses: actions/checkout@v4
+
+      - name: Check podspec version matches tag
+        if: github.ref_type == 'tag'
+        run: |
+          SPEC_VERSION=$(grep 'spec.version' RookSDK.podspec | head -1 | sed 's/.*"\(.*\)".*/\1/')
+          if [ "$SPEC_VERSION" != "$GITHUB_REF_NAME" ]; then
+            echo "::error::RookSDK.podspec version is $SPEC_VERSION but the tag is $GITHUB_REF_NAME"
+            exit 1
+          fi
+
+      - name: Install CocoaPods
+        run: gem install cocoapods
+
+      - name: Deploy to CocoaPods
+        run: |
+          set -eo pipefail
+          pod spec lint
+          pod trunk push RookSDK.podspec
+        env:
+          COCOAPODS_TRUNK_TOKEN: ${{ secrets.COCOAPODS_TRUNK_TOKEN }}
